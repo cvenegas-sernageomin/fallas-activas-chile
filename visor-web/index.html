@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Fallas Activas + Infraestructura Crítica — Visor</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  html, body, #root, #map { height: 100%; margin: 0; }
+  * { box-sizing: border-box; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
+  #map { position: absolute; top: 0; right: 0; bottom: 0; left: 320px; background: #0b1622; }
+
+  #panel {
+    position: absolute; top: 0; left: 0; bottom: 0; z-index: 1000;
+    width: 320px; overflow-y: auto;
+    background: rgba(15,22,31,0.97); color: #e7edf3;
+    padding: 14px 16px; box-shadow: 2px 0 16px rgba(0,0,0,0.45);
+    font-size: 13px;
+  }
+  #panel h1 { font-size: 15px; margin: 0 0 8px; display: flex; align-items: center; gap: 6px; }
+  .collapse { display: inline-block; margin-left: auto; background: transparent !important; width: auto !important; padding: 2px 8px !important; font-size: 14px; cursor: pointer; }
+
+  @media (max-width: 760px) {
+    #map { left: 0; }
+    #panel {
+      top: calc(8px + env(safe-area-inset-top)); left: 8px; right: 8px; bottom: auto;
+      width: auto; max-width: none;
+      max-height: calc(100vh - 16px - env(safe-area-inset-top));
+      border-radius: 14px; backdrop-filter: blur(6px);
+      padding: 12px 14px; font-size: 14px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+    }
+    #panel:not(.open) { right: auto; }
+    #panel h1 { font-size: 13px; cursor: pointer; }
+    .collapse { padding: 6px 12px !important; font-size: 16px; }
+    .hint { color: #7fd4ff; font-size: 12px; margin-top: 6px; cursor: pointer; }
+    label.tg { min-height: 40px; margin: 2px 0; }
+    label.tg input[type="checkbox"] { width: 20px; height: 20px; flex: none; }
+    .seg button { padding: 12px 10px; font-size: 14px; }
+    button { padding: 12px 12px; font-size: 14px; }
+    .leaflet-popup-content { width: min(86vw, 340px) !important; max-height: calc(100vh - 200px); }
+  }
+  #panel .sub { color: #93a4b5; font-size: 11px; margin-bottom: 10px; }
+  .hint { color: #7fd4ff; font-size: 12px; margin-top: 6px; cursor: pointer; }
+  .row { display: flex; align-items: center; justify-content: space-between; margin: 5px 0; }
+  .stat { display: flex; align-items: center; gap: 7px; margin: 3px 0; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; flex: none; }
+  .sq  { width: 12px; height: 12px; display: inline-block; flex: none; }
+  .num { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .group { border-top: 1px solid #2a3a4a; margin-top: 8px; padding-top: 8px; }
+  .subsection { margin-left: 8px; padding-left: 8px; border-left: 2px solid #2a3a4a; }
+  .subsection .group { border-top: 1px dashed #2a3a4a; }
+  .gtitle { font-size: 11px; text-transform: uppercase; letter-spacing: .5px; color: #8aa0b4; margin-bottom: 4px; }
+  .sec-head {
+    display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none;
+    padding: 8px 10px; margin: 0 -2px 4px; border-radius: 8px;
+    background: rgba(255,255,255,0.04); border-left: 3px solid #2563eb;
+  }
+  .sec-head:active { background: rgba(255,255,255,0.09); }
+  .sec-head .sec-title { font-size: 13px; font-weight: 700; color: #eef3f8; letter-spacing: .2px; }
+  .sec-badge {
+    margin-left: auto; font-size: 11px; font-weight: 700; padding: 2px 9px; border-radius: 10px;
+    background: #1f2b3a; color: #9db1c4;
+  }
+  .sec-chev { color: #6d8299; font-size: 13px; }
+  label.tg { display: flex; align-items: center; gap: 7px; cursor: pointer; margin: 4px 0; user-select: none; }
+  label.tg .warn { color: #ffb020; }
+  button { background: #2563eb; color: #fff; border: 0; border-radius: 7px; padding: 7px 10px; cursor: pointer; font-size: 12px; width: 100%; margin-top: 8px; }
+  button:disabled { opacity: .6; cursor: default; }
+  .seg { display: flex; gap: 4px; margin-top: 4px; }
+  .seg button { width: auto; flex: 1; margin: 0; background: #1f2b3a; }
+  .seg button.on { background: #2563eb; }
+  #err { color: #ff8d7a; font-size: 11px; margin-top: 6px; }
+  .layer-err { color: #ff8d7a; font-size: 11px; margin: 2px 0 4px; }
+  .leaflet-popup-content { font-size: 12px; max-height: calc(100vh - 210px); overflow-y: auto; overflow-x: hidden; }
+  .leaflet-popup-content table { border-collapse: collapse; }
+  .leaflet-popup-content td { border-bottom: 1px solid #eee; padding: 2px 6px 2px 0; vertical-align: top; }
+  .leaflet-pane.leaflet-popup-pane { z-index: 1200; }
+  .leaflet-tile-pane, .leaflet-tile-pane *,
+  .leaflet-overlay-pane, .leaflet-overlay-pane *,
+  .leaflet-marker-pane, .leaflet-marker-pane *,
+  .leaflet-container > canvas { touch-action: none !important; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- type="text/plain": evita que Babel Standalone AUTO-ejecute este script (bug conocido,
+     ver alertas-redes/CLAUDE.md "Bug histórico: doble montaje de React"). Solo lo corre
+     el bootstrap manual de abajo, UNA vez. -->
+<script type="text/plain" id="app-src">
+const { useState, useEffect, useRef, useCallback } = React;
+
+// En localhost, los datos se sirven desde el propio repo (servidor estático apuntando
+// a la raíz de fallas-activas-chile/, no solo visor-web/), para poder probar contra
+// archivos locales sin depender de GitHub. Fuera de localhost, se usa la rama main
+// publicada. Evita el gotcha de "revertir la URL local antes de publicar" que tuvo
+// alertas-redes con las cuencas: acá es automático por hostname, no manual.
+const DATA_BASE = (typeof location !== "undefined" &&
+    (location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+  ? "../data"
+  : "https://raw.githubusercontent.com/cvenegas-sernageomin/fallas-activas-chile/main/data";
+
+const ESRI_SAT_URL = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
+
+const POPUP_OPTS = { maxWidth: 400, autoPanPaddingTopLeft: [16, 124], autoPanPaddingBottomRight: [16, 20] };
+
+// Referencia a nivel de módulo: sobrevive al doble montaje de React 18 (modo estricto)
+// para poder destruir el mapa anterior por completo antes de crear uno nuevo (mismo
+// patrón que alertas-redes/visor-web/index.html, ver comentario ahí).
+let _mapaActivo = null;
+
+// ---------- colores ----------
+const COLOR_ACTIVIDAD = { Proved: "#ff2d2d", Probable: "#ff8c00", Possible: "#e6c400" };
+const COLOR_ACTIVIDAD_DEFAULT = "#9db1c4";
+
+const SECTORES = [
+  { id: "agua", label: "Agua", icon: "💧", color: "#38bdf8" },
+  { id: "energia", label: "Energía", icon: "⚡", color: "#f59e0b" },
+  { id: "relaves", label: "Relaves", icon: "⛏️", color: "#92400e" },
+  { id: "salud", label: "Salud", icon: "🏥", color: "#f43f5e" },
+  { id: "transporte", label: "Transporte", icon: "🚦", color: "#a855f7" }
+];
+const COLOR_SECTOR = {};
+SECTORES.forEach(s => { COLOR_SECTOR[s.id] = s.color; });
+
+// ---------- configuración de capas ----------
+// sector "fallas" es especial: se muestra en su propia sección de nivel superior,
+// no anidada bajo "Infraestructura Crítica". kind: "points" | "lines".
+const LAYER_DEFS = [
+  { id: "fallas", sector: "fallas", label: "Fallas Activas (CHAF v1)", file: "red_fallas.kml", kind: "lines" },
+
+  { id: "agua_potable_rural", sector: "agua", label: "Agua Potable Rural", file: "agua/agua_potable_rural.kml", kind: "points" },
+  { id: "bocatomas", sector: "agua", label: "Bocatomas", file: "agua/bocatomas.kml", kind: "points" },
+
+  { id: "almacenes_combustible", sector: "energia", label: "Almacenes de Combustible", file: "energia/almacenes_combustible.kml", kind: "points" },
+  { id: "centrales_biomasa", sector: "energia", label: "Centrales de Biomasa", file: "energia/centrales_biomasa.kml", kind: "points" },
+  { id: "centrales_eolicas", sector: "energia", label: "Centrales Eólicas", file: "energia/centrales_eolicas.kml", kind: "points" },
+  { id: "centrales_geotermicas", sector: "energia", label: "Centrales Geotérmicas", file: "energia/centrales_geotermicas.kml", kind: "points" },
+  { id: "centrales_hidroelectricas", sector: "energia", label: "Centrales Hidroeléctricas", file: "energia/centrales_hidroelectricas.kml", kind: "points" },
+  { id: "centrales_solares", sector: "energia", label: "Centrales Solares", file: "energia/centrales_solares.kml", kind: "points" },
+  { id: "gasoductos", sector: "energia", label: "Gasoductos", file: "energia/gasoductos.kml", kind: "lines" },
+  { id: "lineas_sea", sector: "energia", label: "Líneas Eléctricas SEA", file: "energia/lineas_sea.kml", kind: "lines" },
+  { id: "lineas_sem", sector: "energia", label: "Líneas Eléctricas SEM", file: "energia/lineas_sem.kml", kind: "lines" },
+  { id: "lineas_sic", sector: "energia", label: "Líneas Eléctricas SIC", file: "energia/lineas_sic.kml", kind: "lines" },
+  { id: "lineas_sing", sector: "energia", label: "Líneas Eléctricas SING", file: "energia/lineas_sing.kml", kind: "lines" },
+  { id: "oleoductos", sector: "energia", label: "Oleoductos", file: "energia/oleoductos.kml", kind: "lines" },
+  { id: "subestaciones_sea", sector: "energia", label: "Subestaciones SEA", file: "energia/subestaciones_sea.kml", kind: "points" },
+  { id: "subestaciones_sem", sector: "energia", label: "Subestaciones SEM", file: "energia/subestaciones_sem.kml", kind: "points" },
+  { id: "subestaciones_sic", sector: "energia", label: "Subestaciones SIC", file: "energia/subestaciones_sic.kml", kind: "points" },
+  { id: "subestaciones_sing", sector: "energia", label: "Subestaciones SING", file: "energia/subestaciones_sing.kml", kind: "points" },
+  { id: "terminales_maritimos_descarga", sector: "energia", label: "Terminales Marítimos de Descarga", file: "energia/terminales_maritimos_descarga.kml", kind: "points" },
+  { id: "termoelectricas", sector: "energia", label: "Termoeléctricas", file: "energia/termoelectricas.kml", kind: "points" },
+
+  { id: "relaves_sernageomin_2018", sector: "relaves", label: "Relaves (SERNAGEOMIN 2018)", file: "relaves/relaves_sernageomin_2018.kml", kind: "points" },
+
+  { id: "establecimientos_salud", sector: "salud", label: "Establecimientos de Salud", file: "salud/establecimientos_salud.kml", kind: "points" },
+
+  { id: "infraestructura_portuaria", sector: "transporte", label: "Infraestructura Portuaria", file: "transporte/infraestructura_portuaria.kml", kind: "points" },
+  { id: "red_aeroportuaria", sector: "transporte", label: "Red Aeroportuaria", file: "transporte/red_aeroportuaria.kml", kind: "points" },
+  { id: "red_ferrea", sector: "transporte", label: "Red Férrea", file: "transporte/red_ferrea.kml", kind: "lines" },
+  { id: "red_vial", sector: "transporte", label: "Red Vial", file: "transporte/red_vial.kml", kind: "lines", warn: true }
+];
+const FALLAS_DEF = LAYER_DEFS.find(d => d.id === "fallas");
+const INFRA_DEFS = LAYER_DEFS.filter(d => d.sector !== "fallas");
+
+function colorDeCapa(def, attrs) {
+  if (def.id === "fallas") return COLOR_ACTIVIDAD[attrs.activity] || COLOR_ACTIVIDAD_DEFAULT;
+  return COLOR_SECTOR[def.sector] || "#3388ff";
+}
+
+function tituloPopup(def, name, attrs) {
+  if (def.id === "fallas") {
+    const fname = attrs.F_name, ftname = attrs.FT_name;
+    if (fname && ftname) return fname + " — " + ftname;
+    if (fname) return fname;
+    return attrs.activity || name || "(sin nombre)";
+  }
+  return name || "(sin nombre)";
+}
+
+// ---------- utilidades de texto/HTML ----------
+function escHtml(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+function esValorVacio(v) {
+  if (v == null) return true;
+  const s = String(v).trim();
+  return s === "" || s === "-99" || s === "-99.0";
+}
+function tablaAtributos(attrs) {
+  const filas = Object.keys(attrs)
+    .filter(k => !esValorVacio(attrs[k]))
+    .map(k => `<tr><td><b>${escHtml(k)}</b></td><td>${escHtml(attrs[k])}</td></tr>`)
+    .join("");
+  return filas ? `<table cellpadding="2">${filas}</table>` : "";
+}
+
+// ---------- parseo genérico de KML (puntos y líneas, con ExtendedData/SimpleData) ----------
+function dec(s) {
+  return s.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&apos;/g, "'");
+}
+function parseAttrs(block) {
+  const attrs = {};
+  const re = /<SimpleData name="([^"]+)">([\s\S]*?)<\/SimpleData>/g;
+  let m;
+  while ((m = re.exec(block))) attrs[m[1]] = dec(m[2]).trim();
+  return attrs;
+}
+// kind: "lines" lee todos los <LineString> del placemark (soporta MultiGeometry, ej.
+// gasoductos: 13 de 58 features son multi-tramo); default = "points" lee un <Point>.
+function parsePlacemarks(text, kind) {
+  const out = [];
+  const pmRe = /<Placemark[^>]*>([\s\S]*?)<\/Placemark>/g;
+  let pm;
+  while ((pm = pmRe.exec(text))) {
+    const block = pm[1];
+    const nM = block.match(/<name>([\s\S]*?)<\/name>/);
+    const name = nM ? dec(nM[1]).trim() : "";
+    const attrs = parseAttrs(block);
+    if (kind === "lines") {
+      const lines = [];
+      const lsRe = /<LineString>[\s\S]*?<coordinates>([\s\S]*?)<\/coordinates>[\s\S]*?<\/LineString>/g;
+      let lm;
+      while ((lm = lsRe.exec(block))) {
+        const coords = lm[1].trim().split(/\s+/).filter(x => x !== "").map(pair => {
+          const p = pair.split(","); return [parseFloat(p[1]), parseFloat(p[0])];
+        });
+        if (coords.length) lines.push(coords);
+      }
+      if (!lines.length) continue;
+      out.push({ name, attrs, lines });
+    } else {
+      const ptM = block.match(/<Point>[\s\S]*?<coordinates>([\s\S]*?)<\/coordinates>/);
+      if (!ptM) continue;
+      const p = ptM[1].trim().split(",");
+      const lat = parseFloat(p[1]), lon = parseFloat(p[0]);
+      if (isNaN(lat) || isNaN(lon)) continue;
+      out.push({ name, attrs, lat, lon });
+    }
+  }
+  return out;
+}
+
+// ---------- Web Worker (fuera del hilo principal, igual patrón que alertas-redes) ----------
+// Duplicado a mano (el Worker corre desde un Blob, scope aislado sin acceso a las
+// funciones de arriba) — verificar que un cambio en parsePlacemarks se refleje acá también.
+const KML_WORKER_SRC = `
+function dec(s){return s.replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&apos;/g,"'");}
+function parseAttrs(block){
+  var attrs={}; var re=/<SimpleData name="([^"]+)">([\\s\\S]*?)<\\/SimpleData>/g, m;
+  while((m=re.exec(block))) attrs[m[1]]=dec(m[2]).trim();
+  return attrs;
+}
+function parsePlacemarks(text, kind){
+  var out=[];
+  var pmRe=/<Placemark[^>]*>([\\s\\S]*?)<\\/Placemark>/g, pm;
+  while((pm=pmRe.exec(text))){
+    var block=pm[1];
+    var nM=block.match(/<name>([\\s\\S]*?)<\\/name>/);
+    var name=nM?dec(nM[1]).trim():"";
+    var attrs=parseAttrs(block);
+    if(kind==="lines"){
+      var lines=[];
+      var lsRe=/<LineString>[\\s\\S]*?<coordinates>([\\s\\S]*?)<\\/coordinates>[\\s\\S]*?<\\/LineString>/g, lm;
+      while((lm=lsRe.exec(block))){
+        var coords=lm[1].trim().split(/\\s+/).filter(function(x){return x!=="";}).map(function(pair){
+          var p=pair.split(","); return [parseFloat(p[1]),parseFloat(p[0])];
+        });
+        if(coords.length) lines.push(coords);
+      }
+      if(!lines.length) continue;
+      out.push({name:name, attrs:attrs, lines:lines});
+    } else {
+      var ptM=block.match(/<Point>[\\s\\S]*?<coordinates>([\\s\\S]*?)<\\/coordinates>/);
+      if(!ptM) continue;
+      var p=ptM[1].trim().split(",");
+      var lat=parseFloat(p[1]), lon=parseFloat(p[0]);
+      if(isNaN(lat)||isNaN(lon)) continue;
+      out.push({name:name, attrs:attrs, lat:lat, lon:lon});
+    }
+  }
+  return out;
+}
+self.onmessage=function(e){
+  var d=e.data;
+  fetch(d.url, {cache:"no-cache"}).then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status+": "+d.url); return r.text(); })
+    .then(function(t){ var out=parsePlacemarks(t, d.kind); self.postMessage({id:d.id, ok:true, out:out}); })
+    .catch(function(err){ self.postMessage({id:d.id, ok:false, error:String((err&&err.message)||err)}); });
+};
+`;
+
+let _kmlWorker = null, _kmlSeq = 0;
+const _kmlPending = new Map();
+function getKmlWorker() {
+  if (_kmlWorker === false) return null;
+  if (_kmlWorker) return _kmlWorker;
+  try {
+    const blob = new Blob([KML_WORKER_SRC], { type: "application/javascript" });
+    _kmlWorker = new Worker(URL.createObjectURL(blob));
+    _kmlWorker.onmessage = (e) => {
+      const { id, ok, out, error } = e.data;
+      const p = _kmlPending.get(id); if (!p) return;
+      _kmlPending.delete(id);
+      ok ? p.resolve(out) : p.reject(new Error(error));
+    };
+    _kmlWorker.onerror = () => {
+      _kmlWorker = false;
+      _kmlPending.forEach(p => p.reject(new Error("KML worker no disponible")));
+      _kmlPending.clear();
+    };
+    return _kmlWorker;
+  } catch (e) { _kmlWorker = false; return null; }
+}
+
+async function fetchGenericoAbs(url, kind) {
+  const r = await fetch(url, { cache: "no-cache" });
+  if (!r.ok) throw new Error(`HTTP ${r.status}: ${url}`);
+  const text = await r.text();
+  return parsePlacemarks(text, kind);
+}
+
+// Resuelve SIEMPRE a una URL absoluta antes de mandarla al worker: un Worker creado
+// desde un Blob no tiene la página como base para resolver rutas relativas (".."),
+// las resuelve contra el propio blob: y el fetch falla con "Failed to parse URL".
+function fetchKml(file, kind) {
+  const url = new URL(`${DATA_BASE}/${file}`, document.baseURI).href;
+  const w = getKmlWorker();
+  if (!w) return fetchGenericoAbs(url, kind);
+  return new Promise((resolve, reject) => {
+    const id = ++_kmlSeq;
+    _kmlPending.set(id, { resolve, reject });
+    w.postMessage({ id, url, kind });
+  });
+}
+
+// Sanitiza el HTML del popup antes de inyectarlo (mismo patrón que alertas-redes):
+// quita <script>/<iframe>/<object>/<embed>, atributos on* y URLs javascript:.
+function sanitizePopup(html) {
+  if (!html) return "";
+  const t = document.createElement("template");
+  t.innerHTML = html;
+  t.content.querySelectorAll("script, iframe, object, embed, link, meta, style, base").forEach(n => n.remove());
+  t.content.querySelectorAll("*").forEach(el => {
+    for (const a of [...el.attributes]) {
+      const v = (a.value || "").replace(/\s+/g, "").toLowerCase();
+      if (/^on/i.test(a.name) || v.startsWith("javascript:") || v.startsWith("data:text/html")) {
+        el.removeAttribute(a.name);
+      }
+    }
+  });
+  return t.innerHTML;
+}
+
+function buildLayerGroup(def, feats) {
+  const g = L.layerGroup();
+  feats.forEach(f => {
+    const color = colorDeCapa(def, f.attrs);
+    const titulo = tituloPopup(def, f.name, f.attrs);
+    const popupHtml = `<b>${escHtml(titulo)}</b>${tablaAtributos(f.attrs)}`;
+    let layer;
+    if (def.kind === "lines") {
+      layer = L.polyline(f.lines, { color, weight: def.id === "fallas" ? 3 : 2, opacity: 0.85 });
+    } else {
+      layer = L.circleMarker([f.lat, f.lon], {
+        radius: 5, color: "#0a0a0a", weight: 0.6, fillColor: color, fillOpacity: 0.85
+      });
+    }
+    layer.bindPopup(sanitizePopup(popupHtml), POPUP_OPTS);
+    g.addLayer(layer);
+  });
+  return g;
+}
+
+// ---------- componentes de UI ----------
+function St({ color, square, label, value }) {
+  return (
+    <div className="stat">
+      <span className={square ? "sq" : "dot"} style={{ background: color }}></span>
+      <span>{label}</span>
+      {value !== "" && <span className="num" style={{ marginLeft: "auto" }}>{value}</span>}
+    </div>
+  );
+}
+
+function Section({ title, open, onToggle, badge, children }) {
+  return (
+    <div className="group">
+      <div className="sec-head" onClick={onToggle}>
+        <span className="sec-title">{title}</span>
+        {badge != null && badge !== "" && <span className="sec-badge">{badge}</span>}
+        <span className="sec-chev">{open ? "▾" : "▸"}</span>
+      </div>
+      {open && children}
+    </div>
+  );
+}
+
+function LayerRow({ def, state, onToggle }) {
+  const st = state || {};
+  return (
+    <div>
+      <label className="tg">
+        <input type="checkbox" checked={!!st.on} onChange={e => onToggle(def, e.target.checked)} />
+        <span>{def.label}{def.warn ? <span className="warn"> (capa pesada)</span> : ""}</span>
+        <span className="num" style={{ marginLeft: "auto" }}>
+          {st.loading ? "…" : (st.total != null ? st.total : "")}
+        </span>
+      </label>
+      {st.error && <div className="layer-err">⚠ {st.error}</div>}
+    </div>
+  );
+}
+
+// ---------- App ----------
+function App() {
+  const mapRef = useRef(null);
+  const basemaps = useRef({});
+  const groups = useRef({});   // id -> L.layerGroup, poblado la primera vez que se activa
+
+  const [layerState, setLayerState] = useState({});
+  const [fallasOpen, setFallasOpen] = useState(false);
+  const [infraOpen, setInfraOpen] = useState(false);
+  const [sectorOpen, setSectorOpen] = useState({});
+  const [base, setBase] = useState("sat");
+  const [collapsed, setCollapsed] = useState(() =>
+    typeof window !== "undefined" && window.matchMedia("(max-width: 760px)").matches);
+
+  useEffect(() => {
+    if (_mapaActivo) {
+      try { _mapaActivo.remove(); } catch (e) {}
+      _mapaActivo = null;
+    }
+    const cont = L.DomUtil.get("map");
+    if (cont != null && cont._leaflet_id != null) {
+      cont._leaflet_id = null;
+      cont.innerHTML = "";
+    }
+    const map = L.map("map", { zoomControl: true, preferCanvas: true }).setView([-35.5, -71], 5);
+    mapRef.current = map;
+    _mapaActivo = map;
+
+    const sat = L.tileLayer(ESRI_SAT_URL, { maxZoom: 18, attribution: "Imagery © Esri" });
+    const labels = L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+      { maxZoom: 18 }
+    );
+    const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      { maxZoom: 18, attribution: "© OpenStreetMap" });
+    basemaps.current = { sat, labels, osm };
+    sat.addTo(map); labels.addTo(map);
+
+    return () => {
+      try { map.remove(); } catch (e) {}
+      if (_mapaActivo === map) _mapaActivo = null;
+      mapRef.current = null;
+      groups.current = {};
+    };
+  }, []);
+
+  useEffect(() => {
+    const b = basemaps.current, map = mapRef.current;
+    if (!map || !b.sat) return;
+    if (base === "sat") {
+      map.removeLayer(b.osm); b.sat.addTo(map); b.labels.addTo(map);
+    } else {
+      map.removeLayer(b.sat); map.removeLayer(b.labels); b.osm.addTo(map);
+    }
+  }, [base]);
+
+  const toggleLayer = useCallback(async (def, on) => {
+    setLayerState(prev => ({ ...prev, [def.id]: { ...(prev[def.id] || {}), on } }));
+    const map = mapRef.current;
+    if (!map) return;
+    let group = groups.current[def.id];
+    if (on) {
+      if (!group) {
+        setLayerState(prev => ({ ...prev, [def.id]: { ...(prev[def.id] || {}), on: true, loading: true, error: "" } }));
+        try {
+          const feats = await fetchKml(def.file, def.kind);
+          group = buildLayerGroup(def, feats);
+          groups.current[def.id] = group;
+          setLayerState(prev => ({ ...prev, [def.id]: { on: true, loading: false, error: "", total: feats.length } }));
+        } catch (e) {
+          // on:false -> el checkbox se desmarca solo (nada quedo mostrado en el mapa)
+          // y no infla el contador "X/N" de capas activas; el mensaje de error queda
+          // igual visible debajo para que el usuario sepa por que y pueda reintentar.
+          setLayerState(prev => ({ ...prev, [def.id]: { on: false, loading: false, error: String(e.message || e) } }));
+          return;
+        }
+      }
+      group.addTo(map);
+    } else if (group) {
+      map.removeLayer(group);
+    }
+  }, []);
+
+  return (
+    <div id="panel" className={collapsed ? "" : "open"}>
+      <h1 onClick={() => setCollapsed(!collapsed)}>🪨 Fallas + Infraestructura
+        <button className="collapse" onClick={(e) => { e.stopPropagation(); setCollapsed(!collapsed); }}>{collapsed ? "▸" : "▾"}</button>
+      </h1>
+      <div className="sub">Capas estáticas — CHAF v1 (2020) + SERNAGEOMIN/sectorial</div>
+      {collapsed && <div className="hint" onClick={() => setCollapsed(false)}>👆 Toca para ver capas y leyenda</div>}
+
+      {!collapsed && <div className="pbody">
+      <Section title="🪨 Fallas Activas (CHAF v1)" open={fallasOpen} onToggle={() => setFallasOpen(!fallasOpen)}
+        badge={layerState.fallas && layerState.fallas.total != null ? layerState.fallas.total : "958"}>
+        <LayerRow def={FALLAS_DEF} state={layerState.fallas} onToggle={toggleLayer} />
+        <div style={{ marginTop: 6 }}>
+          <St color={COLOR_ACTIVIDAD.Proved} label="Proved (confirmada)" value="" />
+          <St color={COLOR_ACTIVIDAD.Probable} label="Probable" value="" />
+          <St color={COLOR_ACTIVIDAD.Possible} label="Possible" value="" />
+        </div>
+        <div style={{ color: "#93a4b5", fontSize: 11, marginTop: 6 }}>
+          Melnick, Maldonado &amp; Contreras (2020), PANGAEA doi:10.1594/PANGAEA.922241, CC-BY 4.0.
+        </div>
+      </Section>
+
+      <Section title="🏗️ Infraestructura Crítica" open={infraOpen} onToggle={() => setInfraOpen(!infraOpen)}
+        badge={INFRA_DEFS.filter(d => layerState[d.id] && layerState[d.id].on).length + "/" + INFRA_DEFS.length}>
+        {SECTORES.map(sec => {
+          const defsSector = LAYER_DEFS.filter(d => d.sector === sec.id);
+          return (
+            <div className="subsection" key={sec.id}>
+              <Section title={sec.icon + " " + sec.label}
+                open={!!sectorOpen[sec.id]}
+                onToggle={() => setSectorOpen({ ...sectorOpen, [sec.id]: !sectorOpen[sec.id] })}
+                badge={defsSector.filter(d => layerState[d.id] && layerState[d.id].on).length + "/" + defsSector.length}>
+                {defsSector.map(def => (
+                  <LayerRow key={def.id} def={def} state={layerState[def.id]} onToggle={toggleLayer} />
+                ))}
+              </Section>
+            </div>
+          );
+        })}
+      </Section>
+
+      <div className="group">
+        <div className="gtitle">Fondo</div>
+        <div className="seg">
+          <button className={base === "sat" ? "on" : ""} onClick={() => setBase("sat")}>Satélite</button>
+          <button className={base === "calle" ? "on" : ""} onClick={() => setBase("calle")}>Calles</button>
+        </div>
+      </div>
+      </div>}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+
+<script>
+  (function () {
+    try {
+      var src = document.getElementById("app-src").textContent;
+      var code = Babel.transform(src, { presets: [["react", { runtime: "classic" }]] }).code;
+      (0, eval)(code);
+    } catch (err) {
+      console.error("Bootstrap error:", err && err.message);
+      document.getElementById("root").innerHTML =
+        '<div style="color:#fff;padding:20px;font-family:sans-serif">Error al iniciar: ' +
+        (err && err.message) + "</div>";
+    }
+  })();
+</script>
+</body>
+</html>
