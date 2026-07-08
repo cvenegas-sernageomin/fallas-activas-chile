@@ -374,7 +374,11 @@ function buildLayerGroup(def, feats) {
         radius: 5, color: "#0a0a0a", weight: 0.6, fillColor: color, fillOpacity: 0.85
       });
     }
-    layer.bindPopup(sanitizePopup(popupHtml), POPUP_OPTS);
+    // Lazy: Leaflet acepta una función como contenido y la llama recién al abrir el
+    // popup. Evita sanitizar (construcción de <template> + 2 querySelectorAll) las
+    // ~12.600 features de red_vial de una sola vez al activar la capa — solo se
+    // sanitiza la que el usuario realmente abre.
+    layer.bindPopup(() => sanitizePopup(popupHtml), POPUP_OPTS);
     g.addLayer(layer);
   });
   return g;
@@ -425,6 +429,13 @@ function App() {
   const mapRef = useRef(null);
   const basemaps = useRef({});
   const groups = useRef({});   // id -> L.layerGroup, poblado la primera vez que se activa
+  // desiredOn: último estado on/off pedido por el usuario para cada capa, escrito de
+  // forma SÍNCRONA (antes de cualquier await) para que un fetch en curso pueda
+  // comprobar, al resolver, si su resultado todavía es el que el usuario quiere.
+  const desiredOn = useRef({});
+  // inFlight: promesa de fetchKml en curso por def.id, para no disparar un segundo
+  // fetch si el usuario apaga y prende la capa mientras la primera sigue cargando.
+  const inFlight = useRef({});
 
   const [layerState, setLayerState] = useState({});
   const [fallasOpen, setFallasOpen] = useState(false);
@@ -477,29 +488,66 @@ function App() {
   }, [base]);
 
   const toggleLayer = useCallback(async (def, on) => {
+    // Escribir el estado deseado ANTES de cualquier await: si el usuario alterna
+    // rápido (on -> off -> on...) mientras un fetch sigue en curso, esta es la
+    // única fuente de verdad sobre qué quiere el usuario "ahora mismo".
+    desiredOn.current[def.id] = on;
     setLayerState(prev => ({ ...prev, [def.id]: { ...(prev[def.id] || {}), on } }));
     const map = mapRef.current;
     if (!map) return;
     let group = groups.current[def.id];
-    if (on) {
-      if (!group) {
-        setLayerState(prev => ({ ...prev, [def.id]: { ...(prev[def.id] || {}), on: true, loading: true, error: "" } }));
-        try {
-          const feats = await fetchKml(def.file, def.kind);
-          group = buildLayerGroup(def, feats);
-          groups.current[def.id] = group;
-          setLayerState(prev => ({ ...prev, [def.id]: { on: true, loading: false, error: "", total: feats.length } }));
-        } catch (e) {
-          // on:false -> el checkbox se desmarca solo (nada quedo mostrado en el mapa)
-          // y no infla el contador "X/N" de capas activas; el mensaje de error queda
-          // igual visible debajo para que el usuario sepa por que y pueda reintentar.
-          setLayerState(prev => ({ ...prev, [def.id]: { on: false, loading: false, error: String(e.message || e) } }));
-          return;
-        }
-      }
+
+    if (!on) {
+      // Apagar: si ya hay grupo construido, sacarlo del mapa. Si todavía no existe
+      // (fetch en curso), no hay nada que remover — cuando ese fetch resuelva,
+      // comprobará desiredOn.current y no lo mostrará (ver más abajo).
+      if (group) map.removeLayer(group);
+      return;
+    }
+
+    if (group) {
+      // Ya estaba construido (activación previa): mostrarlo de inmediato, sin fetch.
       group.addTo(map);
-    } else if (group) {
-      map.removeLayer(group);
+      return;
+    }
+
+    // No hay grupo todavía: reusar un fetch ya en curso para esta capa en vez de
+    // disparar uno nuevo (evita features duplicadas / grupos huérfanos si el
+    // usuario prende la capa dos veces antes de que la primera responda).
+    let promise = inFlight.current[def.id];
+    if (!promise) {
+      setLayerState(prev => ({ ...prev, [def.id]: { ...(prev[def.id] || {}), on: true, loading: true, error: "" } }));
+      promise = fetchKml(def.file, def.kind);
+      inFlight.current[def.id] = promise;
+    }
+
+    try {
+      const feats = await promise;
+      // Solo la primera llamada que despierta tras el resolve construye el grupo;
+      // llamadas posteriores que esperaban la misma promesa lo encuentran ya listo.
+      if (inFlight.current[def.id] === promise) {
+        delete inFlight.current[def.id];
+      }
+      if (!groups.current[def.id]) {
+        groups.current[def.id] = buildLayerGroup(def, feats);
+      }
+      group = groups.current[def.id];
+
+      if (desiredOn.current[def.id]) {
+        group.addTo(map);
+        setLayerState(prev => ({ ...prev, [def.id]: { on: true, loading: false, error: "", total: feats.length } }));
+      } else {
+        // El usuario apagó la capa mientras cargaba: dejar el grupo cacheado
+        // (listo al toque la próxima vez) pero NO mostrarlo ni reactivar el
+        // checkbox — evita el "flash" de que se vuelva a marcar solo.
+        setLayerState(prev => ({ ...prev, [def.id]: { on: false, loading: false, error: "", total: feats.length } }));
+      }
+    } catch (e) {
+      if (inFlight.current[def.id] === promise) delete inFlight.current[def.id];
+      // on:false -> el checkbox se desmarca solo (nada quedo mostrado en el mapa)
+      // y no infla el contador "X/N" de capas activas; el mensaje de error queda
+      // igual visible debajo para que el usuario sepa por que y pueda reintentar.
+      setLayerState(prev => ({ ...prev, [def.id]: { on: false, loading: false, error: String(e.message || e) } }));
     }
   }, []);
 
