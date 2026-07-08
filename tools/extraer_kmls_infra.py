@@ -27,14 +27,28 @@ def ruta_salida(kmz_path: Path, raiz_infra: Path, destino_data: Path) -> Path:
 
 
 def main() -> None:
+    if not RAIZ_INFRA.exists():
+        raise FileNotFoundError(
+            f"No se encontro {RAIZ_INFRA}. Se espera que 'infraestructura-critica-chile' "
+            "sea un directorio hermano de este repo (ver docs/superpowers/specs para el origen del dato)."
+        )
     kmzs = rutas_kmz(RAIZ_INFRA)
     print(f"{len(kmzs)} archivos KMZ a extraer (excluidos: {sorted(EXCLUIR)})")
+    fallidos = []
     for kmz in kmzs:
-        kml_text = extraer_doc_kml(str(kmz))
-        salida = ruta_salida(kmz, RAIZ_INFRA, DESTINO_DATA)
-        salida.parent.mkdir(parents=True, exist_ok=True)
-        salida.write_text(kml_text, encoding="utf-8")
-        print(f"  OK: {kmz} -> {salida}")
+        try:
+            kml_text = extraer_doc_kml(str(kmz))
+            salida = ruta_salida(kmz, RAIZ_INFRA, DESTINO_DATA)
+            salida.parent.mkdir(parents=True, exist_ok=True)
+            salida.write_text(kml_text, encoding="utf-8")
+            print(f"  OK: {kmz} -> {salida}")
+        except Exception as e:
+            fallidos.append((kmz, e))
+            print(f"  ERROR: {kmz} -> {e}")
+    exitosos = len(kmzs) - len(fallidos)
+    print(f"{exitosos}/{len(kmzs)} extraidos correctamente")
+    if fallidos:
+        raise RuntimeError(f"{len(fallidos)} archivo(s) fallaron: {[str(k) for k, _ in fallidos]}")
 
 
 if __name__ == "__main__":
