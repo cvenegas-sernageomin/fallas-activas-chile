@@ -11,6 +11,9 @@ from pathlib import Path
 import geopandas as gpd
 
 TOLERANCIA = 0.0005
+# ORIGEN_SHP vive en "infraestructura-critica-chile", un proyecto HERMANO ubicado
+# junto a este repo (no forma parte de fallas-activas-chile). Se espera que ambos
+# repos compartan el mismo directorio padre en la maquina donde se ejecuta esto.
 ORIGEN_SHP = (
     Path(__file__).resolve().parent.parent.parent
     / "infraestructura-critica-chile" / "transporte" / "red_vial.shp"
@@ -26,6 +29,11 @@ def simplificar_gdf(gdf: gpd.GeoDataFrame, tolerancia: float) -> gpd.GeoDataFram
 
 
 def main() -> None:
+    if not ORIGEN_SHP.exists():
+        raise FileNotFoundError(
+            f"No se encontro {ORIGEN_SHP}. Se espera que 'infraestructura-critica-chile' "
+            "sea un directorio hermano de este repo (ver docs/superpowers/specs para el origen del dato)."
+        )
     print(f"Leyendo {ORIGEN_SHP} ...")
     gdf = gpd.read_file(ORIGEN_SHP)
     print(f"  {len(gdf)} features")
