@@ -11,7 +11,7 @@ SERNAGEOMIN necesita un visor web que combine dos capas de información nacional
    Chile at 1:25,000 scale*; PANGAEA, doi:10.1594/PANGAEA.922241; CC-BY 4.0;
    [fallasactivas.cl](https://fallasactivas.cl/)). 959 trazas de falla agrupadas en 17
    sistemas, clasificadas por confiabilidad (78 Proved, 592 Probable, 288 Possible).
-2. **Infraestructura crítica de Chile** — 22 capas ya descargadas y convertidas a KMZ en
+2. **Infraestructura crítica de Chile** — 26 capas ya descargadas y convertidas a KMZ en
    `infraestructura-critica-chile/`, repartidas en 5 sectores: agua, energía, relaves,
    salud, transporte.
 
@@ -46,7 +46,7 @@ visitas, no hay actualización periódica).
   geopandas/fiona).
 - Estructura KML: `ExtendedData/SchemaData/SimpleData` (mismo patrón que CHAF, generado
   por geopandas) — un esquema de columnas distinto por capa (no hay campos comunes entre
-  las 22 capas, salvo geometría).
+  las 26 capas, salvo geometría).
 - El `<name>` de cada Placemark ya viene resuelto por `shp_a_kmz.py` al campo más
   descriptivo disponible (`NOMBRE`, `ESTABLECIM`, etc.) — se usa tal cual para el título
   del popup, sin lógica adicional.
@@ -73,7 +73,7 @@ fallas-activas-chile/
   data/
     red_fallas.kml                  # CHAF nacional, extraído del KMZ de PANGAEA
     agua/*.kml                      # 2 capas
-    energia/*.kml                   # 12 capas
+    energia/*.kml                   # 18 capas
     relaves/*.kml                   # 1 capa
     salud/*.kml                     # 1 capa
     transporte/*.kml                # 4 capas (red_vial simplificada)
@@ -105,7 +105,7 @@ patrón dual (Worker + fallback main-thread `parseLinesMain`).
 
 **Parseo genérico de atributos**
 
-En vez de construir el HTML de cada popup a mano (inviable con 23 esquemas de columnas
+En vez de construir el HTML de cada popup a mano (inviable con 27 esquemas de columnas
 distintos), se agrega una función genérica que:
 1. Lee todos los pares `<SimpleData name="X">valor</SimpleData>` de la `ExtendedData` del
    Placemark, sin necesidad de conocer los nombres de campo de antemano.
@@ -125,7 +125,7 @@ distintos), se agrega una función genérica que:
 **Carga perezosa**
 
 A diferencia de cuencas/glaciares en `alertas-redes` (que se cargan siempre al montar,
-porque son solo 2 capas estáticas adicionales a las 3 dinámicas), aquí hay 23 datasets
+porque son solo 2 capas estáticas adicionales a las 3 dinámicas), aquí hay 27 datasets
 estáticos — cargarlos todos de entrada sería lento e innecesario. Cada capa se
 descarga y parsea la primera vez que el usuario la activa desde el panel, y el resultado
 queda cacheado en memoria (no se vuelve a pedir si se desactiva/reactiva la misma capa).
@@ -136,7 +136,7 @@ queda cacheado en memoria (no se vuelve a pedir si se desactiva/reactiva la mism
   checkbox único para mostrar/ocultar toda la capa.
 - Sección "🏗️ Infraestructura Crítica" — con 5 subsecciones anidadas (una por sector:
   agua, energía, relaves, salud, transporte), cada una con checkboxes individuales por
-  capa (22 en total). `red_vial` lleva una nota "(capa pesada)" junto a su checkbox.
+  capa (26 en total). `red_vial` lleva una nota "(capa pesada)" junto a su checkbox.
 - Todas las secciones y subsecciones arrancan **cerradas** al abrir el visor (mismo
   criterio ya usado en alertas-redes).
 
