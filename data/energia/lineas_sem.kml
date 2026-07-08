@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="lineas_sem" id="lineas_sem">
+	<SimpleField name="OBJECTID" type="string"></SimpleField>
+	<SimpleField name="gml_id" type="string"></SimpleField>
+	<SimpleField name="nombre" type="string"></SimpleField>
+	<SimpleField name="tramo" type="string"></SimpleField>
+	<SimpleField name="propiedad" type="string"></SimpleField>
+	<SimpleField name="voltaje_kv" type="string"></SimpleField>
+	<SimpleField name="tipo" type="string"></SimpleField>
+	<SimpleField name="fecha_oper" type="string"></SimpleField>
+	<SimpleField name="estado" type="string"></SimpleField>
+	<SimpleField name="sist_elec" type="string"></SimpleField>
+	<SimpleField name="fuent_base" type="string"></SimpleField>
+	<SimpleField name="f_fbase" type="string"></SimpleField>
+	<SimpleField name="f_f_actual" type="string"></SimpleField>
+	<SimpleField name="fe_co_rev" type="string"></SimpleField>
+	<SimpleField name="Shape_Leng" type="float"></SimpleField>
+</Schema>
+<Folder><name>lineas_sem</name>
+  <Placemark id="lineas_sem.1">
+	<name>Sicpa66</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#lineas_sem">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="gml_id">lt_magallanes_d96ad869_7f29_4753_b994_752ec62ee1dc.1</SimpleData>
+		<SimpleData name="nombre">Sicpa66</SimpleData>
+		<SimpleData name="tramo">L66-001</SimpleData>
+		<SimpleData name="propiedad">EDELMAG</SimpleData>
+		<SimpleData name="voltaje_kv">66</SimpleData>
+		<SimpleData name="tipo">Subtransmisisn</SimpleData>
+		<SimpleData name="fecha_oper">1996</SimpleData>
+		<SimpleData name="estado">En Operacisn</SimpleData>
+		<SimpleData name="sist_elec">Magallanes</SimpleData>
+		<SimpleData name="fuent_base">EDELMAG</SimpleData>
+		<SimpleData name="f_fbase">Abril 2011</SimpleData>
+		<SimpleData name="f_f_actual">2013-06-28</SimpleData>
+		<SimpleData name="fe_co_rev">29112013</SimpleData>
+		<SimpleData name="Shape_Leng">0.09549692727168</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-70.8973323879999,-53.1016882169999 -70.89886118,-53.102841149 -70.902365985,-53.105515237 -70.903491361,-53.106367168 -70.904604126,-53.107212638 -70.9057798869999,-53.108106914 -70.906899091,-53.1089567189999 -70.908019213,-53.1098066869999 -70.909144585,-53.110662845 -70.910259864,-53.1115107489999 -70.911352703,-53.1123411739999 -70.912336599,-53.113076421 -70.91154038,-53.113882196 -70.9106780239999,-53.11477488 -70.909876023,-53.1156046519999 -70.908843468,-53.11668179 -70.90810716,-53.117454089 -70.9072478529999,-53.117892589 -70.906534245,-53.1182847759999 -70.905246236,-53.118945004 -70.90398859,-53.1196097399999 -70.902714037,-53.120283346 -70.901376768,-53.120989865 -70.900130754,-53.1216417859999 -70.898840435,-53.12231374 -70.897620456,-53.1229521019999 -70.896444989,-53.1235791509999 -70.896658426,-53.1238156109999 -70.897831461,-53.124515156 -70.8990183509999,-53.1252263709999 -70.9001987139999,-53.1259337239999 -70.901370195,-53.126635354 -70.902704947,-53.1274458189999 -70.903844051,-53.128222664 -70.904892107,-53.128937346 -70.905070885,-53.129202001 -70.9058860279999,-53.129758113 -70.906723179,-53.130317921 -70.9070809259999,-53.130554011 -70.907164097,-53.130648132 -70.907966022,-53.13119991 -70.9087434589999,-53.1317316029999 -70.909537789,-53.132240634 -70.9102193579999,-53.132743819 -70.911286639,-53.1334593239999 -70.912685908,-53.134257882 -70.91401615,-53.1350538199999 -70.91534451,-53.135833915 -70.916635173,-53.1365939419999 -70.9178022249999,-53.137271056 -70.918970899,-53.1379568899999 -70.920035861,-53.138579636 -70.920974165,-53.1391378759999 -70.9212960569999,-53.1393718319999 -70.920119546,-53.1400598609999 -70.918893377,-53.140763765 -70.917592832,-53.14151075 -70.916250318,-53.1422833089999 -70.914895045,-53.143068915 -70.913569818,-53.14382954 -70.9122007079999,-53.1446286509999 -70.911143866,-53.14523617 -70.909981731,-53.145928135 -70.908935754,-53.146541978 -70.907587264,-53.147338141 -70.906172883,-53.1481519229999 -70.904797077,-53.1489423689999 -70.903632052,-53.14962459 -70.9043750499999,-53.150484417 -70.905043558,-53.15124774 -70.905831943,-53.152157522 -70.906607182,-53.1530743239999 -70.907396432,-53.1539491349999 -70.9080833629999,-53.154699766 -70.9074027349999,-53.1549360299999</coordinates></LineString>
+  </Placemark>
+</Folder>
+</Document></kml>

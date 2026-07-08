@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="centrales_geotermicas" id="centrales_geotermicas">
+	<SimpleField name="OBJECTID" type="string"></SimpleField>
+	<SimpleField name="ID_GE_GEOT" type="string"></SimpleField>
+	<SimpleField name="NOMBRE" type="string"></SimpleField>
+	<SimpleField name="PROPIEDAD" type="string"></SimpleField>
+	<SimpleField name="TIPO" type="string"></SimpleField>
+	<SimpleField name="MEDIO_GENE" type="string"></SimpleField>
+	<SimpleField name="COMBUSTIBL" type="string"></SimpleField>
+	<SimpleField name="POTENCIAMW" type="float"></SimpleField>
+	<SimpleField name="UNIDADES" type="string"></SimpleField>
+	<SimpleField name="RCA" type="string"></SimpleField>
+	<SimpleField name="SIST_ELECT" type="string"></SimpleField>
+	<SimpleField name="ESTADO" type="string"></SimpleField>
+	<SimpleField name="F_OPERACIO" type="string"></SimpleField>
+	<SimpleField name="COORD_ESTE" type="string"></SimpleField>
+	<SimpleField name="COORD_NORT" type="string"></SimpleField>
+	<SimpleField name="HUSO" type="string"></SimpleField>
+	<SimpleField name="DATUM" type="string"></SimpleField>
+	<SimpleField name="REGION" type="string"></SimpleField>
+	<SimpleField name="PROVINCIA" type="string"></SimpleField>
+	<SimpleField name="COMUNA" type="string"></SimpleField>
+	<SimpleField name="FUENTE_BAS" type="string"></SimpleField>
+	<SimpleField name="FECH_CREA" type="string"></SimpleField>
+	<SimpleField name="FECH_ACT" type="string"></SimpleField>
+</Schema>
+<Folder><name>centrales_geotermicas</name>
+  <Placemark id="centrales_geotermicas.1">
+	<name>CERRO PABELLON</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_geotermicas">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="ID_GE_GEOT">2</SimpleData>
+		<SimpleData name="NOMBRE">CERRO PABELLON</SimpleData>
+		<SimpleData name="PROPIEDAD">GEOTERMICA DEL NORTE S.A.</SimpleData>
+		<SimpleData name="TIPO">GEOTERMIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">83.37</SimpleData>
+		<SimpleData name="UNIDADES">0</SimpleData>
+		<SimpleData name="RCA">086/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1559260800000</SimpleData>
+		<SimpleData name="COORD_ESTE">587387</SimpleData>
+		<SimpleData name="COORD_NORT">7582977</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">02</SimpleData>
+		<SimpleData name="PROVINCIA">022</SimpleData>
+		<SimpleData name="COMUNA">02202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1498867200000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-68.1542768909999,-21.855047606</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

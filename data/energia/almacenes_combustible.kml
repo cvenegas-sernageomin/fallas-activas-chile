@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="almacenes_combustible" id="almacenes_combustible">
+	<SimpleField name="OBJECTID" type="string"></SimpleField>
+	<SimpleField name="gml_id" type="string"></SimpleField>
+	<SimpleField name="nombre" type="string"></SimpleField>
+	<SimpleField name="propiedad" type="string"></SimpleField>
+	<SimpleField name="direccion" type="string"></SimpleField>
+	<SimpleField name="capacid_m3" type="string"></SimpleField>
+	<SimpleField name="p_almacen" type="string"></SimpleField>
+	<SimpleField name="coor_este" type="float"></SimpleField>
+	<SimpleField name="coor_norte" type="float"></SimpleField>
+	<SimpleField name="datum" type="string"></SimpleField>
+	<SimpleField name="huso" type="string"></SimpleField>
+	<SimpleField name="region" type="string"></SimpleField>
+	<SimpleField name="provincia" type="string"></SimpleField>
+	<SimpleField name="comuna" type="string"></SimpleField>
+	<SimpleField name="fuente_bas" type="string"></SimpleField>
+	<SimpleField name="fecha_crea" type="string"></SimpleField>
+	<SimpleField name="fecha_act" type="string"></SimpleField>
+</Schema>
+<Folder><name>almacenes_combustible</name>
+  <Placemark id="almacenes_combustible.1">
+	<name>CD PUERTO MONTT</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.1</SimpleData>
+		<SimpleData name="nombre">CD PUERTO MONTT</SimpleData>
+		<SimpleData name="propiedad">GASCO GLP S.A.</SimpleData>
+		<SimpleData name="direccion">RUTA 5 SUR KM 7</SimpleData>
+		<SimpleData name="capacid_m3">91</SimpleData>
+		<SimpleData name="p_almacen">PROPANO</SimpleData>
+		<SimpleData name="coor_este">162653.094186</SimpleData>
+		<SimpleData name="coor_norte">5398102.62572</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE LOS LAGOS</SimpleData>
+		<SimpleData name="provincia">LLANQUIHUE</SimpleData>
+		<SimpleData name="comuna">PUERTO MONTT</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.04132749,-41.497686318</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.2">
+	<name>PLANTA IQUIQUE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.2</SimpleData>
+		<SimpleData name="nombre">PLANTA IQUIQUE</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="direccion">PARQUE INDUSTRIAL LOS CONDORES CALLE RUTA A-616 LOTE 5 MANZANA</SimpleData>
+		<SimpleData name="capacid_m3">284</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">386273</SimpleData>
+		<SimpleData name="coor_norte">7760345</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE TARAPACA</SimpleData>
+		<SimpleData name="provincia">IQUIQUE</SimpleData>
+		<SimpleData name="comuna">ALTO HOSPICIO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.088889594,-20.25121275</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.3">
+	<name>PLANTA ANTOFAGASTA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.3</SimpleData>
+		<SimpleData name="nombre">PLANTA ANTOFAGASTA</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="direccion">AVENIDA RUTA DEL COBRE PARQUE INDUSTRIAL LA NEGRA N 456</SimpleData>
+		<SimpleData name="capacid_m3">228</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">367070.38</SimpleData>
+		<SimpleData name="coor_norte">7371806.31</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ANTOFAGASTA</SimpleData>
+		<SimpleData name="provincia">ANTOFAGASTA</SimpleData>
+		<SimpleData name="comuna">ANTOFAGASTA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.304442637,-23.759352781</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.4">
+	<name>ANTOFAGASTA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.4</SimpleData>
+		<SimpleData name="nombre">ANTOFAGASTA</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">AVDA. DEL AGUA N 15600</SimpleData>
+		<SimpleData name="capacid_m3">400</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">357045.1</SimpleData>
+		<SimpleData name="coor_norte">7400417.25</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ANTOFAGASTA</SimpleData>
+		<SimpleData name="provincia">ANTOFAGASTA</SimpleData>
+		<SimpleData name="comuna">ANTOFAGASTA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.4000492119999,-23.5001339359999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.5">
+	<name>PLANTA ARICA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.5</SimpleData>
+		<SimpleData name="nombre">PLANTA ARICA</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="direccion">CALLE 1 NORTE PUERTA LAS AMERICAS N 36</SimpleData>
+		<SimpleData name="capacid_m3">227,5</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">363080</SimpleData>
+		<SimpleData name="coor_norte">7965580</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ARICA Y PARINACOTA</SimpleData>
+		<SimpleData name="provincia">ARICA</SimpleData>
+		<SimpleData name="comuna">ARICA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.29620492,-18.3953930439999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.6">
+	<name>ARICA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.6</SimpleData>
+		<SimpleData name="nombre">ARICA</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">BARROS ARANA N 2931</SimpleData>
+		<SimpleData name="capacid_m3">258,08</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">364466.7</SimpleData>
+		<SimpleData name="coor_norte">7959522.95</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ARICA Y PARINACOTA</SimpleData>
+		<SimpleData name="provincia">ARICA</SimpleData>
+		<SimpleData name="comuna">ARICA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.283485572,-18.450213339</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.7">
+	<name>ARICA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.7</SimpleData>
+		<SimpleData name="nombre">ARICA</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">CALETA QUIANE S/N</SimpleData>
+		<SimpleData name="capacid_m3">17081</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">361128</SimpleData>
+		<SimpleData name="coor_norte">7952783</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ARICA Y PARINACOTA</SimpleData>
+		<SimpleData name="provincia">ARICA</SimpleData>
+		<SimpleData name="comuna">ARICA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.315561163,-18.5108975819999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.8">
+	<name>PUERTO CHACABUCO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.8</SimpleData>
+		<SimpleData name="nombre">PUERTO CHACABUCO</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">COSTANERA S/N</SimpleData>
+		<SimpleData name="capacid_m3">6780</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - GASOLINAS</SimpleData>
+		<SimpleData name="coor_este">201006.573088</SimpleData>
+		<SimpleData name="coor_norte">4958719.37921</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">AYSEN</SimpleData>
+		<SimpleData name="comuna">AYSEN</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.824430707,-45.460991323</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.9">
+	<name>CALAMA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.9</SimpleData>
+		<SimpleData name="nombre">CALAMA</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">CAMINO ANTOFAGASTA KM 5</SimpleData>
+		<SimpleData name="capacid_m3">325,54</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">507068.19</SimpleData>
+		<SimpleData name="coor_norte">7511513</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ANTOFAGASTA</SimpleData>
+		<SimpleData name="provincia">EL LOA</SimpleData>
+		<SimpleData name="comuna">CALAMA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-68.9312787269999,-22.502834271</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.10">
+	<name>PUREO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.10</SimpleData>
+		<SimpleData name="nombre">PUREO</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO A SAN ANTONIO S/N</SimpleData>
+		<SimpleData name="capacid_m3">78927</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - GASOLINAS - KEROSENE DOMESTICO - KEROSENE AVIACION - PETROLEO COMBUSTIBLES</SimpleData>
+		<SimpleData name="coor_este">150224.4719</SimpleData>
+		<SimpleData name="coor_norte">5366287.5163</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE LOS LAGOS</SimpleData>
+		<SimpleData name="provincia">LLANQUIHUE</SimpleData>
+		<SimpleData name="comuna">CALBUCO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.208426604,-41.778158467</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.11">
+	<name>CALDERA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.11</SimpleData>
+		<SimpleData name="nombre">CALDERA</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">ROCAS NEGRAS S/N</SimpleData>
+		<SimpleData name="capacid_m3">22280,74</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - GASOLINAS</SimpleData>
+		<SimpleData name="coor_este">320394</SimpleData>
+		<SimpleData name="coor_norte">7007095</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ATACAMA</SimpleData>
+		<SimpleData name="provincia">COPIAPO</SimpleData>
+		<SimpleData name="comuna">CALDERA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.8108387459999,-27.0467578779999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.12">
+	<name>PLANTA COYHAIQUE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.12</SimpleData>
+		<SimpleData name="nombre">PLANTA COYHAIQUE</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO INTERNACIONAL SECTOR RECTA FOITZICK KM 5</SimpleData>
+		<SimpleData name="capacid_m3">340,5</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">258596.937081</SimpleData>
+		<SimpleData name="coor_norte">4944705.48557</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COIHAYQUE</SimpleData>
+		<SimpleData name="comuna">COIHAYQUE</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.095910094,-45.609229994</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.13">
+	<name>COYHAIQUE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.13</SimpleData>
+		<SimpleData name="nombre">COYHAIQUE</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">CAMINO A BALMACEDA KM 6,6</SimpleData>
+		<SimpleData name="capacid_m3">466,85</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">258043.3632</SimpleData>
+		<SimpleData name="coor_norte">4943503.0873</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COIHAYQUE</SimpleData>
+		<SimpleData name="comuna">COIHAYQUE</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.103595642,-45.6198443119999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.14">
+	<name>PLANTA COYHAIQUE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.14</SimpleData>
+		<SimpleData name="nombre">PLANTA COYHAIQUE</SimpleData>
+		<SimpleData name="propiedad">GASCO GLP S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO A COYHAIQUE ALTO KM 5</SimpleData>
+		<SimpleData name="capacid_m3">95,4</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">265170.9341</SimpleData>
+		<SimpleData name="coor_norte">4949377.3151</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COIHAYQUE</SimpleData>
+		<SimpleData name="comuna">COIHAYQUE</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.009472793,-45.5694896869999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.15">
+	<name>ENAP REFINERIAS ACONCAGUA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.15</SimpleData>
+		<SimpleData name="nombre">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS S.A.</SimpleData>
+		<SimpleData name="direccion">AVENIDA BORGONO N 25777</SimpleData>
+		<SimpleData name="capacid_m3">312591</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO - KEROSENE AVIACION - KEROSENE DOMESTICO - PETROLEO COMBUSTIBLE - PETROLEO DIESEL - GASOLINA</SimpleData>
+		<SimpleData name="coor_este">265690</SimpleData>
+		<SimpleData name="coor_norte">6354017</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">CONCON</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.505856648,-32.9270230459999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.16">
+	<name>PLANTA CON CON</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.16</SimpleData>
+		<SimpleData name="nombre">PLANTA CON CON</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="direccion">CALLE 2 NORTE N 655</SimpleData>
+		<SimpleData name="capacid_m3">567,5</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">267370.72</SimpleData>
+		<SimpleData name="coor_norte">6354003.91</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">CONCON</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.4879000139999,-32.927500035</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.17">
+	<name>CON CON</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.17</SimpleData>
+		<SimpleData name="nombre">CON CON</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">2 NORTE N 1205</SimpleData>
+		<SimpleData name="capacid_m3">33049</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - GASOLINAS - PETROLEO COMBUSTIBLES</SimpleData>
+		<SimpleData name="coor_este">267763</SimpleData>
+		<SimpleData name="coor_norte">6353981</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">CONCON</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.483713886,-32.927789924</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.18">
+	<name>COPIAPO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.18</SimpleData>
+		<SimpleData name="nombre">COPIAPO</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">PANAMERICANA NORTE KM 813</SimpleData>
+		<SimpleData name="capacid_m3">632,3</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">364781.82</SimpleData>
+		<SimpleData name="coor_norte">6975900.54</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ATACAMA</SimpleData>
+		<SimpleData name="provincia">COPIAPO</SimpleData>
+		<SimpleData name="comuna">COPIAPO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.366856136,-27.3333597879999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.19">
+	<name>PLANTA EL PENON</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.19</SimpleData>
+		<SimpleData name="nombre">PLANTA EL PENON</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="direccion">CARRETERA RUTA 43 OVALLE LA SERENA KM 22</SimpleData>
+		<SimpleData name="capacid_m3">340,5</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">285339.93</SimpleData>
+		<SimpleData name="coor_norte">6662064.22</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE COQUIMBO</SimpleData>
+		<SimpleData name="provincia">ELQUI</SimpleData>
+		<SimpleData name="comuna">COQUIMBO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.2288300439999,-30.153890052</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.20">
+	<name>PLANTA GUAYACAN</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.20</SimpleData>
+		<SimpleData name="nombre">PLANTA GUAYACAN</SimpleData>
+		<SimpleData name="propiedad">PETROBRAS S.A.</SimpleData>
+		<SimpleData name="direccion">LOS ESTANQUES N 150</SimpleData>
+		<SimpleData name="capacid_m3">18399</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - BENCINA - KEROSENE AVIACION</SimpleData>
+		<SimpleData name="coor_este">274044.28</SimpleData>
+		<SimpleData name="coor_norte">6682052.73</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE COQUIMBO</SimpleData>
+		<SimpleData name="provincia">ELQUI</SimpleData>
+		<SimpleData name="comuna">COQUIMBO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.3417847659999,-29.9716110379999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.21">
+	<name>COQUIMBO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.21</SimpleData>
+		<SimpleData name="nombre">COQUIMBO</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">BARRIO INDUSTRIAL ALTOS PENUELAS SITIO 62</SimpleData>
+		<SimpleData name="capacid_m3">680,64</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">282867.77</SimpleData>
+		<SimpleData name="coor_norte">6682777.24</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE COQUIMBO</SimpleData>
+		<SimpleData name="provincia">ELQUI</SimpleData>
+		<SimpleData name="comuna">COQUIMBO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.250251743,-29.966671435</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.22">
+	<name>GUAYACAN</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.22</SimpleData>
+		<SimpleData name="nombre">GUAYACAN</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">DE LOS ESTANQUES N 151</SimpleData>
+		<SimpleData name="capacid_m3">16978</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - GASOLINAS - PETROLEO COMBUSTIBLES</SimpleData>
+		<SimpleData name="coor_este">273894</SimpleData>
+		<SimpleData name="coor_norte">6682063</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE COQUIMBO</SimpleData>
+		<SimpleData name="provincia">ELQUI</SimpleData>
+		<SimpleData name="comuna">COQUIMBO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.343338992,-29.9714907389999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.23">
+	<name>CD COQUIMBO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.23</SimpleData>
+		<SimpleData name="nombre">CD COQUIMBO</SimpleData>
+		<SimpleData name="propiedad">GASCO GLP S.A.</SimpleData>
+		<SimpleData name="direccion">GERONIMO MENDEZ N 1990</SimpleData>
+		<SimpleData name="capacid_m3">68</SimpleData>
+		<SimpleData name="p_almacen">PROPANO</SimpleData>
+		<SimpleData name="coor_este">281140</SimpleData>
+		<SimpleData name="coor_norte">6681983</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE COQUIMBO</SimpleData>
+		<SimpleData name="provincia">ELQUI</SimpleData>
+		<SimpleData name="comuna">COQUIMBO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.268308589,-29.973526517</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.24">
+	<name>PLANTA 1 IQUIQUE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.24</SimpleData>
+		<SimpleData name="nombre">PLANTA 1 IQUIQUE</SimpleData>
+		<SimpleData name="propiedad">PETROBRAS S.A.</SimpleData>
+		<SimpleData name="direccion">PASAJE CALACALA SITIO D MANZANA A</SimpleData>
+		<SimpleData name="capacid_m3">6119</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO COMBUSTIBLES</SimpleData>
+		<SimpleData name="coor_este">381192.97</SimpleData>
+		<SimpleData name="coor_norte">7766197.08</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE TARAPACA</SimpleData>
+		<SimpleData name="provincia">IQUIQUE</SimpleData>
+		<SimpleData name="comuna">IQUIQUE</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.137137348,-20.198032446</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.25">
+	<name>PLANTA 2 IQUIQUE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.25</SimpleData>
+		<SimpleData name="nombre">PLANTA 2 IQUIQUE</SimpleData>
+		<SimpleData name="propiedad">PETROBRAS S.A.</SimpleData>
+		<SimpleData name="direccion">SANTA ROSA DE HUARA SITIO 36 MANZANA D</SimpleData>
+		<SimpleData name="capacid_m3">24639,4</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - BENCINA - KEROSENE AVIACION</SimpleData>
+		<SimpleData name="coor_este">381228.11</SimpleData>
+		<SimpleData name="coor_norte">7765844.06</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE TARAPACA</SimpleData>
+		<SimpleData name="provincia">IQUIQUE</SimpleData>
+		<SimpleData name="comuna">IQUIQUE</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.136824211,-20.20122405</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.26">
+	<name>IQUIQUE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.26</SimpleData>
+		<SimpleData name="nombre">IQUIQUE</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">CIRCUNVALACION N 720</SimpleData>
+		<SimpleData name="capacid_m3">528,2</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">381750</SimpleData>
+		<SimpleData name="coor_norte">7764076.88</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE TARAPACA</SimpleData>
+		<SimpleData name="provincia">IQUIQUE</SimpleData>
+		<SimpleData name="comuna">IQUIQUE</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.131945113,-20.217222233</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.27">
+	<name>IQUIQUE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.27</SimpleData>
+		<SimpleData name="nombre">IQUIQUE</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">MANZANA 9-A Y 9-B BARRIO INDUSTRIAL</SimpleData>
+		<SimpleData name="capacid_m3">53836,89</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">381040</SimpleData>
+		<SimpleData name="coor_norte">7765970</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE TARAPACA</SimpleData>
+		<SimpleData name="provincia">IQUIQUE</SimpleData>
+		<SimpleData name="comuna">IQUIQUE</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.138616166,-20.200074566</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.28">
+	<name>TERMINAL DE ALMACENAMIENTO LINARES</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">28</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.28</SimpleData>
+		<SimpleData name="nombre">TERMINAL DE ALMACENAMIENTO LINARES</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO SECUNDARIO EX FUNDO SAN GABRIEL S/N</SimpleData>
+		<SimpleData name="capacid_m3">26285,06</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO - KEROSENE DOMESTICO - PETROLEO DIESEL - GASOLINA</SimpleData>
+		<SimpleData name="coor_este">260153.34</SimpleData>
+		<SimpleData name="coor_norte">6026163.49</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL MAULE</SimpleData>
+		<SimpleData name="provincia">LINARES</SimpleData>
+		<SimpleData name="comuna">LONGAVI</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.656849985,-35.879433342</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.29">
+	<name>TERMINAL DE ALMACENAMIENTO MAIPU</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">29</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.29</SimpleData>
+		<SimpleData name="nombre">TERMINAL DE ALMACENAMIENTO MAIPU</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS S.A.</SimpleData>
+		<SimpleData name="direccion">AVENIDA TRES PONIENTE N 900</SimpleData>
+		<SimpleData name="capacid_m3">217636</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO - KEROSENE AVIACION - KEROSENE DOMESTICO - PETROLEO DIESEL - GASOLINA</SimpleData>
+		<SimpleData name="coor_este">336158.99</SimpleData>
+		<SimpleData name="coor_norte">6287403.66</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION METROPOLITANA DE SANTIAGO DE SANTIAGO</SimpleData>
+		<SimpleData name="provincia">SANTIAGO</SimpleData>
+		<SimpleData name="comuna">MAIPU</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.7646167079999,-33.540433364</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.30">
+	<name>PLANTA MAIPU</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">30</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.30</SimpleData>
+		<SimpleData name="nombre">PLANTA MAIPU</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO A MELIPILLA N 11700</SimpleData>
+		<SimpleData name="capacid_m3">6,122</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">337595.74</SimpleData>
+		<SimpleData name="coor_norte">6288993.48</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION METROPOLITANA DE SANTIAGO DE SANTIAGO</SimpleData>
+		<SimpleData name="provincia">SANTIAGO</SimpleData>
+		<SimpleData name="comuna">MAIPU</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.748860102,-33.526320041</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.31">
+	<name>PLANTA MAIPU</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">31</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.31</SimpleData>
+		<SimpleData name="nombre">PLANTA MAIPU</SimpleData>
+		<SimpleData name="propiedad">PETROBRAS S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO A MELIPILLA N 11179</SimpleData>
+		<SimpleData name="capacid_m3">27845</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">337795</SimpleData>
+		<SimpleData name="coor_norte">6289617</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION METROPOLITANA DE SANTIAGO DE SANTIAGO</SimpleData>
+		<SimpleData name="provincia">SANTIAGO</SimpleData>
+		<SimpleData name="comuna">MAIPU</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.7466021979999,-33.520729027</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.32">
+	<name>MAIPU</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">32</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.32</SimpleData>
+		<SimpleData name="nombre">MAIPU</SimpleData>
+		<SimpleData name="propiedad">ENEX S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO A MELIPILLA N 11280</SimpleData>
+		<SimpleData name="capacid_m3">S/I</SimpleData>
+		<SimpleData name="p_almacen">S/I</SimpleData>
+		<SimpleData name="coor_este">337450.25</SimpleData>
+		<SimpleData name="coor_norte">6289137.44</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION METROPOLITANA DE SANTIAGO DE SANTIAGO</SimpleData>
+		<SimpleData name="provincia">SANTIAGO</SimpleData>
+		<SimpleData name="comuna">MAIPU</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.7504000279999,-33.525000056</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.33">
+	<name>JOSELUIS CAPDEVILA HONORATO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">33</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.33</SimpleData>
+		<SimpleData name="nombre">JOSELUIS CAPDEVILA HONORATO</SimpleData>
+		<SimpleData name="propiedad">JLC</SimpleData>
+		<SimpleData name="direccion">AILLAVILU N 15780</SimpleData>
+		<SimpleData name="capacid_m3">S/I</SimpleData>
+		<SimpleData name="p_almacen">S/I</SimpleData>
+		<SimpleData name="coor_este">337010</SimpleData>
+		<SimpleData name="coor_norte">6286940</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION METROPOLITANA DE SANTIAGO DE SANTIAGO</SimpleData>
+		<SimpleData name="provincia">SANTIAGO</SimpleData>
+		<SimpleData name="comuna">MAIPU</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.7555393769999,-33.5447436759999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.34">
+	<name>MAIPU</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">34</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.34</SimpleData>
+		<SimpleData name="nombre">MAIPU</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">CERRO SOMBRERO N 401</SimpleData>
+		<SimpleData name="capacid_m3">3514,3</SimpleData>
+		<SimpleData name="p_almacen">S/I</SimpleData>
+		<SimpleData name="coor_este">337518.85</SimpleData>
+		<SimpleData name="coor_norte">6288771.57</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION METROPOLITANA DE SANTIAGO DE SANTIAGO</SimpleData>
+		<SimpleData name="provincia">SANTIAGO</SimpleData>
+		<SimpleData name="comuna">MAIPU</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.749728064,-33.528308954</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.35">
+	<name>MAIPU</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">35</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.35</SimpleData>
+		<SimpleData name="nombre">MAIPU</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO A MELIPILLA N 11820</SimpleData>
+		<SimpleData name="capacid_m3">63361</SimpleData>
+		<SimpleData name="p_almacen">S/I</SimpleData>
+		<SimpleData name="coor_este">337259</SimpleData>
+		<SimpleData name="coor_norte">6288844</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION METROPOLITANA DE SANTIAGO DE SANTIAGO</SimpleData>
+		<SimpleData name="provincia">SANTIAGO</SimpleData>
+		<SimpleData name="comuna">MAIPU</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.752512021,-33.5276164109999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.36">
+	<name>PLANTA MAIPU</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">36</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.36</SimpleData>
+		<SimpleData name="nombre">PLANTA MAIPU</SimpleData>
+		<SimpleData name="propiedad">GASCO GLP S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO A MELIPILLA N 13120</SimpleData>
+		<SimpleData name="capacid_m3">5444,72</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">336359.75</SimpleData>
+		<SimpleData name="coor_norte">6288356.5</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION METROPOLITANA DE SANTIAGO DE SANTIAGO</SimpleData>
+		<SimpleData name="provincia">SANTIAGO</SimpleData>
+		<SimpleData name="comuna">MAIPU</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.76228099,-33.531873998</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.37">
+	<name>MEJILLONES</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">37</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.37</SimpleData>
+		<SimpleData name="nombre">MEJILLONES</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">QUINTA INDUSTRIAL N 1100</SimpleData>
+		<SimpleData name="capacid_m3">60060</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - GASOLINAS</SimpleData>
+		<SimpleData name="coor_este">357911</SimpleData>
+		<SimpleData name="coor_norte">7446889</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ANTOFAGASTA</SimpleData>
+		<SimpleData name="provincia">ANTOFAGASTA</SimpleData>
+		<SimpleData name="comuna">MEJILLONES</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.3872140349999,-23.080549289</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.38">
+	<name>PLANTA MEJILLONES</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">38</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.38</SimpleData>
+		<SimpleData name="nombre">PLANTA MEJILLONES</SimpleData>
+		<SimpleData name="propiedad">GASCO GLP S.A.</SimpleData>
+		<SimpleData name="direccion">RUTA B-262 N 3408</SimpleData>
+		<SimpleData name="capacid_m3">340,8</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">354405</SimpleData>
+		<SimpleData name="coor_norte">7444267</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ANTOFAGASTA</SimpleData>
+		<SimpleData name="provincia">ANTOFAGASTA</SimpleData>
+		<SimpleData name="comuna">MEJILLONES</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.4216841689999,-23.103923106</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.39">
+	<name>PLANTA OSORNO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">39</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.39</SimpleData>
+		<SimpleData name="nombre">PLANTA OSORNO</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="direccion">PANAMERICANA LONGITUDINAL 5 SUR N 1155</SimpleData>
+		<SimpleData name="capacid_m3">567,5</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">152973.911039</SimpleData>
+		<SimpleData name="coor_norte">5498279.9135</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE LOS LAGOS</SimpleData>
+		<SimpleData name="provincia">OSORNO</SimpleData>
+		<SimpleData name="comuna">OSORNO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.100640116,-40.593489889</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.40">
+	<name>OSORNO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">40</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.40</SimpleData>
+		<SimpleData name="nombre">OSORNO</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">PANAMERICANA NORTE S/N</SimpleData>
+		<SimpleData name="capacid_m3">1021,85</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">153124.266009</SimpleData>
+		<SimpleData name="coor_norte">5500245.30964</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE LOS LAGOS</SimpleData>
+		<SimpleData name="provincia">OSORNO</SimpleData>
+		<SimpleData name="comuna">OSORNO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.0977879449999,-40.5758922439999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.41">
+	<name>PLANTA OSORNO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">41</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.41</SimpleData>
+		<SimpleData name="nombre">PLANTA OSORNO</SimpleData>
+		<SimpleData name="propiedad">GASCO GLP S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO PUERTO OCTAY N 655</SimpleData>
+		<SimpleData name="capacid_m3">454,2</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">153249.879323</SimpleData>
+		<SimpleData name="coor_norte">5497735.75093</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE LOS LAGOS</SimpleData>
+		<SimpleData name="provincia">OSORNO</SimpleData>
+		<SimpleData name="comuna">OSORNO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.0976860929999,-40.598495257</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.42">
+	<name>TERMINAL CLARENCIA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">42</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.42</SimpleData>
+		<SimpleData name="nombre">TERMINAL CLARENCIA</SimpleData>
+		<SimpleData name="propiedad">ENAP MAGALLANES</SimpleData>
+		<SimpleData name="direccion">CAMINO RURAL Y 585 HACIA TERMINAL CLARENCIA</SimpleData>
+		<SimpleData name="capacid_m3">65942,5</SimpleData>
+		<SimpleData name="p_almacen">PETROLEOS COMBUSTIBLES</SimpleData>
+		<SimpleData name="coor_este">423250</SimpleData>
+		<SimpleData name="coor_norte">4138831</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">TIERRA DEL FUEGO</SimpleData>
+		<SimpleData name="comuna">PRIMAVERA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.1408857979999,-52.894724034</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.43">
+	<name>PLANTA BELLOTO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">43</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.43</SimpleData>
+		<SimpleData name="nombre">PLANTA BELLOTO</SimpleData>
+		<SimpleData name="propiedad">GASCO GLP S.A.</SimpleData>
+		<SimpleData name="direccion">EL ESFUERZO</SimpleData>
+		<SimpleData name="capacid_m3">684,08</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">274218</SimpleData>
+		<SimpleData name="coor_norte">6341771</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">MARGA MARGA</SimpleData>
+		<SimpleData name="comuna">QUILPUE</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.417732571,-33.039183388</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.44">
+	<name>TERMINAL MARITIMO QUINTERO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">44</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.44</SimpleData>
+		<SimpleData name="nombre">TERMINAL MARITIMO QUINTERO</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO LONCURA S/N</SimpleData>
+		<SimpleData name="capacid_m3">145111</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO - KEROSENE AVIACION - PETROLEO DIESEL - GASOLINA</SimpleData>
+		<SimpleData name="coor_este">266826</SimpleData>
+		<SimpleData name="coor_norte">6371178</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.489392868,-32.7726103919999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.45">
+	<name>CONCON</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">45</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.45</SimpleData>
+		<SimpleData name="nombre">CONCON</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">DOS NORTE N 200</SimpleData>
+		<SimpleData name="capacid_m3">8127,6</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">267755.97</SimpleData>
+		<SimpleData name="coor_norte">6355193.22</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.4834836489999,-32.9168639169999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.46">
+	<name>TPI</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">46</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.46</SimpleData>
+		<SimpleData name="nombre">TPI</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO COSTERO N 1111</SimpleData>
+		<SimpleData name="capacid_m3">90100</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - GASOLINAS - PETROLEO COMBUSTIBLES</SimpleData>
+		<SimpleData name="coor_este">266207</SimpleData>
+		<SimpleData name="coor_norte">6370532</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.496158598,-32.778300762</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.47">
+	<name>TERMINAL QUINTERO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">47</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.47</SimpleData>
+		<SimpleData name="nombre">TERMINAL QUINTERO</SimpleData>
+		<SimpleData name="propiedad">GASMAR S.A.</SimpleData>
+		<SimpleData name="direccion">RUTA F30E CONCON PUCHUNCAVI</SimpleData>
+		<SimpleData name="capacid_m3">85650</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">267636.97</SimpleData>
+		<SimpleData name="coor_norte">6371546.72</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.480649647,-32.769459104</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.48">
+	<name>RANCAGUA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">48</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.48</SimpleData>
+		<SimpleData name="nombre">RANCAGUA</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">LONGITUDINAL 5 SUR N 320</SimpleData>
+		<SimpleData name="capacid_m3">687,9</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">340901</SimpleData>
+		<SimpleData name="coor_norte">6218311</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL LIBERTADOR BERNARDO O'HIGGINS</SimpleData>
+		<SimpleData name="provincia">CACHAPOAL</SimpleData>
+		<SimpleData name="comuna">RANCAGUA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.726050962,-34.164025081</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.49">
+	<name>COMACO CHACABUCO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">49</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.49</SimpleData>
+		<SimpleData name="nombre">COMACO CHACABUCO</SimpleData>
+		<SimpleData name="propiedad">PETROBRAS S.A.</SimpleData>
+		<SimpleData name="direccion">AVENIDA COSTANERA S/N</SimpleData>
+		<SimpleData name="capacid_m3">3956,45</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - BENCINA</SimpleData>
+		<SimpleData name="coor_este">272580.6184</SimpleData>
+		<SimpleData name="coor_norte">4869902.1809</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">GENERAL CARRERA</SimpleData>
+		<SimpleData name="comuna">RIO IBANEZ</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.952331058,-46.2863245899999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.50">
+	<name>TERMINAL DE ALMACENAMIENTO SAN FERNANDO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">50</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.50</SimpleData>
+		<SimpleData name="nombre">TERMINAL DE ALMACENAMIENTO SAN FERNANDO</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO PUENTE NEGRO S/N</SimpleData>
+		<SimpleData name="capacid_m3">96710</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO - KEROSENE DOMESTICO - PETROLEO DIESEL - GASOLINA</SimpleData>
+		<SimpleData name="coor_este">320029.8</SimpleData>
+		<SimpleData name="coor_norte">6168618.3</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL LIBERTADOR BERNARDO O'HIGGINS</SimpleData>
+		<SimpleData name="provincia">COLCHAGUA</SimpleData>
+		<SimpleData name="comuna">SAN FERNANDO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.962800037,-34.608516682</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.51">
+	<name>SAN FERNANDO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">51</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.51</SimpleData>
+		<SimpleData name="nombre">SAN FERNANDO</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">LOS AROMOS S/N</SimpleData>
+		<SimpleData name="capacid_m3">21576</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - GASOLINAS</SimpleData>
+		<SimpleData name="coor_este">319525</SimpleData>
+		<SimpleData name="coor_norte">6169587</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL LIBERTADOR BERNARDO O'HIGGINS</SimpleData>
+		<SimpleData name="provincia">COLCHAGUA</SimpleData>
+		<SimpleData name="comuna">SAN FERNANDO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.968096578,-34.599697405</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.52">
+	<name>COMPLEJO GREGORIO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">52</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.52</SimpleData>
+		<SimpleData name="nombre">COMPLEJO GREGORIO</SimpleData>
+		<SimpleData name="propiedad">ENAP MAGALLANES</SimpleData>
+		<SimpleData name="direccion">CAMINO INTERNACIONAL RUTA 255 PUNTA ARENAS MONTE AYMOND</SimpleData>
+		<SimpleData name="capacid_m3">158090,11</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - KEROSENE DOMESTICO - GASOLINA</SimpleData>
+		<SimpleData name="coor_este">418314</SimpleData>
+		<SimpleData name="coor_norte">4168833</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">MAGALLANES</SimpleData>
+		<SimpleData name="comuna">SAN GREGORIO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.206764705,-52.624345128</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.53">
+	<name>PLANTA TALCA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">53</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.53</SimpleData>
+		<SimpleData name="nombre">PLANTA TALCA</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="direccion">PANAMERICANA LONGITUDINAL 5 SUR S/N</SimpleData>
+		<SimpleData name="capacid_m3">564</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">260779.64</SimpleData>
+		<SimpleData name="coor_norte">6076757.91</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL MAULE</SimpleData>
+		<SimpleData name="provincia">TALCA</SimpleData>
+		<SimpleData name="comuna">TALCA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.634900101,-35.42389007</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.54">
+	<name>PLANTA TALCA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">54</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.54</SimpleData>
+		<SimpleData name="nombre">PLANTA TALCA</SimpleData>
+		<SimpleData name="propiedad">GASCO GLP S.A.</SimpleData>
+		<SimpleData name="direccion">LONGITUDINAL SUR KM 253 - 3455</SimpleData>
+		<SimpleData name="capacid_m3">566,2</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">261370</SimpleData>
+		<SimpleData name="coor_norte">6078433</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL MAULE</SimpleData>
+		<SimpleData name="provincia">TALCA</SimpleData>
+		<SimpleData name="comuna">TALCA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.627913381,-35.4089436859999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.55">
+	<name>TEMUCO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">55</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.55</SimpleData>
+		<SimpleData name="nombre">TEMUCO</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">PANAMERICANA NORTE S/N</SimpleData>
+		<SimpleData name="capacid_m3">S/I</SimpleData>
+		<SimpleData name="p_almacen">S/I</SimpleData>
+		<SimpleData name="coor_este">191158.2133</SimpleData>
+		<SimpleData name="coor_norte">5709979.5385</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE LA ARAUCANIA</SimpleData>
+		<SimpleData name="provincia">CAUTIN</SimpleData>
+		<SimpleData name="comuna">TEMUCO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.551435253,-38.7049096809999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.56">
+	<name>CD TEMUCO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">56</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.56</SimpleData>
+		<SimpleData name="nombre">CD TEMUCO</SimpleData>
+		<SimpleData name="propiedad">GASCO GLP S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO LABRANZA KM 8</SimpleData>
+		<SimpleData name="capacid_m3">64</SimpleData>
+		<SimpleData name="p_almacen">PROPANO</SimpleData>
+		<SimpleData name="coor_este">178594.201042</SimpleData>
+		<SimpleData name="coor_norte">5703329.733</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE LA ARAUCANIA</SimpleData>
+		<SimpleData name="provincia">CAUTIN</SimpleData>
+		<SimpleData name="comuna">TEMUCO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.698724249,-38.7602367709999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.57">
+	<name>ABASTECIMIENTO Y DISTRIBUCION DE COMBUSTIBLE HUGO NAJLE HAYE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">57</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.57</SimpleData>
+		<SimpleData name="nombre">ABASTECIMIENTO Y DISTRIBUCION DE COMBUSTIBLE HUGO NAJLE HAYE</SimpleData>
+		<SimpleData name="propiedad">HUGO NAJLE HAYE</SimpleData>
+		<SimpleData name="direccion">CARRETERA 5 SUR KILOMETRO 409</SimpleData>
+		<SimpleData name="capacid_m3">S/I</SimpleData>
+		<SimpleData name="p_almacen">S/I</SimpleData>
+		<SimpleData name="coor_este">214831.780586</SimpleData>
+		<SimpleData name="coor_norte">5941284.21529</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">NUBLE</SimpleData>
+		<SimpleData name="comuna">CHILLAN VIEJO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.189188053,-36.631344981</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.58">
+	<name>CHILLAN</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">58</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.58</SimpleData>
+		<SimpleData name="nombre">CHILLAN</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO LONGITUDINAL SUR KM 409</SimpleData>
+		<SimpleData name="capacid_m3">13719,66</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - GASOLINAS</SimpleData>
+		<SimpleData name="coor_este">214966.98385</SimpleData>
+		<SimpleData name="coor_norte">5941053.7094</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">NUBLE</SimpleData>
+		<SimpleData name="comuna">CHILLAN VIEJO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.187763671,-36.633460215</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.59">
+	<name>TERMINAL TALCAHUANO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">59</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.59</SimpleData>
+		<SimpleData name="nombre">TERMINAL TALCAHUANO</SimpleData>
+		<SimpleData name="propiedad">OLEODUCTO TRASANDINO S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO A LENGA N 3380</SimpleData>
+		<SimpleData name="capacid_m3">S/I</SimpleData>
+		<SimpleData name="p_almacen">S/I</SimpleData>
+		<SimpleData name="coor_este">131303.34113</SimpleData>
+		<SimpleData name="coor_norte">5921863.39944</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">HUALPEN</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.130735392,-36.7773315159999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.60">
+	<name>ENAP REFINERIAS BIO BIO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">60</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.60</SimpleData>
+		<SimpleData name="nombre">ENAP REFINERIAS BIO BIO</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO A LENGA N 2001</SimpleData>
+		<SimpleData name="capacid_m3">901538,21</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO - KEROSENE AVIACION - KEROSENE DOMESTICO - PETROLEO DIESEL - GASOLINA</SimpleData>
+		<SimpleData name="coor_este">132128.1163</SimpleData>
+		<SimpleData name="coor_norte">5921855.7866</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">TALCAHUANO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.121520319,-36.7777202629999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.61">
+	<name>TERMINAL SAN VICENTE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">61</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.61</SimpleData>
+		<SimpleData name="nombre">TERMINAL SAN VICENTE</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS S.A.</SimpleData>
+		<SimpleData name="direccion">BAHIA SAN VICENTE S/N</SimpleData>
+		<SimpleData name="capacid_m3">S/I</SimpleData>
+		<SimpleData name="p_almacen">S/I</SimpleData>
+		<SimpleData name="coor_este">131574.496309</SimpleData>
+		<SimpleData name="coor_norte">5927579.18214</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">TALCAHUANO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.124947737,-36.726044154</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.62">
+	<name>PLANTA LENGA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">62</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.62</SimpleData>
+		<SimpleData name="nombre">PLANTA LENGA</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO A LENGA N 3120</SimpleData>
+		<SimpleData name="capacid_m3">1021,5</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">131628.3419</SimpleData>
+		<SimpleData name="coor_norte">5922598.9677</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">TALCAHUANO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.126747657,-36.770844073</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.63">
+	<name>LENGA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">63</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.63</SimpleData>
+		<SimpleData name="nombre">LENGA</SimpleData>
+		<SimpleData name="propiedad">EMPRESAS LIPIGAS S.A</SimpleData>
+		<SimpleData name="direccion">CAMINO A LENGA N 2950</SimpleData>
+		<SimpleData name="capacid_m3">S/I</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">131747.4046</SimpleData>
+		<SimpleData name="coor_norte">5922557.6926</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">TALCAHUANO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.125436892,-36.771261422</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.64">
+	<name>SAN VICENTE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">64</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.64</SimpleData>
+		<SimpleData name="nombre">SAN VICENTE</SimpleData>
+		<SimpleData name="propiedad">COPEC S.A.</SimpleData>
+		<SimpleData name="direccion">AVENIDA LA MARINA N 155</SimpleData>
+		<SimpleData name="capacid_m3">28596</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - KEROSENE DOMESTICO - GASOLINA</SimpleData>
+		<SimpleData name="coor_este">131314.461469</SimpleData>
+		<SimpleData name="coor_norte">5927614.03166</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">TALCAHUANO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.127835476,-36.7256299379999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.65">
+	<name>PLANTA BIOBIO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">65</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.65</SimpleData>
+		<SimpleData name="nombre">PLANTA BIOBIO</SimpleData>
+		<SimpleData name="propiedad">GASCO GLP S.A.</SimpleData>
+		<SimpleData name="direccion">AVENIDA GRAN BRETANA 4325</SimpleData>
+		<SimpleData name="capacid_m3">454</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO</SimpleData>
+		<SimpleData name="coor_este">132482.1069</SimpleData>
+		<SimpleData name="coor_norte">5923429.7872</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">TALCAHUANO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.116805585,-36.7637049689999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.66">
+	<name>PLANTA SAN VICENTE</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">66</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.66</SimpleData>
+		<SimpleData name="nombre">PLANTA SAN VICENTE</SimpleData>
+		<SimpleData name="propiedad">PETROBRAS S.A.</SimpleData>
+		<SimpleData name="direccion">AVDA LA MARINA S/N</SimpleData>
+		<SimpleData name="capacid_m3">15335,6</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - BENCINA - KEROSENE AVIACION</SimpleData>
+		<SimpleData name="coor_este">131477.3232</SimpleData>
+		<SimpleData name="coor_norte">5927477.613</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">TALCAHUANO</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.126082085,-36.726919718</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.67">
+	<name>AVELLANO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">67</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.67</SimpleData>
+		<SimpleData name="nombre">AVELLANO</SimpleData>
+		<SimpleData name="propiedad">OLEODUCTO TRASANDINO S.A.</SimpleData>
+		<SimpleData name="direccion">CAMINO YUNGAY-LAS CRUCES S/N</SimpleData>
+		<SimpleData name="capacid_m3">S/I</SimpleData>
+		<SimpleData name="p_almacen">S/I</SimpleData>
+		<SimpleData name="coor_este">255829.25</SimpleData>
+		<SimpleData name="coor_norte">5892698</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">NUBLE</SimpleData>
+		<SimpleData name="comuna">YUNGAY</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.746828367,-37.080220342</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.68">
+	<name>TERMINAL MARITIMO VINAPU (ISLA DE PASCUA)</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">68</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.68</SimpleData>
+		<SimpleData name="nombre">TERMINAL MARITIMO VINAPU (ISLA DE PASCUA)</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS S.A.</SimpleData>
+		<SimpleData name="direccion">ISLA DE PASCUA S/N</SimpleData>
+		<SimpleData name="capacid_m3">4800</SimpleData>
+		<SimpleData name="p_almacen">PETROLEO DIESEL - KEROSENE AVIACION - GASOLINA</SimpleData>
+		<SimpleData name="coor_este">-3696426.6124</SimpleData>
+		<SimpleData name="coor_norte">6234293.5958</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">ISLA DE PASCUA</SimpleData>
+		<SimpleData name="comuna">ISLA DE PASCUA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-109.405254284,-27.1752195019999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.69">
+	<name>PLANTA CABO NEGRO</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">69</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.69</SimpleData>
+		<SimpleData name="nombre">PLANTA CABO NEGRO</SimpleData>
+		<SimpleData name="propiedad">ENAP MAGALLANES</SimpleData>
+		<SimpleData name="direccion">CAMINO INTERNACIONAL RUTA 9 PUNTA ARENAS NATALES</SimpleData>
+		<SimpleData name="capacid_m3">91536,85</SimpleData>
+		<SimpleData name="p_almacen">PROPANO - BUTANO - KEROSENE AVIACION - KEROSENE DOMESTICO - PETROLEO DIESEL - GASOLINA</SimpleData>
+		<SimpleData name="coor_este">378308.194329</SimpleData>
+		<SimpleData name="coor_norte">4133616.90742</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">PUNTA ARENAS</SimpleData>
+		<SimpleData name="comuna">PUNTA ARENAS</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.810600897,-52.933280839</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.70">
+	<name>CAMAP ANTOFAGASTA</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">70</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.70</SimpleData>
+		<SimpleData name="nombre">CAMAP ANTOFAGASTA</SimpleData>
+		<SimpleData name="propiedad">ENEX S.A.</SimpleData>
+		<SimpleData name="direccion">AVENIDA IQUIQUE N 6000</SimpleData>
+		<SimpleData name="capacid_m3">45520</SimpleData>
+		<SimpleData name="p_almacen">BUTANO - PETROLEO DIESEL - GASOLINA - KEROSENE AVIACION</SimpleData>
+		<SimpleData name="coor_este">357093</SimpleData>
+		<SimpleData name="coor_norte">7384474</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ANTOFAGASTA</SimpleData>
+		<SimpleData name="provincia">ANTOFAGASTA</SimpleData>
+		<SimpleData name="comuna">ANTOFAGASTA</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.401107108,-23.6441069439999</coordinates></Point>
+  </Placemark>
+  <Placemark id="almacenes_combustible.71">
+	<name>PLANTA GLP PUERTO WILLIAMS</name>
+	<ExtendedData><SchemaData schemaUrl="#almacenes_combustible">
+		<SimpleData name="OBJECTID">71</SimpleData>
+		<SimpleData name="gml_id">almacenamiento_de_co_d02619c1_5648_4775_ad69_a815c06577b5.71</SimpleData>
+		<SimpleData name="nombre">PLANTA GLP PUERTO WILLIAMS</SimpleData>
+		<SimpleData name="propiedad">GASCO MAGALLANES</SimpleData>
+		<SimpleData name="direccion">AVENIDA COSTANERA S/N</SimpleData>
+		<SimpleData name="capacid_m3">181</SimpleData>
+		<SimpleData name="p_almacen">PROPANO</SimpleData>
+		<SimpleData name="coor_este">589382.602051</SimpleData>
+		<SimpleData name="coor_norte">3911770.09292</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="comuna">CABO DE HORNOS</SimpleData>
+		<SimpleData name="fuente_bas">SEC</SimpleData>
+		<SimpleData name="fecha_crea">10-12-2014</SimpleData>
+		<SimpleData name="fecha_act">24-08-2016</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-67.6049855049999,-54.9330310409999</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

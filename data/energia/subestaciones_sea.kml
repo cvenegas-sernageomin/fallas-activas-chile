@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="subestaciones_sea" id="subestaciones_sea">
+	<SimpleField name="OBJECTID" type="string"></SimpleField>
+	<SimpleField name="gml_id" type="string"></SimpleField>
+	<SimpleField name="nombre" type="string"></SimpleField>
+	<SimpleField name="propiedad" type="string"></SimpleField>
+	<SimpleField name="tension_kv" type="string"></SimpleField>
+	<SimpleField name="tipo" type="string"></SimpleField>
+	<SimpleField name="f_operacio" type="string"></SimpleField>
+	<SimpleField name="rca" type="string"></SimpleField>
+	<SimpleField name="sist_elect" type="string"></SimpleField>
+	<SimpleField name="estado" type="string"></SimpleField>
+	<SimpleField name="coord_este" type="float"></SimpleField>
+	<SimpleField name="coor_norte" type="float"></SimpleField>
+	<SimpleField name="huso" type="string"></SimpleField>
+	<SimpleField name="datum" type="string"></SimpleField>
+	<SimpleField name="region" type="string"></SimpleField>
+	<SimpleField name="provincia" type="string"></SimpleField>
+	<SimpleField name="comuna" type="string"></SimpleField>
+	<SimpleField name="fuente_bas" type="string"></SimpleField>
+	<SimpleField name="fech_crea" type="string"></SimpleField>
+	<SimpleField name="fech_act" type="string"></SimpleField>
+</Schema>
+<Folder><name>subestaciones_sea</name>
+  <Placemark id="subestaciones_sea.1">
+	<name>CENTRAL RIO AZUL</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.1</SimpleData>
+		<SimpleData name="nombre">CENTRAL RIO AZUL</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">274471.4097</SimpleData>
+		<SimpleData name="coor_norte">4831984.52</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">GENERAL CARRERA</SimpleData>
+		<SimpleData name="comuna">CHILE CHICO</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.946156612,-46.627751159</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.2">
+	<name>CENTRAL LA JUNTA</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.2</SimpleData>
+		<SimpleData name="nombre">CENTRAL LA JUNTA</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">247495.2063</SimpleData>
+		<SimpleData name="coor_norte">4870243.6185</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">GENERAL CARRERA</SimpleData>
+		<SimpleData name="comuna">RIO IBANEZ</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.2772893869999,-46.274390135</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.3">
+	<name>CENTRAL PUYUHUAPI</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.3</SimpleData>
+		<SimpleData name="nombre">CENTRAL PUYUHUAPI</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">229497.0717</SimpleData>
+		<SimpleData name="coor_norte">4907394.294</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COYHAIQUE</SimpleData>
+		<SimpleData name="comuna">COYHAIQUE</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.489315792,-45.933722358</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.4">
+	<name>CENTRAL SANTA BARBARA</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.4</SimpleData>
+		<SimpleData name="nombre">CENTRAL SANTA BARBARA</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">215760.8457</SimpleData>
+		<SimpleData name="coor_norte">4853696.6576</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">GENERAL CARRERA</SimpleData>
+		<SimpleData name="comuna">RIO IBANEZ</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.698373863,-46.4104627299999</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.5">
+	<name>CENTRAL TEHUELCHE</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.5</SimpleData>
+		<SimpleData name="nombre">CENTRAL TEHUELCHE</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">249818.5061</SimpleData>
+		<SimpleData name="coor_norte">5055556.6079</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COYHAIQUE</SimpleData>
+		<SimpleData name="comuna">LAGO VERDE</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.1529261489999,-44.6098100689999</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.6">
+	<name>CENTRAL ALTO BAGUALES</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.6</SimpleData>
+		<SimpleData name="nombre">CENTRAL ALTO BAGUALES</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">250983.0779</SimpleData>
+		<SimpleData name="coor_norte">5044483.7304</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COYHAIQUE</SimpleData>
+		<SimpleData name="comuna">LAGO VERDE</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.143650694,-44.7097472799999</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.7">
+	<name>CENTRAL MONREAL</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.7</SimpleData>
+		<SimpleData name="nombre">CENTRAL MONREAL</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">249979.3357</SimpleData>
+		<SimpleData name="coor_norte">5082966.0529</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COYHAIQUE</SimpleData>
+		<SimpleData name="comuna">LAGO VERDE</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.1376532039999,-44.363478002</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.8">
+	<name>CENTRAL LAGO ATRAVESADO</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.8</SimpleData>
+		<SimpleData name="nombre">CENTRAL LAGO ATRAVESADO</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">233717.9213</SimpleData>
+		<SimpleData name="coor_norte">5068365.7422</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COYHAIQUE</SimpleData>
+		<SimpleData name="comuna">LAGO VERDE</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.348883992,-44.488913553</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.9">
+	<name>CENTRAL AYSEN HIDRO</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.9</SimpleData>
+		<SimpleData name="nombre">CENTRAL AYSEN HIDRO</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">205478.3021</SimpleData>
+		<SimpleData name="coor_norte">5022956.4121</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">AYSEN</SimpleData>
+		<SimpleData name="comuna">CISNES</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.729451177,-44.885890343</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.10">
+	<name>CENTRAL AYSEN TERMICA</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.10</SimpleData>
+		<SimpleData name="nombre">CENTRAL AYSEN TERMICA</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">205531.9664</SimpleData>
+		<SimpleData name="coor_norte">5022813.194</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">AYSEN</SimpleData>
+		<SimpleData name="comuna">CISNES</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.7288563119999,-44.887199047</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.11">
+	<name>CENTRAL CHACABUCO</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.11</SimpleData>
+		<SimpleData name="nombre">CENTRAL CHACABUCO</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">201751.3549</SimpleData>
+		<SimpleData name="coor_norte">5029039.1647</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">AYSEN</SimpleData>
+		<SimpleData name="comuna">CISNES</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.772967788,-44.829701734</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.12">
+	<name>CENTRAL EL TRARO HIDRO</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.12</SimpleData>
+		<SimpleData name="nombre">CENTRAL EL TRARO HIDRO</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">191269.6128</SimpleData>
+		<SimpleData name="coor_norte">5228717.7211</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">X REGION DE LOS LAGOS</SimpleData>
+		<SimpleData name="provincia">PALENA</SimpleData>
+		<SimpleData name="comuna">CHAITEN</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.789456432,-43.031474873</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.13">
+	<name>CENTRAL EL TRARO TERMICA</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.13</SimpleData>
+		<SimpleData name="nombre">CENTRAL EL TRARO TERMICA</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">191269.0321</SimpleData>
+		<SimpleData name="coor_norte">5228719.1778</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">X REGION DE LOS LAGOS</SimpleData>
+		<SimpleData name="provincia">PALENA</SimpleData>
+		<SimpleData name="comuna">CHAITEN</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.7894627379999,-43.031461548</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.14">
+	<name>CENTRAL NUEVO REINO HIDRO</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.14</SimpleData>
+		<SimpleData name="nombre">CENTRAL NUEVO REINO HIDRO</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">208616.0568</SimpleData>
+		<SimpleData name="coor_norte">5041345.3724</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">AYSEN</SimpleData>
+		<SimpleData name="comuna">CISNES</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.6792712129999,-44.721981042</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.15">
+	<name>CENTRAL NUEVO REINO TERMICA</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.15</SimpleData>
+		<SimpleData name="nombre">CENTRAL NUEVO REINO TERMICA</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">208616.0441</SimpleData>
+		<SimpleData name="coor_norte">5041345.3801</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">AYSEN</SimpleData>
+		<SimpleData name="comuna">CISNES</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.6792713679999,-44.721980967</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.16">
+	<name>CENTRAL HIELOS DEL SUR HIDRO</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.16</SimpleData>
+		<SimpleData name="nombre">CENTRAL HIELOS DEL SUR HIDRO</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">234435.3011</SimpleData>
+		<SimpleData name="coor_norte">4619998.9926</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">CAPITAN PRAT</SimpleData>
+		<SimpleData name="comuna">O'HIGGINS</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.5964202819999,-48.5168919549999</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.17">
+	<name>CENTRAL HIELOS DEL SUR TERMICA</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.17</SimpleData>
+		<SimpleData name="nombre">CENTRAL HIELOS DEL SUR TERMICA</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">234435.3036</SimpleData>
+		<SimpleData name="coor_norte">4619998.9942</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">CAPITAN PRAT</SimpleData>
+		<SimpleData name="comuna">O'HIGGINS</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.596420247,-48.516891942</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.18">
+	<name>CENTRAL PUERTO IBANEZ</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.18</SimpleData>
+		<SimpleData name="nombre">CENTRAL PUERTO IBANEZ</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">273779.4792</SimpleData>
+		<SimpleData name="coor_norte">4869227.7124</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">GENERAL CARRERA</SimpleData>
+		<SimpleData name="comuna">RIO IBANEZ</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.9371127159999,-46.292787366</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.19">
+	<name>CENTRAL MANIHUALES</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.19</SimpleData>
+		<SimpleData name="nombre">CENTRAL MANIHUALES</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">253023.6562</SimpleData>
+		<SimpleData name="coor_norte">4995180.7916</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">AYSEN</SimpleData>
+		<SimpleData name="comuna">AYSEN</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.1420229989999,-45.153616695</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.20">
+	<name>CENTRAL AMENGUAL</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.20</SimpleData>
+		<SimpleData name="nombre">CENTRAL AMENGUAL</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">246004.4189</SimpleData>
+		<SimpleData name="coor_norte">5040572.8729</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COYHAIQUE</SimpleData>
+		<SimpleData name="comuna">LAGO VERDE</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.2083497209999,-44.7431526</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.21">
+	<name>CENTRAL TAPERA</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.21</SimpleData>
+		<SimpleData name="nombre">CENTRAL TAPERA</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">287842.4578</SimpleData>
+		<SimpleData name="coor_norte">5053472.6881</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COYHAIQUE</SimpleData>
+		<SimpleData name="comuna">LAGO VERDE</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.6751553029999,-44.640770952</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.22">
+	<name>CENTRAL CALETA ANDRADE</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.22</SimpleData>
+		<SimpleData name="nombre">CENTRAL CALETA ANDRADE</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">145675.2456</SimpleData>
+		<SimpleData name="coor_norte">4989926.7283</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">AYSEN</SimpleData>
+		<SimpleData name="comuna">AYSEN</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.507834545,-45.155100757</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.23">
+	<name>CENTRAL LAGO VERDE</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.23</SimpleData>
+		<SimpleData name="nombre">CENTRAL LAGO VERDE</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">272460.7916</SimpleData>
+		<SimpleData name="coor_norte">4902451.6658</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">COYHAIQUE</SimpleData>
+		<SimpleData name="comuna">COYHAIQUE</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.938267159,-45.993722835</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.24">
+	<name>CENTRAL PALENA</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.24</SimpleData>
+		<SimpleData name="nombre">CENTRAL PALENA</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">274178.2953</SimpleData>
+		<SimpleData name="coor_norte">4832992.8528</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">GENERAL CARRERA</SimpleData>
+		<SimpleData name="comuna">CHILE CHICO</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.949487857,-46.618590234</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.25">
+	<name>CENTRAL FUTALELFU</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.25</SimpleData>
+		<SimpleData name="nombre">CENTRAL FUTALELFU</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">267060.8821</SimpleData>
+		<SimpleData name="coor_norte">4785127.1923</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XI REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">CAPITAN PRAT</SimpleData>
+		<SimpleData name="comuna">COCHRANE</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.066709822,-47.0462888929999</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sea.26">
+	<name>CENTRAL CHILE CHICO</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sea">
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="gml_id">se_aysen_45efdcf6_f111_4f9a_80f4_41a63b802b06.26</SimpleData>
+		<SimpleData name="nombre">CENTRAL CHILE CHICO</SimpleData>
+		<SimpleData name="propiedad">EDELAYSEN</SimpleData>
+		<SimpleData name="tension_kv">23</SimpleData>
+		<SimpleData name="tipo">ELEVADORA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELAYSEN</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">287157.0274</SimpleData>
+		<SimpleData name="coor_norte">5159709.6023</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">X REGION DE LOS LAGOS</SimpleData>
+		<SimpleData name="provincia">PALENA</SimpleData>
+		<SimpleData name="comuna">PALENA</SimpleData>
+		<SimpleData name="fuente_bas">EDELAYSEN</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.640788919,-43.68512463</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

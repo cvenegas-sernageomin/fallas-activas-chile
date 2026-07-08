@@ -1,0 +1,1579 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="centrales_eolicas" id="centrales_eolicas">
+	<SimpleField name="OBJECTID" type="string"></SimpleField>
+	<SimpleField name="ID_GE_EOLI" type="string"></SimpleField>
+	<SimpleField name="NOMBRE" type="string"></SimpleField>
+	<SimpleField name="PROPIEDAD" type="string"></SimpleField>
+	<SimpleField name="TIPO" type="string"></SimpleField>
+	<SimpleField name="MEDIO_GENE" type="string"></SimpleField>
+	<SimpleField name="COMBUSTIBL" type="string"></SimpleField>
+	<SimpleField name="POTENCIAMW" type="float"></SimpleField>
+	<SimpleField name="UNIDADES" type="string"></SimpleField>
+	<SimpleField name="RCA" type="string"></SimpleField>
+	<SimpleField name="SIST_ELECT" type="string"></SimpleField>
+	<SimpleField name="ESTADO" type="string"></SimpleField>
+	<SimpleField name="F_OPERACIO" type="string"></SimpleField>
+	<SimpleField name="COORD_ESTE" type="string"></SimpleField>
+	<SimpleField name="COORD_NORT" type="string"></SimpleField>
+	<SimpleField name="HUSO" type="string"></SimpleField>
+	<SimpleField name="DATUM" type="string"></SimpleField>
+	<SimpleField name="REGION" type="string"></SimpleField>
+	<SimpleField name="PROVINCIA" type="string"></SimpleField>
+	<SimpleField name="COMUNA" type="string"></SimpleField>
+	<SimpleField name="FUENTE_BAS" type="string"></SimpleField>
+	<SimpleField name="FECH_CREA" type="string"></SimpleField>
+	<SimpleField name="FECH_ACT" type="string"></SimpleField>
+</Schema>
+<Folder><name>centrales_eolicas</name>
+  <Placemark id="centrales_eolicas.1">
+	<name>ALENA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="ID_GE_EOLI">1</SimpleData>
+		<SimpleData name="NOMBRE">ALENA</SimpleData>
+		<SimpleData name="PROPIEDAD">AR ALENA SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">83.92</SimpleData>
+		<SimpleData name="UNIDADES">18</SimpleData>
+		<SimpleData name="RCA">314/2013</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1639353600000</SimpleData>
+		<SimpleData name="COORD_ESTE">185488</SimpleData>
+		<SimpleData name="COORD_NORT">5841018</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.5587819689999,-37.524218887</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.2">
+	<name>ALTO BAGUALES 2</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="ID_GE_EOLI">3</SimpleData>
+		<SimpleData name="NOMBRE">ALTO BAGUALES 2</SimpleData>
+		<SimpleData name="PROPIEDAD">EMPRESA ELECTRICA DE AYSEN S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">1.8</SimpleData>
+		<SimpleData name="UNIDADES">2</SimpleData>
+		<SimpleData name="RCA">NO APLICA</SimpleData>
+		<SimpleData name="SIST_ELECT">SEA</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1451606400000</SimpleData>
+		<SimpleData name="COORD_ESTE">257682</SimpleData>
+		<SimpleData name="COORD_NORT">4953967</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">11</SimpleData>
+		<SimpleData name="PROVINCIA">111</SimpleData>
+		<SimpleData name="COMUNA">11101</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1483142400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.103035382,-45.525671013</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.3">
+	<name>AURORA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="ID_GE_EOLI">8</SimpleData>
+		<SimpleData name="NOMBRE">AURORA</SimpleData>
+		<SimpleData name="PROPIEDAD">AELA EOLICA LLLANQUIHUE SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">126.6</SimpleData>
+		<SimpleData name="UNIDADES">43</SimpleData>
+		<SimpleData name="RCA">539/2015</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1605052800000</SimpleData>
+		<SimpleData name="COORD_ESTE">151501</SimpleData>
+		<SimpleData name="COORD_NORT">5426739</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">10</SimpleData>
+		<SimpleData name="PROVINCIA">101</SimpleData>
+		<SimpleData name="COMUNA">10107</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.158152426,-41.2356547219999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.4">
+	<name>CABO LEONES</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="ID_GE_EOLI">10</SimpleData>
+		<SimpleData name="NOMBRE">CABO LEONES</SimpleData>
+		<SimpleData name="PROPIEDAD">PARQUE EOLICO CABO LEONES I S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">175.1989</SimpleData>
+		<SimpleData name="UNIDADES">67</SimpleData>
+		<SimpleData name="RCA">070/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1528761600000</SimpleData>
+		<SimpleData name="COORD_ESTE">259493</SimpleData>
+		<SimpleData name="COORD_NORT">6799312</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">03</SimpleData>
+		<SimpleData name="PROVINCIA">033</SimpleData>
+		<SimpleData name="COMUNA">03303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.466766047,-28.9115303479999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.5">
+	<name>CABO LEONES II</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="ID_GE_EOLI">11</SimpleData>
+		<SimpleData name="NOMBRE">CABO LEONES II</SimpleData>
+		<SimpleData name="PROPIEDAD">IBEREOLICA CABO LEONES II S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">205.25</SimpleData>
+		<SimpleData name="UNIDADES">49</SimpleData>
+		<SimpleData name="RCA">219/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1614038400000</SimpleData>
+		<SimpleData name="COORD_ESTE">261893</SimpleData>
+		<SimpleData name="COORD_NORT">6793012</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">03</SimpleData>
+		<SimpleData name="PROVINCIA">033</SimpleData>
+		<SimpleData name="COMUNA">03303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.443502237,-28.968791091</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.6">
+	<name>CABO LEONES III</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="ID_GE_EOLI">12</SimpleData>
+		<SimpleData name="NOMBRE">CABO LEONES III</SimpleData>
+		<SimpleData name="PROPIEDAD">IBEREOLICA CABO LEONES III S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">188.274</SimpleData>
+		<SimpleData name="UNIDADES">44</SimpleData>
+		<SimpleData name="RCA">126/2018</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1609200000000</SimpleData>
+		<SimpleData name="COORD_ESTE">257093</SimpleData>
+		<SimpleData name="COORD_NORT">6797512</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">03</SimpleData>
+		<SimpleData name="PROVINCIA">033</SimpleData>
+		<SimpleData name="COMUNA">03303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1469577600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.491750799,-28.927308867</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.7">
+	<name>CABO NEGRO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="ID_GE_EOLI">13</SimpleData>
+		<SimpleData name="NOMBRE">CABO NEGRO</SimpleData>
+		<SimpleData name="PROPIEDAD">METHANEX CHILE S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">2.55</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="RCA">259/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEM</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1262304000000</SimpleData>
+		<SimpleData name="COORD_ESTE">377109</SimpleData>
+		<SimpleData name="COORD_NORT">4131790</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">12</SimpleData>
+		<SimpleData name="PROVINCIA">121</SimpleData>
+		<SimpleData name="COMUNA">12101</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.829125666,-52.949422367</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.8">
+	<name>PARQUE EOLICO CALAMA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="ID_GE_EOLI">16</SimpleData>
+		<SimpleData name="NOMBRE">PARQUE EOLICO CALAMA</SimpleData>
+		<SimpleData name="PROPIEDAD">ENGIE ENERGIA CHILE S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">150.46</SimpleData>
+		<SimpleData name="UNIDADES">36</SimpleData>
+		<SimpleData name="RCA">236/2018</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1635465600000</SimpleData>
+		<SimpleData name="COORD_ESTE">523637</SimpleData>
+		<SimpleData name="COORD_NORT">7514741</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">02</SimpleData>
+		<SimpleData name="PROVINCIA">022</SimpleData>
+		<SimpleData name="COMUNA">02201</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1530316800000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-68.770235391,-22.473523427</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.9">
+	<name>CANELA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="ID_GE_EOLI">22</SimpleData>
+		<SimpleData name="NOMBRE">CANELA</SimpleData>
+		<SimpleData name="PROPIEDAD">ENEL GENERACION</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">17.9685</SimpleData>
+		<SimpleData name="UNIDADES">11</SimpleData>
+		<SimpleData name="RCA">63/2007; 150/2006</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1198713600000</SimpleData>
+		<SimpleData name="COORD_ESTE">251477</SimpleData>
+		<SimpleData name="COORD_NORT">6535683</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">042</SimpleData>
+		<SimpleData name="COMUNA">04202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.610685346,-31.2866923189999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.10">
+	<name>CANELA II</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="ID_GE_EOLI">23</SimpleData>
+		<SimpleData name="NOMBRE">CANELA II</SimpleData>
+		<SimpleData name="PROPIEDAD">ENEL GENERACION</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">59.4</SimpleData>
+		<SimpleData name="UNIDADES">40</SimpleData>
+		<SimpleData name="RCA">296/2008; 043/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1260489600000</SimpleData>
+		<SimpleData name="COORD_ESTE">250849</SimpleData>
+		<SimpleData name="COORD_NORT">6533484</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">042</SimpleData>
+		<SimpleData name="COMUNA">04202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.617824689,-31.306378496</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.11">
+	<name>CERRO TIGRE</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="ID_GE_EOLI">26</SimpleData>
+		<SimpleData name="NOMBRE">CERRO TIGRE</SimpleData>
+		<SimpleData name="PROPIEDAD">AR CERRO TIGRE SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">182.05</SimpleData>
+		<SimpleData name="UNIDADES">80</SimpleData>
+		<SimpleData name="RCA">148/2016</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1646697600000</SimpleData>
+		<SimpleData name="COORD_ESTE">405390</SimpleData>
+		<SimpleData name="COORD_NORT">7372010</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">02</SimpleData>
+		<SimpleData name="PROVINCIA">021</SimpleData>
+		<SimpleData name="COMUNA">02101</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-69.9284441139999,-23.7602304919999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.12">
+	<name>PMGD EL ARREBOL</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="ID_GE_EOLI">32</SimpleData>
+		<SimpleData name="NOMBRE">PMGD EL ARREBOL</SimpleData>
+		<SimpleData name="PROPIEDAD">EMPRESA ELECTRICA EL ARREBOL SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">9</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="RCA">022/2016</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1592956800000</SimpleData>
+		<SimpleData name="COORD_ESTE">94197</SimpleData>
+		<SimpleData name="COORD_NORT">5835250</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">082</SimpleData>
+		<SimpleData name="COMUNA">08201</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1469577600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.592250543,-37.540448322</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.13">
+	<name>EL MAITEN</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="ID_GE_EOLI">33</SimpleData>
+		<SimpleData name="NOMBRE">EL MAITEN</SimpleData>
+		<SimpleData name="PROPIEDAD">PARQUE EOLICO EL MAITEN SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">9</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="RCA">419/2016</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1593129600000</SimpleData>
+		<SimpleData name="COORD_ESTE">185077</SimpleData>
+		<SimpleData name="COORD_NORT">5869264</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08304</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1469577600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.5513982969999,-37.269966159</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.14">
+	<name>EL NOGAL</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="ID_GE_EOLI">34</SimpleData>
+		<SimpleData name="NOMBRE">EL NOGAL</SimpleData>
+		<SimpleData name="PROPIEDAD">PARQUE EOLICO EL NOGAL SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">8.9</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="RCA">488/2016</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1566518400000</SimpleData>
+		<SimpleData name="COORD_ESTE">198029</SimpleData>
+		<SimpleData name="COORD_NORT">5834245</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08305</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1469577600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.419900763,-37.589348017</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.15">
+	<name>CUEL</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="ID_GE_EOLI">37</SimpleData>
+		<SimpleData name="NOMBRE">CUEL</SimpleData>
+		<SimpleData name="PROPIEDAD">AELA EOLICA NEGRETE SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">32.4951</SimpleData>
+		<SimpleData name="UNIDADES">22</SimpleData>
+		<SimpleData name="RCA">031/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1391558400000</SimpleData>
+		<SimpleData name="COORD_ESTE">192502</SimpleData>
+		<SimpleData name="COORD_NORT">5842409</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1426636800000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.478970535,-37.514067886</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.16">
+	<name>EOLICA EL ARRAYAN</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="ID_GE_EOLI">38</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA EL ARRAYAN</SimpleData>
+		<SimpleData name="PROPIEDAD">PARQUE EOLICO EL ARRAYAN SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">114.9885</SimpleData>
+		<SimpleData name="UNIDADES">50</SimpleData>
+		<SimpleData name="RCA">044/2010</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1402012800000</SimpleData>
+		<SimpleData name="COORD_ESTE">240984</SimpleData>
+		<SimpleData name="COORD_NORT">6613484</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">043</SimpleData>
+		<SimpleData name="COMUNA">04301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1426636800000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.701008351,-30.5831710049999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.17">
+	<name>EOLICA LAS PENAS</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="ID_GE_EOLI">39</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA LAS PENAS</SimpleData>
+		<SimpleData name="PROPIEDAD">EOLICO LAS PENAS SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">8.3496</SimpleData>
+		<SimpleData name="UNIDADES">4</SimpleData>
+		<SimpleData name="RCA">251/2013</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1482883200000</SimpleData>
+		<SimpleData name="COORD_ESTE">107388</SimpleData>
+		<SimpleData name="COORD_NORT">5867408</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">082</SimpleData>
+		<SimpleData name="COMUNA">08202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1490918400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.426327769,-37.257159244</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.18">
+	<name>LEBU</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="ID_GE_EOLI">40</SimpleData>
+		<SimpleData name="NOMBRE">LEBU</SimpleData>
+		<SimpleData name="PROPIEDAD">PARQUE EOLICO LEBU-TORO SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMG</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">9.34</SimpleData>
+		<SimpleData name="UNIDADES">9</SimpleData>
+		<SimpleData name="RCA">069/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1395705600000</SimpleData>
+		<SimpleData name="COORD_ESTE">89972</SimpleData>
+		<SimpleData name="COORD_NORT">5818828</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">082</SimpleData>
+		<SimpleData name="COMUNA">08201</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.6491152039999,-37.6861131439999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.19">
+	<name>EOLICA LEBU III</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="ID_GE_EOLI">42</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA LEBU III</SimpleData>
+		<SimpleData name="PROPIEDAD">PARQUE EOLICO LEBU-TORO SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">5.15</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="RCA">183/2015</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1481673600000</SimpleData>
+		<SimpleData name="COORD_ESTE">90387</SimpleData>
+		<SimpleData name="COORD_NORT">5819284</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">082</SimpleData>
+		<SimpleData name="COMUNA">08201</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1490918400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.6441679179999,-37.682201828</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.20">
+	<name>EOLICA LOS BUENOS AIRES</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="ID_GE_EOLI">43</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA LOS BUENOS AIRES</SimpleData>
+		<SimpleData name="PROPIEDAD">ENEL GREEN POWER CHILE</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">23.85</SimpleData>
+		<SimpleData name="UNIDADES">12</SimpleData>
+		<SimpleData name="RCA">025/2015</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1472515200000</SimpleData>
+		<SimpleData name="COORD_ESTE">190010</SimpleData>
+		<SimpleData name="COORD_NORT">5839498</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1483142400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.5083441689999,-37.5394238809999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.21">
+	<name>EOLICA LOS CURUROS</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="ID_GE_EOLI">44</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA LOS CURUROS</SimpleData>
+		<SimpleData name="PROPIEDAD">PARQUE EOLICO LOS CURUROS LTDA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">107.7</SimpleData>
+		<SimpleData name="UNIDADES">57</SimpleData>
+		<SimpleData name="RCA">213/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1406073600000</SimpleData>
+		<SimpleData name="COORD_ESTE">248747</SimpleData>
+		<SimpleData name="COORD_NORT">6564167</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">043</SimpleData>
+		<SimpleData name="COMUNA">04301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1426636800000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.6322268119999,-31.0293680889999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.22">
+	<name>EOLICA PUNTA COLORADA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="ID_GE_EOLI">45</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA PUNTA COLORADA</SimpleData>
+		<SimpleData name="PROPIEDAD">COMPANIA BARRICK CHILE GENERACION LTDA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">19.998</SimpleData>
+		<SimpleData name="UNIDADES">10</SimpleData>
+		<SimpleData name="RCA">303/2008</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1323907200000</SimpleData>
+		<SimpleData name="COORD_ESTE">301976</SimpleData>
+		<SimpleData name="COORD_NORT">6749564</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">041</SimpleData>
+		<SimpleData name="COMUNA">04104</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.040136302,-29.3675360669999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.23">
+	<name>EOLICA PUNTA PALMERAS</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="ID_GE_EOLI">46</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA PUNTA PALMERAS</SimpleData>
+		<SimpleData name="PROPIEDAD">PUNTA PALMERAS S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">44.7048</SimpleData>
+		<SimpleData name="UNIDADES">15</SimpleData>
+		<SimpleData name="RCA">122/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1416355200000</SimpleData>
+		<SimpleData name="COORD_ESTE">249973</SimpleData>
+		<SimpleData name="COORD_NORT">6541268</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">042</SimpleData>
+		<SimpleData name="COMUNA">04202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.625075871,-31.236030779</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.24">
+	<name>EOLICA SAN JUAN</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="ID_GE_EOLI">47</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA SAN JUAN</SimpleData>
+		<SimpleData name="PROPIEDAD">SAN JUAN</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">189.4</SimpleData>
+		<SimpleData name="UNIDADES">56</SimpleData>
+		<SimpleData name="RCA">040/2013</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1489622400000</SimpleData>
+		<SimpleData name="COORD_ESTE">259281</SimpleData>
+		<SimpleData name="COORD_NORT">6802641</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">03</SimpleData>
+		<SimpleData name="PROVINCIA">033</SimpleData>
+		<SimpleData name="COMUNA">03303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1498780800000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.468228095,-28.8814705959999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.25">
+	<name>EOLICA SAN PEDRO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="ID_GE_EOLI">48</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA SAN PEDRO</SimpleData>
+		<SimpleData name="PROPIEDAD">ALBA S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">35.9964</SimpleData>
+		<SimpleData name="UNIDADES">18</SimpleData>
+		<SimpleData name="RCA">351/2011</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1403827200000</SimpleData>
+		<SimpleData name="COORD_ESTE">93912</SimpleData>
+		<SimpleData name="COORD_NORT">5307891</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">10</SimpleData>
+		<SimpleData name="PROVINCIA">102</SimpleData>
+		<SimpleData name="COMUNA">10205</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.924111673,-42.2754081589999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.26">
+	<name>EOLICA SAN PEDRO II</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="ID_GE_EOLI">49</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA SAN PEDRO II</SimpleData>
+		<SimpleData name="PROPIEDAD">RIO ALTO GENERACION S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">64.9935</SimpleData>
+		<SimpleData name="UNIDADES">13</SimpleData>
+		<SimpleData name="RCA">733/2013</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1495152000000</SimpleData>
+		<SimpleData name="COORD_ESTE">94389</SimpleData>
+		<SimpleData name="COORD_NORT">5307273</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">10</SimpleData>
+		<SimpleData name="PROVINCIA">102</SimpleData>
+		<SimpleData name="COMUNA">10205</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1506729600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.918780687,-42.281201386</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.27">
+	<name>EOLICA TALINAY ORIENTE</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="ID_GE_EOLI">50</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA TALINAY ORIENTE</SimpleData>
+		<SimpleData name="PROPIEDAD">PARQUE TALINAY ORIENTE S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">89.55</SimpleData>
+		<SimpleData name="UNIDADES">45</SimpleData>
+		<SimpleData name="RCA">158/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1365811200000</SimpleData>
+		<SimpleData name="COORD_ESTE">254247</SimpleData>
+		<SimpleData name="COORD_NORT">6584597</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">043</SimpleData>
+		<SimpleData name="COMUNA">04301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.5697219429999,-30.8463702779999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.28">
+	<name>EOLICA TALINAY PONIENTE</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">28</SimpleData>
+		<SimpleData name="ID_GE_EOLI">51</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA TALINAY PONIENTE</SimpleData>
+		<SimpleData name="PROPIEDAD">ENEL GREEN POWER CHILE</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">60.098</SimpleData>
+		<SimpleData name="UNIDADES">32</SimpleData>
+		<SimpleData name="RCA">158/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1432598400000</SimpleData>
+		<SimpleData name="COORD_ESTE">246190</SimpleData>
+		<SimpleData name="COORD_NORT">6588315</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">043</SimpleData>
+		<SimpleData name="COMUNA">04301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1430352000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.6529727399999,-30.8111585</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.29">
+	<name>EOLICA TALTAL</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">29</SimpleData>
+		<SimpleData name="ID_GE_EOLI">52</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA TALTAL</SimpleData>
+		<SimpleData name="PROPIEDAD">ENEL GREEN POWER CHILE</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">98.109</SimpleData>
+		<SimpleData name="UNIDADES">33</SimpleData>
+		<SimpleData name="RCA">166/2013</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1423440000000</SimpleData>
+		<SimpleData name="COORD_ESTE">413553</SimpleData>
+		<SimpleData name="COORD_NORT">7225914</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">02</SimpleData>
+		<SimpleData name="PROVINCIA">021</SimpleData>
+		<SimpleData name="COMUNA">02104</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1426636800000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-69.857212351,-25.08005229</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.30">
+	<name>EOLICA TOTORAL</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">30</SimpleData>
+		<SimpleData name="ID_GE_EOLI">53</SimpleData>
+		<SimpleData name="NOMBRE">EOLICA TOTORAL</SimpleData>
+		<SimpleData name="PROPIEDAD">NORVIND S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">45.54</SimpleData>
+		<SimpleData name="UNIDADES">23</SimpleData>
+		<SimpleData name="RCA">080/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1264377600000</SimpleData>
+		<SimpleData name="COORD_ESTE">252479</SimpleData>
+		<SimpleData name="COORD_NORT">6528850</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">042</SimpleData>
+		<SimpleData name="COMUNA">04202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.6018627249999,-31.3484946569999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.31">
+	<name>HUAJACHE</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">31</SimpleData>
+		<SimpleData name="ID_GE_EOLI">56</SimpleData>
+		<SimpleData name="NOMBRE">HUAJACHE</SimpleData>
+		<SimpleData name="PROPIEDAD">PROYECTO HUAJACHE SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">5.9867</SimpleData>
+		<SimpleData name="UNIDADES">2</SimpleData>
+		<SimpleData name="RCA">107/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1448409600000</SimpleData>
+		<SimpleData name="COORD_ESTE">97413</SimpleData>
+		<SimpleData name="COORD_NORT">5812510</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">082</SimpleData>
+		<SimpleData name="COMUNA">08201</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1459382400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.568485057,-37.746171567</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.32">
+	<name>LA ESTRELLA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">32</SimpleData>
+		<SimpleData name="ID_GE_EOLI">62</SimpleData>
+		<SimpleData name="NOMBRE">LA ESTRELLA</SimpleData>
+		<SimpleData name="PROPIEDAD">EOLICA LA ESTRELLA SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">49.1</SimpleData>
+		<SimpleData name="UNIDADES">11</SimpleData>
+		<SimpleData name="RCA">187/2015</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1624492800000</SimpleData>
+		<SimpleData name="COORD_ESTE">259741</SimpleData>
+		<SimpleData name="COORD_NORT">6217840</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">06</SimpleData>
+		<SimpleData name="PROVINCIA">062</SimpleData>
+		<SimpleData name="COMUNA">06202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1469577600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.6060137109999,-34.152736325</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.33">
+	<name>LA FLOR</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">33</SimpleData>
+		<SimpleData name="ID_GE_EOLI">63</SimpleData>
+		<SimpleData name="NOMBRE">LA FLOR</SimpleData>
+		<SimpleData name="PROPIEDAD">SOCIEDAD VIENTOS DE RENAICO LTDA.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">32.4</SimpleData>
+		<SimpleData name="UNIDADES">9</SimpleData>
+		<SimpleData name="RCA">1168/2014</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1592265600000</SimpleData>
+		<SimpleData name="COORD_ESTE">182677</SimpleData>
+		<SimpleData name="COORD_NORT">5824940</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">09</SimpleData>
+		<SimpleData name="PROVINCIA">092</SimpleData>
+		<SimpleData name="COMUNA">09209</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.59749762,-37.667890278</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.34">
+	<name>LLANOS DEL VIENTO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">34</SimpleData>
+		<SimpleData name="ID_GE_EOLI">73</SimpleData>
+		<SimpleData name="NOMBRE">LLANOS DEL VIENTO</SimpleData>
+		<SimpleData name="PROPIEDAD">AR LLANOS DEL VIENTO SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">159.36</SimpleData>
+		<SimpleData name="UNIDADES">42</SimpleData>
+		<SimpleData name="RCA">140/2019</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1680220800000</SimpleData>
+		<SimpleData name="COORD_ESTE">401097</SimpleData>
+		<SimpleData name="COORD_NORT">7370716</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">02</SimpleData>
+		<SimpleData name="PROVINCIA">021</SimpleData>
+		<SimpleData name="COMUNA">02101</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1546214400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-69.970655058,-23.7716580429999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.35">
+	<name>LOMAS DE DUQUECO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">35</SimpleData>
+		<SimpleData name="ID_GE_EOLI">77</SimpleData>
+		<SimpleData name="NOMBRE">LOMAS DE DUQUECO</SimpleData>
+		<SimpleData name="PROPIEDAD">WPD CHILE SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">58</SimpleData>
+		<SimpleData name="UNIDADES">14</SimpleData>
+		<SimpleData name="RCA">142/2018</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1659484800000</SimpleData>
+		<SimpleData name="COORD_ESTE">200333</SimpleData>
+		<SimpleData name="COORD_NORT">5841378</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1469577600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.3909363659999,-37.525919944</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.36">
+	<name>LOS OLMOS</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">36</SimpleData>
+		<SimpleData name="ID_GE_EOLI">79</SimpleData>
+		<SimpleData name="NOMBRE">LOS OLMOS</SimpleData>
+		<SimpleData name="PROPIEDAD">INVERSIONES BOSQUEMAR LTDA.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">107.4634</SimpleData>
+		<SimpleData name="UNIDADES">23</SimpleData>
+		<SimpleData name="RCA">140/2016</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1642550400000</SimpleData>
+		<SimpleData name="COORD_ESTE">195033</SimpleData>
+		<SimpleData name="COORD_NORT">5825530</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08305</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1469577600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.4574095519999,-37.666769717</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.37">
+	<name>MESAMAVIDA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">37</SimpleData>
+		<SimpleData name="ID_GE_EOLI">83</SimpleData>
+		<SimpleData name="NOMBRE">MESAMAVIDA</SimpleData>
+		<SimpleData name="PROPIEDAD">ENERGIA EOLICA MESAMAVIDA SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">55.73</SimpleData>
+		<SimpleData name="UNIDADES">14</SimpleData>
+		<SimpleData name="RCA">012/2015</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1659052800000</SimpleData>
+		<SimpleData name="COORD_ESTE">193644</SimpleData>
+		<SimpleData name="COORD_NORT">5841968</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.466255604,-37.518415287</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.38">
+	<name>MONTE REDONDO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">38</SimpleData>
+		<SimpleData name="ID_GE_EOLI">84</SimpleData>
+		<SimpleData name="NOMBRE">MONTE REDONDO</SimpleData>
+		<SimpleData name="PROPIEDAD">EOLICA MONTE REDONDO S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">47.52</SimpleData>
+		<SimpleData name="UNIDADES">24</SimpleData>
+		<SimpleData name="RCA">228/2007</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1262736000000</SimpleData>
+		<SimpleData name="COORD_ESTE">248395</SimpleData>
+		<SimpleData name="COORD_NORT">6559364</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">043</SimpleData>
+		<SimpleData name="COMUNA">04301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.637105553,-31.072585014</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.39">
+	<name>NEGRETE</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">39</SimpleData>
+		<SimpleData name="ID_GE_EOLI">87</SimpleData>
+		<SimpleData name="NOMBRE">NEGRETE</SimpleData>
+		<SimpleData name="PROPIEDAD">WPD NEGRETE SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">35.34</SimpleData>
+		<SimpleData name="UNIDADES">10</SimpleData>
+		<SimpleData name="RCA">280/2014</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1623715200000</SimpleData>
+		<SimpleData name="COORD_ESTE">186966</SimpleData>
+		<SimpleData name="COORD_NORT">5832983</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08307</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.5455154759999,-37.597006608</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.40">
+	<name>VIENTOS PATAGONICOS</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">40</SimpleData>
+		<SimpleData name="ID_GE_EOLI">88</SimpleData>
+		<SimpleData name="NOMBRE">VIENTOS PATAGONICOS</SimpleData>
+		<SimpleData name="PROPIEDAD">EMPRESA NACIONAL DEL PETROLEO - MAGALLANES</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">10.35</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="RCA">029/2017</SimpleData>
+		<SimpleData name="SIST_ELECT">SEM</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1602806400000</SimpleData>
+		<SimpleData name="COORD_ESTE">376681</SimpleData>
+		<SimpleData name="COORD_NORT">4133137</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">12</SimpleData>
+		<SimpleData name="PROVINCIA">121</SimpleData>
+		<SimpleData name="COMUNA">12101</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1469577600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.834980205,-52.937221521</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.41">
+	<name>LA ESPERANZA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">41</SimpleData>
+		<SimpleData name="ID_GE_EOLI">89</SimpleData>
+		<SimpleData name="NOMBRE">LA ESPERANZA</SimpleData>
+		<SimpleData name="PROPIEDAD">EOLICA LA ESPERANZA S.A.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">10.2585</SimpleData>
+		<SimpleData name="UNIDADES">5</SimpleData>
+		<SimpleData name="RCA">284/2015</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1486944000000</SimpleData>
+		<SimpleData name="COORD_ESTE">187989</SimpleData>
+		<SimpleData name="COORD_NORT">5832040</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08307</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1506729600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.534350735,-37.605837477</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.42">
+	<name>RENAICO I</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">42</SimpleData>
+		<SimpleData name="ID_GE_EOLI">90</SimpleData>
+		<SimpleData name="NOMBRE">RENAICO I</SimpleData>
+		<SimpleData name="PROPIEDAD">ENEL GREEN POWER CHILE</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">87.5</SimpleData>
+		<SimpleData name="UNIDADES">44</SimpleData>
+		<SimpleData name="RCA">149/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1473638400000</SimpleData>
+		<SimpleData name="COORD_ESTE">184344</SimpleData>
+		<SimpleData name="COORD_NORT">5819140</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">09</SimpleData>
+		<SimpleData name="PROVINCIA">092</SimpleData>
+		<SimpleData name="COMUNA">09209</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1483142400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.581144506,-37.720640163</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.43">
+	<name>SIERRA GORDA ESTE</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">43</SimpleData>
+		<SimpleData name="ID_GE_EOLI">91</SimpleData>
+		<SimpleData name="NOMBRE">SIERRA GORDA ESTE</SimpleData>
+		<SimpleData name="PROPIEDAD">ENEL GREEN POWER CHILE LTDA.</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">110.619</SimpleData>
+		<SimpleData name="UNIDADES">56</SimpleData>
+		<SimpleData name="RCA">490/2014</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1522800000000</SimpleData>
+		<SimpleData name="COORD_ESTE">502596</SimpleData>
+		<SimpleData name="COORD_NORT">7470021</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">02</SimpleData>
+		<SimpleData name="PROVINCIA">021</SimpleData>
+		<SimpleData name="COMUNA">02103</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1506729600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-68.974691354,-22.877677271</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.44">
+	<name>PUELCHE SUR</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">44</SimpleData>
+		<SimpleData name="ID_GE_EOLI">100</SimpleData>
+		<SimpleData name="NOMBRE">PUELCHE SUR</SimpleData>
+		<SimpleData name="PROPIEDAD">AR PUELCHE SUR SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">159.5</SimpleData>
+		<SimpleData name="UNIDADES">33</SimpleData>
+		<SimpleData name="RCA">026/2019</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1673308800000</SimpleData>
+		<SimpleData name="COORD_ESTE">163737</SimpleData>
+		<SimpleData name="COORD_NORT">5450115</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">10</SimpleData>
+		<SimpleData name="PROVINCIA">101</SimpleData>
+		<SimpleData name="COMUNA">10105</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1469577600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.999705725,-41.030774935</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.45">
+	<name>PUNTA SIERRA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">45</SimpleData>
+		<SimpleData name="ID_GE_EOLI">103</SimpleData>
+		<SimpleData name="NOMBRE">PUNTA SIERRA</SimpleData>
+		<SimpleData name="PROPIEDAD">PACIFIC HYDRO PUNTA SIERRA SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">81.185</SimpleData>
+		<SimpleData name="UNIDADES">32</SimpleData>
+		<SimpleData name="RCA">103/2014</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1559692800000</SimpleData>
+		<SimpleData name="COORD_ESTE">248947</SimpleData>
+		<SimpleData name="COORD_NORT">6552468</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">04</SimpleData>
+		<SimpleData name="PROVINCIA">043</SimpleData>
+		<SimpleData name="COMUNA">04301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1483142400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.633040706,-31.134860435</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.46">
+	<name>RAKI</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">46</SimpleData>
+		<SimpleData name="ID_GE_EOLI">105</SimpleData>
+		<SimpleData name="NOMBRE">RAKI</SimpleData>
+		<SimpleData name="PROPIEDAD">PROYECTO RAKI SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">8.98</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="RCA">107/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1438214400000</SimpleData>
+		<SimpleData name="COORD_ESTE">96961</SimpleData>
+		<SimpleData name="COORD_NORT">5812860</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">082</SimpleData>
+		<SimpleData name="COMUNA">08201</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1451520000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.5734053629999,-37.742828228</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.47">
+	<name>SAN GABRIEL (MODIFICACION)</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">47</SimpleData>
+		<SimpleData name="ID_GE_EOLI">107</SimpleData>
+		<SimpleData name="NOMBRE">SAN GABRIEL (MODIFICACION)</SimpleData>
+		<SimpleData name="PROPIEDAD">PARQUE EOLICO SAN GABRIEL SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">180</SimpleData>
+		<SimpleData name="UNIDADES">61</SimpleData>
+		<SimpleData name="RCA">242/2017</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1584057600000</SimpleData>
+		<SimpleData name="COORD_ESTE">190390</SimpleData>
+		<SimpleData name="COORD_NORT">5822332</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">09</SimpleData>
+		<SimpleData name="PROVINCIA">092</SimpleData>
+		<SimpleData name="COMUNA">09209</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.511314758,-37.6939864189999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.48">
+	<name>SARCO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">48</SimpleData>
+		<SimpleData name="ID_GE_EOLI">111</SimpleData>
+		<SimpleData name="NOMBRE">SARCO</SimpleData>
+		<SimpleData name="PROPIEDAD">AELA EOLICA SARCO SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">167.56</SimpleData>
+		<SimpleData name="UNIDADES">50</SimpleData>
+		<SimpleData name="RCA">032/2014</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1525132800000</SimpleData>
+		<SimpleData name="COORD_ESTE">263710</SimpleData>
+		<SimpleData name="COORD_NORT">6804933</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">03</SimpleData>
+		<SimpleData name="PROVINCIA">033</SimpleData>
+		<SimpleData name="COMUNA">03303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.4223691559999,-28.8616251569999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.49">
+	<name>TCHAMMA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">49</SimpleData>
+		<SimpleData name="ID_GE_EOLI">119</SimpleData>
+		<SimpleData name="NOMBRE">TCHAMMA</SimpleData>
+		<SimpleData name="PROPIEDAD">AR TCHAMMA SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">155.4</SimpleData>
+		<SimpleData name="UNIDADES">35</SimpleData>
+		<SimpleData name="RCA">492/2014</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1645401600000</SimpleData>
+		<SimpleData name="COORD_ESTE">491323</SimpleData>
+		<SimpleData name="COORD_NORT">7511995</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">02</SimpleData>
+		<SimpleData name="PROVINCIA">022</SimpleData>
+		<SimpleData name="COMUNA">02201</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-69.0843604569999,-22.4984724519999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.50">
+	<name>TOLPAN SUR</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">50</SimpleData>
+		<SimpleData name="ID_GE_EOLI">121</SimpleData>
+		<SimpleData name="NOMBRE">TOLPAN SUR</SimpleData>
+		<SimpleData name="PROPIEDAD">ACCIONA ENERGIA CHILE</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">80.9</SimpleData>
+		<SimpleData name="UNIDADES">28</SimpleData>
+		<SimpleData name="RCA">285/2018</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1606176000000</SimpleData>
+		<SimpleData name="COORD_ESTE">182578</SimpleData>
+		<SimpleData name="COORD_NORT">5822953</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">09</SimpleData>
+		<SimpleData name="PROVINCIA">092</SimpleData>
+		<SimpleData name="COMUNA">09209</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1469577600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.5994825079999,-37.68573026</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.51">
+	<name>UCUQUER</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">51</SimpleData>
+		<SimpleData name="ID_GE_EOLI">122</SimpleData>
+		<SimpleData name="NOMBRE">UCUQUER</SimpleData>
+		<SimpleData name="PROPIEDAD">UCUQUER</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">7.0724</SimpleData>
+		<SimpleData name="UNIDADES">4</SimpleData>
+		<SimpleData name="RCA">099/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1357171200000</SimpleData>
+		<SimpleData name="COORD_ESTE">259083</SimpleData>
+		<SimpleData name="COORD_NORT">6229869</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">06</SimpleData>
+		<SimpleData name="PROVINCIA">062</SimpleData>
+		<SimpleData name="COMUNA">06203</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1426636800000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.609813236,-34.044210812</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.52">
+	<name>UCUQUER II</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">52</SimpleData>
+		<SimpleData name="ID_GE_EOLI">123</SimpleData>
+		<SimpleData name="NOMBRE">UCUQUER II</SimpleData>
+		<SimpleData name="PROPIEDAD">UCUQUER DOS</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">10.5028</SimpleData>
+		<SimpleData name="UNIDADES">5</SimpleData>
+		<SimpleData name="RCA">099/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1413936000000</SimpleData>
+		<SimpleData name="COORD_ESTE">258017</SimpleData>
+		<SimpleData name="COORD_NORT">6229737</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">06</SimpleData>
+		<SimpleData name="PROVINCIA">062</SimpleData>
+		<SimpleData name="COMUNA">06203</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1426636800000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.6213870679999,-34.0451544319999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.53">
+	<name>VALLE DE LOS VIENTOS</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">53</SimpleData>
+		<SimpleData name="ID_GE_EOLI">124</SimpleData>
+		<SimpleData name="NOMBRE">VALLE DE LOS VIENTOS</SimpleData>
+		<SimpleData name="PROPIEDAD">ENEL GREEN POWER CHILE</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">88.9</SimpleData>
+		<SimpleData name="UNIDADES">45</SimpleData>
+		<SimpleData name="RCA">138/2010</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1395360000000</SimpleData>
+		<SimpleData name="COORD_ESTE">518809</SimpleData>
+		<SimpleData name="COORD_NORT">7509843</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">02</SimpleData>
+		<SimpleData name="PROVINCIA">022</SimpleData>
+		<SimpleData name="COMUNA">02201</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-68.817107844,-22.517831848</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.54">
+	<name>MALLECO SUR</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">54</SimpleData>
+		<SimpleData name="ID_GE_EOLI">176</SimpleData>
+		<SimpleData name="NOMBRE">MALLECO SUR</SimpleData>
+		<SimpleData name="PROPIEDAD">WPD MALLECO SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">131.86</SimpleData>
+		<SimpleData name="UNIDADES">38</SimpleData>
+		<SimpleData name="RCA">240/2016</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1632787200000</SimpleData>
+		<SimpleData name="COORD_ESTE">213945</SimpleData>
+		<SimpleData name="COORD_NORT">5788559</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">09</SimpleData>
+		<SimpleData name="PROVINCIA">092</SimpleData>
+		<SimpleData name="COMUNA">09202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.257945799,-38.0055451769999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_eolicas.55">
+	<name>MALLECO NORTE</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_eolicas">
+		<SimpleData name="OBJECTID">55</SimpleData>
+		<SimpleData name="ID_GE_EOLI">177</SimpleData>
+		<SimpleData name="NOMBRE">MALLECO NORTE</SimpleData>
+		<SimpleData name="PROPIEDAD">WPD MALLECO SPA</SimpleData>
+		<SimpleData name="TIPO">EOLICO</SimpleData>
+		<SimpleData name="COMBUSTIBL">NO APLICA</SimpleData>
+		<SimpleData name="POTENCIAMW">131.074</SimpleData>
+		<SimpleData name="UNIDADES">39</SimpleData>
+		<SimpleData name="RCA">240/2016</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1643846400000</SimpleData>
+		<SimpleData name="COORD_ESTE">213945</SimpleData>
+		<SimpleData name="COORD_NORT">5788559</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">09</SimpleData>
+		<SimpleData name="PROVINCIA">092</SimpleData>
+		<SimpleData name="COMUNA">09202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1438560000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.257945799,-38.0055451769999</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="subestaciones_sem" id="subestaciones_sem">
+	<SimpleField name="OBJECTID" type="string"></SimpleField>
+	<SimpleField name="gml_id" type="string"></SimpleField>
+	<SimpleField name="nombre" type="string"></SimpleField>
+	<SimpleField name="propiedad" type="string"></SimpleField>
+	<SimpleField name="tension_kv" type="string"></SimpleField>
+	<SimpleField name="tipo" type="string"></SimpleField>
+	<SimpleField name="f_operacio" type="string"></SimpleField>
+	<SimpleField name="rca" type="string"></SimpleField>
+	<SimpleField name="sist_elect" type="string"></SimpleField>
+	<SimpleField name="estado" type="string"></SimpleField>
+	<SimpleField name="coord_este" type="float"></SimpleField>
+	<SimpleField name="coor_norte" type="float"></SimpleField>
+	<SimpleField name="huso" type="string"></SimpleField>
+	<SimpleField name="datum" type="string"></SimpleField>
+	<SimpleField name="region" type="string"></SimpleField>
+	<SimpleField name="provincia" type="string"></SimpleField>
+	<SimpleField name="comuna" type="string"></SimpleField>
+	<SimpleField name="fuente_bas" type="string"></SimpleField>
+	<SimpleField name="fech_crea" type="string"></SimpleField>
+	<SimpleField name="fech_act" type="string"></SimpleField>
+</Schema>
+<Folder><name>subestaciones_sem</name>
+  <Placemark id="subestaciones_sem.1">
+	<name>PUERTO NATALES</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sem">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="gml_id">se_magallanes_67b299b4_2f39_42ce_9cd6_e3e6241fa60a.1</SimpleData>
+		<SimpleData name="nombre">PUERTO NATALES</SimpleData>
+		<SimpleData name="propiedad">EDELMAG</SimpleData>
+		<SimpleData name="tension_kv">132</SimpleData>
+		<SimpleData name="tipo">PRIMARIA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELMAG</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">259781.1433</SimpleData>
+		<SimpleData name="coor_norte">4263253.8383</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XII REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">ULTIMA ESPERANZA</SimpleData>
+		<SimpleData name="comuna">NATALES</SimpleData>
+		<SimpleData name="fuente_bas">EDELMAG</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.478770273,-51.7300800159999</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sem.2">
+	<name>PUNTA ARENAS</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sem">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="gml_id">se_magallanes_67b299b4_2f39_42ce_9cd6_e3e6241fa60a.2</SimpleData>
+		<SimpleData name="nombre">PUNTA ARENAS</SimpleData>
+		<SimpleData name="propiedad">EDELMAG</SimpleData>
+		<SimpleData name="tension_kv">66</SimpleData>
+		<SimpleData name="tipo">TRANSMISION</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELMAG</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">372458.801</SimpleData>
+		<SimpleData name="coor_norte">4108794.706</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XII REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">MAGALLANES</SimpleData>
+		<SimpleData name="comuna">PUNTA ARENAS</SimpleData>
+		<SimpleData name="fuente_bas">EDELMAG</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.9074027349999,-53.1549360299999</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sem.3">
+	<name>TRES PUENTES</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sem">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="gml_id">se_magallanes_67b299b4_2f39_42ce_9cd6_e3e6241fa60a.3</SimpleData>
+		<SimpleData name="nombre">TRES PUENTES</SimpleData>
+		<SimpleData name="propiedad">EDELMAG</SimpleData>
+		<SimpleData name="tension_kv">66</SimpleData>
+		<SimpleData name="tipo">TRANSMISION</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELMAG</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">372975.146</SimpleData>
+		<SimpleData name="coor_norte">4114735.204</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XII REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">MAGALLANES</SimpleData>
+		<SimpleData name="comuna">PUNTA ARENAS</SimpleData>
+		<SimpleData name="fuente_bas">EDELMAG</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.8973323879999,-53.1016882169999</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sem.4">
+	<name>PORVENIR</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sem">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="gml_id">se_magallanes_67b299b4_2f39_42ce_9cd6_e3e6241fa60a.4</SimpleData>
+		<SimpleData name="nombre">PORVENIR</SimpleData>
+		<SimpleData name="propiedad">EDELMAG</SimpleData>
+		<SimpleData name="tension_kv">138</SimpleData>
+		<SimpleData name="tipo">PRIMARIA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELMAG</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">408000.58</SimpleData>
+		<SimpleData name="coor_norte">4094407.44</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XII REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">TIERRA DEL FUEGO</SimpleData>
+		<SimpleData name="comuna">PORVENIR</SimpleData>
+		<SimpleData name="fuente_bas">EDELMAG</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.380220713,-53.29155244</coordinates></Point>
+  </Placemark>
+  <Placemark id="subestaciones_sem.5">
+	<name>PUERTO WILLIAMS</name>
+	<ExtendedData><SchemaData schemaUrl="#subestaciones_sem">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="gml_id">se_magallanes_67b299b4_2f39_42ce_9cd6_e3e6241fa60a.5</SimpleData>
+		<SimpleData name="nombre">PUERTO WILLIAMS</SimpleData>
+		<SimpleData name="propiedad">EDELMAG</SimpleData>
+		<SimpleData name="tension_kv">132</SimpleData>
+		<SimpleData name="tipo">PRIMARIA</SimpleData>
+		<SimpleData name="f_operacio">S/I</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="sist_elect">EDELMAG</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="coord_este">591089</SimpleData>
+		<SimpleData name="coor_norte">3911720</SimpleData>
+		<SimpleData name="huso">19</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="region">XII REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="comuna">CABO DE HORNOS</SimpleData>
+		<SimpleData name="fuente_bas">EDELMAG</SimpleData>
+		<SimpleData name="fech_crea">04-12-2014</SimpleData>
+		<SimpleData name="fech_act">09-12-2014</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-67.578346536,-54.933172591</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

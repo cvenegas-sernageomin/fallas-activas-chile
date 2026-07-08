@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="centrales_biomasa" id="centrales_biomasa">
+	<SimpleField name="OBJECTID" type="string"></SimpleField>
+	<SimpleField name="ID_GE_BIO" type="string"></SimpleField>
+	<SimpleField name="NOMBRE" type="string"></SimpleField>
+	<SimpleField name="PROPIEDAD" type="string"></SimpleField>
+	<SimpleField name="TIPO" type="string"></SimpleField>
+	<SimpleField name="MEDIO_GENE" type="string"></SimpleField>
+	<SimpleField name="COMBUSTIBL" type="string"></SimpleField>
+	<SimpleField name="POTENCIAMW" type="float"></SimpleField>
+	<SimpleField name="UNIDADES" type="string"></SimpleField>
+	<SimpleField name="RCA" type="string"></SimpleField>
+	<SimpleField name="SIST_ELECT" type="string"></SimpleField>
+	<SimpleField name="ESTADO" type="string"></SimpleField>
+	<SimpleField name="F_OPERACIO" type="string"></SimpleField>
+	<SimpleField name="COORD_ESTE" type="string"></SimpleField>
+	<SimpleField name="COORD_NORT" type="string"></SimpleField>
+	<SimpleField name="HUSO" type="string"></SimpleField>
+	<SimpleField name="DATUM" type="string"></SimpleField>
+	<SimpleField name="REGION" type="string"></SimpleField>
+	<SimpleField name="PROVINCIA" type="string"></SimpleField>
+	<SimpleField name="COMUNA" type="string"></SimpleField>
+	<SimpleField name="FUENTE_BAS" type="string"></SimpleField>
+	<SimpleField name="FECH_CREA" type="string"></SimpleField>
+	<SimpleField name="FECH_ACT" type="string"></SimpleField>
+</Schema>
+<Folder><name>centrales_biomasa</name>
+  <Placemark id="centrales_biomasa.1">
+	<name>ANCALI</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="ID_GE_BIO">3</SimpleData>
+		<SimpleData name="NOMBRE">ANCALI</SimpleData>
+		<SimpleData name="PROPIEDAD">AGRICOLA ANCALI LTDA.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">1.56</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">NO APLICA</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1367798400000</SimpleData>
+		<SimpleData name="COORD_ESTE">208569</SimpleData>
+		<SimpleData name="COORD_NORT">5834520</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.3006079049999,-37.590270378</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.2">
+	<name>ARAUCO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="ID_GE_BIO">4</SimpleData>
+		<SimpleData name="NOMBRE">ARAUCO</SimpleData>
+		<SimpleData name="PROPIEDAD">CELULOSA ARAUCO</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">24</SimpleData>
+		<SimpleData name="UNIDADES">2</SimpleData>
+		<SimpleData name="RCA">125/2008</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">829094400000</SimpleData>
+		<SimpleData name="COORD_ESTE">124779</SimpleData>
+		<SimpleData name="COORD_NORT">5873570</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">082</SimpleData>
+		<SimpleData name="COMUNA">08202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.227659825,-37.2089297329999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.3">
+	<name>CELCO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="ID_GE_BIO">14</SimpleData>
+		<SimpleData name="NOMBRE">CELCO</SimpleData>
+		<SimpleData name="PROPIEDAD">CELULOSA ARAUCO</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMG</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA-PETROLEO N°6</SimpleData>
+		<SimpleData name="POTENCIAMW">8</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">244/1996</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">820454400000</SimpleData>
+		<SimpleData name="COORD_ESTE">189375</SimpleData>
+		<SimpleData name="COORD_NORT">6085700</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">07</SimpleData>
+		<SimpleData name="PROVINCIA">071</SimpleData>
+		<SimpleData name="COMUNA">07102</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.416884505,-35.323698029</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.4">
+	<name>LEPANTO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="ID_GE_BIO">15</SimpleData>
+		<SimpleData name="NOMBRE">LEPANTO</SimpleData>
+		<SimpleData name="PROPIEDAD">ENERKEY SPA</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">2</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">NO APLICA</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1483228800000</SimpleData>
+		<SimpleData name="COORD_ESTE">345188</SimpleData>
+		<SimpleData name="COORD_NORT">6277780</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">13</SimpleData>
+		<SimpleData name="PROVINCIA">134</SimpleData>
+		<SimpleData name="COMUNA">13401</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1506729600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6690786999999,-33.628544798</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.5">
+	<name>CHOLGUAN</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="ID_GE_BIO">16</SimpleData>
+		<SimpleData name="NOMBRE">CHOLGUAN</SimpleData>
+		<SimpleData name="PROPIEDAD">PANELES ARAUCO</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA-PETROLEO N°6</SimpleData>
+		<SimpleData name="POTENCIAMW">13</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1054857600000</SimpleData>
+		<SimpleData name="COORD_ESTE">227628</SimpleData>
+		<SimpleData name="COORD_NORT">5882430</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">16</SimpleData>
+		<SimpleData name="PROVINCIA">161</SimpleData>
+		<SimpleData name="COMUNA">16109</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.0674201479999,-37.164877836</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.6">
+	<name>CMPC LAJA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="ID_GE_BIO">17</SimpleData>
+		<SimpleData name="NOMBRE">CMPC LAJA</SimpleData>
+		<SimpleData name="PROPIEDAD">CMPC CELULOSA S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">40.447</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">203/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1367366400000</SimpleData>
+		<SimpleData name="COORD_ESTE">170983</SimpleData>
+		<SimpleData name="COORD_NORT">5866446</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08304</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.711285198,-37.290442586</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.7">
+	<name>CMPC PACIFICO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="ID_GE_BIO">18</SimpleData>
+		<SimpleData name="NOMBRE">CMPC PACIFICO</SimpleData>
+		<SimpleData name="PROPIEDAD">CMPC CELULOSA S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">33</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="RCA">3825/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1388534400000</SimpleData>
+		<SimpleData name="COORD_ESTE">193330</SimpleData>
+		<SimpleData name="COORD_NORT">5811600</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">09</SimpleData>
+		<SimpleData name="PROVINCIA">092</SimpleData>
+		<SimpleData name="COMUNA">09202</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.4825550689999,-37.791525898</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.8">
+	<name>CMPC SANTA FE</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="ID_GE_BIO">19</SimpleData>
+		<SimpleData name="NOMBRE">CMPC SANTA FE</SimpleData>
+		<SimpleData name="PROPIEDAD">CMPC CELULOSA S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMG</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">5</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1428624000000</SimpleData>
+		<SimpleData name="COORD_ESTE">176808</SimpleData>
+		<SimpleData name="COORD_NORT">5841700</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08306</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1451520000000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.656517846,-37.515085481</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.9">
+	<name>COELEMU</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="ID_GE_BIO">20</SimpleData>
+		<SimpleData name="NOMBRE">COELEMU</SimpleData>
+		<SimpleData name="PROPIEDAD">ENERGIA LEON S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">5.8902</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">275/2012</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1393891200000</SimpleData>
+		<SimpleData name="COORD_ESTE">165316</SimpleData>
+		<SimpleData name="COORD_NORT">5952890</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">16</SimpleData>
+		<SimpleData name="PROVINCIA">162</SimpleData>
+		<SimpleData name="COMUNA">16203</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.736919663,-36.510843941</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.10">
+	<name>TER COPIULEMU</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="ID_GE_BIO">22</SimpleData>
+		<SimpleData name="NOMBRE">TER COPIULEMU</SimpleData>
+		<SimpleData name="PROPIEDAD">DUERO ENERGIA COPIULEMU SPA</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">0.95</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">NO APLICA</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1573776000000</SimpleData>
+		<SimpleData name="COORD_ESTE">155883</SimpleData>
+		<SimpleData name="COORD_NORT">5912994</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">081</SimpleData>
+		<SimpleData name="COMUNA">08104</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1546214400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.859951514,-36.8663444219999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.11">
+	<name>EL CAMPESINO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="ID_GE_BIO">23</SimpleData>
+		<SimpleData name="NOMBRE">EL CAMPESINO</SimpleData>
+		<SimpleData name="PROPIEDAD">AASA ENERGIA</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">0.995</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="RCA">NO APLICA</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1516752000000</SimpleData>
+		<SimpleData name="COORD_ESTE">300457</SimpleData>
+		<SimpleData name="COORD_NORT">6282652</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">13</SimpleData>
+		<SimpleData name="PROVINCIA">135</SimpleData>
+		<SimpleData name="COMUNA">13501</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1506729600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.149984226,-33.5771862469999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.12">
+	<name>EL MOLLE</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="ID_GE_BIO">24</SimpleData>
+		<SimpleData name="NOMBRE">EL MOLLE</SimpleData>
+		<SimpleData name="PROPIEDAD">STERICYCLE</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">4.1456</SimpleData>
+		<SimpleData name="UNIDADES">6</SimpleData>
+		<SimpleData name="RCA">126/2015</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1450396800000</SimpleData>
+		<SimpleData name="COORD_ESTE">253983</SimpleData>
+		<SimpleData name="COORD_NORT">6335840</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">05</SimpleData>
+		<SimpleData name="PROVINCIA">051</SimpleData>
+		<SimpleData name="COMUNA">05101</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1483142400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.635817303,-33.0882403219999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.13">
+	<name>ENERGIA PACIFICO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="ID_GE_BIO">26</SimpleData>
+		<SimpleData name="NOMBRE">ENERGIA PACIFICO</SimpleData>
+		<SimpleData name="PROPIEDAD">ENERGIA PACIFICO S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">14.3052</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">140/2008</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1396310400000</SimpleData>
+		<SimpleData name="COORD_ESTE">343191</SimpleData>
+		<SimpleData name="COORD_NORT">6238577</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">06</SimpleData>
+		<SimpleData name="PROVINCIA">061</SimpleData>
+		<SimpleData name="COMUNA">06110</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.697567407,-33.981677287</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.14">
+	<name>ESCUADRON</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="ID_GE_BIO">27</SimpleData>
+		<SimpleData name="NOMBRE">ESCUADRON</SimpleData>
+		<SimpleData name="PROPIEDAD">ELECTRICA NUEVA ENERGIA S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">12.4541</SimpleData>
+		<SimpleData name="UNIDADES">2</SimpleData>
+		<SimpleData name="RCA">082/2006</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1204761600000</SimpleData>
+		<SimpleData name="COORD_ESTE">129685</SimpleData>
+		<SimpleData name="COORD_NORT">5904230</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">081</SimpleData>
+		<SimpleData name="COMUNA">08102</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.157416353,-36.9352413089999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.15">
+	<name>HBS</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="ID_GE_BIO">28</SimpleData>
+		<SimpleData name="NOMBRE">HBS</SimpleData>
+		<SimpleData name="PROPIEDAD">HBS ENERGIA S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">1.1</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">NO APLICA</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1308096000000</SimpleData>
+		<SimpleData name="COORD_ESTE">202529</SimpleData>
+		<SimpleData name="COORD_NORT">5856170</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08301</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.3601586629999,-37.3935296729999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.16">
+	<name>LAJA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="ID_GE_BIO">30</SimpleData>
+		<SimpleData name="NOMBRE">LAJA</SimpleData>
+		<SimpleData name="PROPIEDAD">AES ANDES</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">11.466</SimpleData>
+		<SimpleData name="UNIDADES">2</SimpleData>
+		<SimpleData name="RCA">544/1995; 389/2001</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">788918400000</SimpleData>
+		<SimpleData name="COORD_ESTE">197334</SimpleData>
+		<SimpleData name="COORD_NORT">5880930</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.408671452,-37.169058803</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.17">
+	<name>LAUTARO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="ID_GE_BIO">33</SimpleData>
+		<SimpleData name="NOMBRE">LAUTARO</SimpleData>
+		<SimpleData name="PROPIEDAD">COMASA S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">44.5</SimpleData>
+		<SimpleData name="UNIDADES">2</SimpleData>
+		<SimpleData name="RCA">034/2010</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1332720000000</SimpleData>
+		<SimpleData name="COORD_ESTE">197571</SimpleData>
+		<SimpleData name="COORD_NORT">5728630</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">09</SimpleData>
+		<SimpleData name="PROVINCIA">091</SimpleData>
+		<SimpleData name="COMUNA">09108</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.4697175479999,-38.5393578269999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.18">
+	<name>LICANTEN</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="ID_GE_BIO">35</SimpleData>
+		<SimpleData name="NOMBRE">LICANTEN</SimpleData>
+		<SimpleData name="PROPIEDAD">ARAUCO BIOENERGIA S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMG</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA-PETROLEO N°6</SimpleData>
+		<SimpleData name="POTENCIAMW">6</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1083110400000</SimpleData>
+		<SimpleData name="COORD_ESTE">224259</SimpleData>
+		<SimpleData name="COORD_NORT">6124200</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">07</SimpleData>
+		<SimpleData name="PROVINCIA">073</SimpleData>
+		<SimpleData name="COMUNA">07303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.0208128419999,-34.987255365</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.19">
+	<name>LOMA LOS COLORADOS</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="ID_GE_BIO">36</SimpleData>
+		<SimpleData name="NOMBRE">LOMA LOS COLORADOS</SimpleData>
+		<SimpleData name="PROPIEDAD">KDM ENERGIA S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMG</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">2</SimpleData>
+		<SimpleData name="UNIDADES">2</SimpleData>
+		<SimpleData name="RCA">391/2006</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1264550400000</SimpleData>
+		<SimpleData name="COORD_ESTE">331349</SimpleData>
+		<SimpleData name="COORD_NORT">6352180</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">13</SimpleData>
+		<SimpleData name="PROVINCIA">133</SimpleData>
+		<SimpleData name="COMUNA">13303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.8043550959999,-32.9556931829999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.20">
+	<name>LOMA LOS COLORADOS II</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="ID_GE_BIO">37</SimpleData>
+		<SimpleData name="NOMBRE">LOMA LOS COLORADOS II</SimpleData>
+		<SimpleData name="PROPIEDAD">KDM ENERGIA S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">18.2</SimpleData>
+		<SimpleData name="UNIDADES">14</SimpleData>
+		<SimpleData name="RCA">344/2010</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1316476800000</SimpleData>
+		<SimpleData name="COORD_ESTE">331328</SimpleData>
+		<SimpleData name="COORD_NORT">6352067</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">13</SimpleData>
+		<SimpleData name="PROVINCIA">133</SimpleData>
+		<SimpleData name="COMUNA">13303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.8046003859999,-32.9567087409999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.21">
+	<name>LOS PINOS</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="ID_GE_BIO">38</SimpleData>
+		<SimpleData name="NOMBRE">LOS PINOS</SimpleData>
+		<SimpleData name="PROPIEDAD">BIO ENERGIA LOS PINOS SPA</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">3</SimpleData>
+		<SimpleData name="UNIDADES">2</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1512432000000</SimpleData>
+		<SimpleData name="COORD_ESTE">146069</SimpleData>
+		<SimpleData name="COORD_NORT">5923920</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">081</SimpleData>
+		<SimpleData name="COMUNA">08107</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1522454400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.9647196669999,-36.7644626429999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.22">
+	<name>MASISA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="ID_GE_BIO">39</SimpleData>
+		<SimpleData name="NOMBRE">MASISA</SimpleData>
+		<SimpleData name="PROPIEDAD">NEOMAS</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">11</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">185/2007</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1294444800000</SimpleData>
+		<SimpleData name="COORD_ESTE">197642</SimpleData>
+		<SimpleData name="COORD_NORT">5894740</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.399643096,-37.044891492</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.23">
+	<name>MOLINA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="ID_GE_BIO">40</SimpleData>
+		<SimpleData name="NOMBRE">MOLINA</SimpleData>
+		<SimpleData name="PROPIEDAD">BIO ENERGIA MOLINA SPA</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">0.7</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">NO APLICA</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1483228800000</SimpleData>
+		<SimpleData name="COORD_ESTE">289098</SimpleData>
+		<SimpleData name="COORD_NORT">6114376</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">07</SimpleData>
+		<SimpleData name="PROVINCIA">073</SimpleData>
+		<SimpleData name="COMUNA">07304</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1490918400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.313572783,-35.091366477</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.24">
+	<name>NUEVA ALDEA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="ID_GE_BIO">42</SimpleData>
+		<SimpleData name="NOMBRE">NUEVA ALDEA</SimpleData>
+		<SimpleData name="PROPIEDAD">CELULOSA ARAUCO</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">51</SimpleData>
+		<SimpleData name="UNIDADES">2</SimpleData>
+		<SimpleData name="RCA">076/2005; 157/2006</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1209600000000</SimpleData>
+		<SimpleData name="COORD_ESTE">188846</SimpleData>
+		<SimpleData name="COORD_NORT">5937030</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">16</SimpleData>
+		<SimpleData name="PROVINCIA">162</SimpleData>
+		<SimpleData name="COMUNA">16206</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.481059929,-36.661496932</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.25">
+	<name>SANTA FE</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="ID_GE_BIO">46</SimpleData>
+		<SimpleData name="NOMBRE">SANTA FE</SimpleData>
+		<SimpleData name="PROPIEDAD">BIOENERGIAS FORESTALES</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">62.633</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">285/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1336521600000</SimpleData>
+		<SimpleData name="COORD_ESTE">177215</SimpleData>
+		<SimpleData name="COORD_NORT">5841790</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">083</SimpleData>
+		<SimpleData name="COMUNA">08306</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.651882211,-37.514418292</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.26">
+	<name>SANTA MARTA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="ID_GE_BIO">49</SimpleData>
+		<SimpleData name="NOMBRE">SANTA MARTA</SimpleData>
+		<SimpleData name="PROPIEDAD">SANTA MARTA</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">14.185</SimpleData>
+		<SimpleData name="UNIDADES">10</SimpleData>
+		<SimpleData name="RCA">529/2011</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1396224000000</SimpleData>
+		<SimpleData name="COORD_ESTE">333381</SimpleData>
+		<SimpleData name="COORD_NORT">6269608</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">13</SimpleData>
+		<SimpleData name="PROVINCIA">136</SimpleData>
+		<SimpleData name="COMUNA">13601</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.797853386,-33.7004318589999</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.27">
+	<name>TAMM</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="ID_GE_BIO">51</SimpleData>
+		<SimpleData name="NOMBRE">TAMM</SimpleData>
+		<SimpleData name="PROPIEDAD">ROBERTO TAMM Y CIA. LTDA.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">0.1815</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">NO APLICA</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1362960000000</SimpleData>
+		<SimpleData name="COORD_ESTE">323175</SimpleData>
+		<SimpleData name="COORD_NORT">6161700</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">06</SimpleData>
+		<SimpleData name="PROVINCIA">063</SimpleData>
+		<SimpleData name="COMUNA">06303</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.9299595419999,-34.67141722</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.28">
+	<name>TREBAL MAPOCHO</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">28</SimpleData>
+		<SimpleData name="ID_GE_BIO">52</SimpleData>
+		<SimpleData name="NOMBRE">TREBAL MAPOCHO</SimpleData>
+		<SimpleData name="PROPIEDAD">EDAM LTDA.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">9</SimpleData>
+		<SimpleData name="UNIDADES">2</SimpleData>
+		<SimpleData name="RCA">442/2011</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1354320000000</SimpleData>
+		<SimpleData name="COORD_ESTE">329506</SimpleData>
+		<SimpleData name="COORD_NORT">6287289</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">13</SimpleData>
+		<SimpleData name="PROVINCIA">136</SimpleData>
+		<SimpleData name="COMUNA">13604</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.836261791,-33.540425343</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.29">
+	<name>VALDIVIA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">29</SimpleData>
+		<SimpleData name="ID_GE_BIO">54</SimpleData>
+		<SimpleData name="NOMBRE">VALDIVIA</SimpleData>
+		<SimpleData name="PROPIEDAD">CELULOSA ARAUCO</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA-PETROLEO N°6</SimpleData>
+		<SimpleData name="POTENCIAMW">61</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">279/1998</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1084320000000</SimpleData>
+		<SimpleData name="COORD_ESTE">164878</SimpleData>
+		<SimpleData name="COORD_NORT">5613411</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">14</SimpleData>
+		<SimpleData name="PROVINCIA">141</SimpleData>
+		<SimpleData name="COMUNA">14106</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.900699687,-39.563546217</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.30">
+	<name>VINALES</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">30</SimpleData>
+		<SimpleData name="ID_GE_BIO">56</SimpleData>
+		<SimpleData name="NOMBRE">VINALES</SimpleData>
+		<SimpleData name="PROPIEDAD">PANELES ARAUCO</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">22</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">080/2009</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1372636800000</SimpleData>
+		<SimpleData name="COORD_ESTE">190085</SimpleData>
+		<SimpleData name="COORD_NORT">6080500</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">07</SimpleData>
+		<SimpleData name="PROVINCIA">071</SimpleData>
+		<SimpleData name="COMUNA">07102</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1418169600000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.4110561749999,-35.370723133</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.31">
+	<name>LOMAS COLORADAS</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">31</SimpleData>
+		<SimpleData name="ID_GE_BIO">57</SimpleData>
+		<SimpleData name="NOMBRE">LOMAS COLORADAS</SimpleData>
+		<SimpleData name="PROPIEDAD">ELECTRICA NUEVA ENERGIA S.A.</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOMASA</SimpleData>
+		<SimpleData name="POTENCIAMW">3</SimpleData>
+		<SimpleData name="UNIDADES">1</SimpleData>
+		<SimpleData name="RCA">NO APLICA</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1631836800000</SimpleData>
+		<SimpleData name="COORD_ESTE">129861</SimpleData>
+		<SimpleData name="COORD_NORT">5904090</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">08</SimpleData>
+		<SimpleData name="PROVINCIA">081</SimpleData>
+		<SimpleData name="COMUNA">08102</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1553990400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.1555136379999,-36.936569117</coordinates></Point>
+  </Placemark>
+  <Placemark id="centrales_biomasa.32">
+	<name>DONA JAVIERA</name>
+	<ExtendedData><SchemaData schemaUrl="#centrales_biomasa">
+		<SimpleData name="OBJECTID">32</SimpleData>
+		<SimpleData name="ID_GE_BIO">58</SimpleData>
+		<SimpleData name="NOMBRE">DONA JAVIERA</SimpleData>
+		<SimpleData name="PROPIEDAD">DONA JAVIERA VALLEDOR GENERACION SPA</SimpleData>
+		<SimpleData name="TIPO">BIOENERGIA</SimpleData>
+		<SimpleData name="MEDIO_GENE">PMGD</SimpleData>
+		<SimpleData name="COMBUSTIBL">BIOGAS</SimpleData>
+		<SimpleData name="POTENCIAMW">2.9</SimpleData>
+		<SimpleData name="UNIDADES">3</SimpleData>
+		<SimpleData name="RCA">NO APLICA</SimpleData>
+		<SimpleData name="SIST_ELECT">SEN</SimpleData>
+		<SimpleData name="ESTADO">OPERATIVA</SimpleData>
+		<SimpleData name="F_OPERACIO">1572220800000</SimpleData>
+		<SimpleData name="COORD_ESTE">339154</SimpleData>
+		<SimpleData name="COORD_NORT">6379474</SimpleData>
+		<SimpleData name="HUSO">19 SUR</SimpleData>
+		<SimpleData name="DATUM">WGS 1984</SimpleData>
+		<SimpleData name="REGION">05</SimpleData>
+		<SimpleData name="PROVINCIA">057</SimpleData>
+		<SimpleData name="COMUNA">05701</SimpleData>
+		<SimpleData name="FUENTE_BAS">CNE</SimpleData>
+		<SimpleData name="FECH_CREA">1577750400000</SimpleData>
+		<SimpleData name="FECH_ACT">1688083200000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.716142724,-32.7107735939999</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

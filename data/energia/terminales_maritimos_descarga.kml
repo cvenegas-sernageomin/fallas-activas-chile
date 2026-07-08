@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="terminales_maritimos_descarga" id="terminales_maritimos_descarga">
+	<SimpleField name="OBJECTID" type="string"></SimpleField>
+	<SimpleField name="gml_id" type="string"></SimpleField>
+	<SimpleField name="nombre" type="string"></SimpleField>
+	<SimpleField name="propiedad" type="string"></SimpleField>
+	<SimpleField name="capita_pue" type="string"></SimpleField>
+	<SimpleField name="operador" type="string"></SimpleField>
+	<SimpleField name="tipo" type="string"></SimpleField>
+	<SimpleField name="administra" type="string"></SimpleField>
+	<SimpleField name="estado" type="string"></SimpleField>
+	<SimpleField name="rca" type="string"></SimpleField>
+	<SimpleField name="com_maneja" type="string"></SimpleField>
+	<SimpleField name="sist_elect" type="string"></SimpleField>
+	<SimpleField name="direccion" type="string"></SimpleField>
+	<SimpleField name="contacto" type="string"></SimpleField>
+	<SimpleField name="mail" type="string"></SimpleField>
+	<SimpleField name="coord_este" type="float"></SimpleField>
+	<SimpleField name="coor_norte" type="float"></SimpleField>
+	<SimpleField name="datum" type="string"></SimpleField>
+	<SimpleField name="huso" type="string"></SimpleField>
+	<SimpleField name="region" type="string"></SimpleField>
+	<SimpleField name="provincia" type="string"></SimpleField>
+	<SimpleField name="comuna" type="string"></SimpleField>
+	<SimpleField name="fuente_bas" type="string"></SimpleField>
+	<SimpleField name="fecha_crea" type="string"></SimpleField>
+	<SimpleField name="fecha_act" type="string"></SimpleField>
+</Schema>
+<Folder><name>terminales_maritimos_descarga</name>
+  <Placemark id="terminales_maritimos_descarga.1">
+	<name>EL BATO</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.1</SimpleData>
+		<SimpleData name="nombre">EL BATO</SimpleData>
+		<SimpleData name="propiedad">PETROBRAS</SimpleData>
+		<SimpleData name="capita_pue">QUINTERO</SimpleData>
+		<SimpleData name="operador">COPEC</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">COMPANIA DE PETROLEOS DE CHILE COPEC SA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">DIESEL - KEROSENE DE AVIACION - GASOLINA - IFO 380 - LUBRICANTES</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">CAMINO COSTERO N 1111 LONCURA QUINTERO</SimpleData>
+		<SimpleData name="contacto">ANGELICA HERNANDEZ</SimpleData>
+		<SimpleData name="mail">ESOTZ@COPECCL</SimpleData>
+		<SimpleData name="coord_este">265085.69</SimpleData>
+		<SimpleData name="coor_norte">5371280.65</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.507930556,-32.7713138889999</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.2">
+	<name>SICA-SICA</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.2</SimpleData>
+		<SimpleData name="nombre">SICA-SICA</SimpleData>
+		<SimpleData name="propiedad">TRANSREDES S.A.</SimpleData>
+		<SimpleData name="capita_pue">ARICA</SimpleData>
+		<SimpleData name="operador">TRANSREDES S.A.</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">TRANSREDES SA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">PETROLEO CRUDO - DIESEL OIL</SimpleData>
+		<SimpleData name="sist_elect">SING</SimpleData>
+		<SimpleData name="direccion">CARRETERA ANTIGUA A COCHABAMBA KM 7 1/2 STA CRUZ</SimpleData>
+		<SimpleData name="contacto">JOSE LUIS HERVOSO SOSSI</SimpleData>
+		<SimpleData name="mail">JOSELUISHERVOSO@YPFTRANSPORTECOM</SimpleData>
+		<SimpleData name="coord_este">360652.47</SimpleData>
+		<SimpleData name="coor_norte">7957745.52</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ARICA Y PARINACOTA</SimpleData>
+		<SimpleData name="provincia">ARICA</SimpleData>
+		<SimpleData name="comuna">ARICA</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.319721697,-18.46602602</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.3">
+	<name>COMAP ARICA</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.3</SimpleData>
+		<SimpleData name="nombre">COMAP ARICA</SimpleData>
+		<SimpleData name="propiedad">COMUNIDAD ALMACENADORA DE PETROLEO COMAP</SimpleData>
+		<SimpleData name="capita_pue">ARICA</SimpleData>
+		<SimpleData name="operador">COMUNIDAD ALMACENADORA DE PETROLEO COMAP</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">COPEC SA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">122-2006</SimpleData>
+		<SimpleData name="com_maneja">PETROLEO DIESEL - GASOLINA 93 - GASOLINA 97</SimpleData>
+		<SimpleData name="sist_elect">SING</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">ANGELICA HERNANDEZ</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">360450.44</SimpleData>
+		<SimpleData name="coor_norte">7952876.95</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ARICA Y PARINACOTA</SimpleData>
+		<SimpleData name="provincia">ARICA</SimpleData>
+		<SimpleData name="comuna">ARICA</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.321972042,-18.510003927</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.4">
+	<name>COMAP IQUIQUE</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.4</SimpleData>
+		<SimpleData name="nombre">COMAP IQUIQUE</SimpleData>
+		<SimpleData name="propiedad">COMUNIDAD ALMACENADORA DE PETROLEO COMAP</SimpleData>
+		<SimpleData name="capita_pue">IQUIQUE</SimpleData>
+		<SimpleData name="operador">COMUNIDAD ALMACENADORA DE PETROLEO COMAP</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">COPEC SA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">DIESEL - KEROSENE - GASOLINA 93 - GASOLINA 97 - FUEL OIL N6</SimpleData>
+		<SimpleData name="sist_elect">SING</SimpleData>
+		<SimpleData name="direccion">BARRIO INDUSTRIAL EL COLORADO MANZANA A SITIO 9A</SimpleData>
+		<SimpleData name="contacto">ANGELICA HERNANDEZ</SimpleData>
+		<SimpleData name="mail">OVILLEGAS@COPECCL</SimpleData>
+		<SimpleData name="coord_este">380599.49</SimpleData>
+		<SimpleData name="coor_norte">7766313.59</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE TARAPACA</SimpleData>
+		<SimpleData name="provincia">IQUIQUE</SimpleData>
+		<SimpleData name="comuna">IQUIQUE</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.142809197,-20.1969429759999</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.5">
+	<name>PETROBRAS</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.5</SimpleData>
+		<SimpleData name="nombre">PETROBRAS</SimpleData>
+		<SimpleData name="propiedad">PETROBRAS</SimpleData>
+		<SimpleData name="capita_pue">IQUIQUE</SimpleData>
+		<SimpleData name="operador">PETROBRAS</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">TERMINAL MARITIMO PETROBRAS</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">DIESEL - KEROSENE - GASOLINA 93 - GASOLINA 97 - FUEL OIL N6</SimpleData>
+		<SimpleData name="sist_elect">SING</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">CARLOS MARTINES</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">379907.31</SimpleData>
+		<SimpleData name="coor_norte">7766444.37</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE TARAPACA</SimpleData>
+		<SimpleData name="provincia">IQUIQUE</SimpleData>
+		<SimpleData name="comuna">IQUIQUE</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.149424542,-20.195718229</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.6">
+	<name>MUELLE ELECTROANDINA</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.6</SimpleData>
+		<SimpleData name="nombre">MUELLE ELECTROANDINA</SimpleData>
+		<SimpleData name="propiedad">ELECTROANDINA</SimpleData>
+		<SimpleData name="capita_pue">TOCOPILLA</SimpleData>
+		<SimpleData name="operador">ELECTROANDINA</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">S/I</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">80-2000/171-2003</SimpleData>
+		<SimpleData name="com_maneja">SODA CAUSTICA - DIESEL - FUEL OIL N6</SimpleData>
+		<SimpleData name="sist_elect">SING</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">JAMES BROWN ROJAS</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">374752.82</SimpleData>
+		<SimpleData name="coor_norte">7556542.55</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ANTOFAGASTA</SimpleData>
+		<SimpleData name="provincia">TOCOPILLA</SimpleData>
+		<SimpleData name="comuna">TOCOPILLA</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.214105483,-22.0915320579999</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.7">
+	<name>PETROBRAS</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.7</SimpleData>
+		<SimpleData name="nombre">PETROBRAS</SimpleData>
+		<SimpleData name="propiedad">SHELL CHILE S.A.C.I.</SimpleData>
+		<SimpleData name="capita_pue">ANTOFAGASTA</SimpleData>
+		<SimpleData name="operador">SHELL CHILE S.A.C.I.</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">S/I</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">39-2012</SimpleData>
+		<SimpleData name="com_maneja">COMBUSTIBLES - LUBRICANTES</SimpleData>
+		<SimpleData name="sist_elect">SING</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">RUBEN VALENZUELA</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">357537.76</SimpleData>
+		<SimpleData name="coor_norte">7387862.99</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ANTOFAGASTA</SimpleData>
+		<SimpleData name="provincia">ANTOFAGASTA</SimpleData>
+		<SimpleData name="comuna">ANTOFAGASTA</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.396422974,-23.613543609</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.8">
+	<name>GNL MEJILLONES</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.8</SimpleData>
+		<SimpleData name="nombre">GNL MEJILLONES</SimpleData>
+		<SimpleData name="propiedad">SOCIEDAD GNL MEJILLONES S.A.</SimpleData>
+		<SimpleData name="capita_pue">MEJILLONES</SimpleData>
+		<SimpleData name="operador">SOCIEDAD GNL MEJILLONES S.A.</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">RICARDO ADRIAN CAMPANO GANDARA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">54-2008</SimpleData>
+		<SimpleData name="com_maneja">GAS NATURAL</SimpleData>
+		<SimpleData name="sist_elect">SING</SimpleData>
+		<SimpleData name="direccion">PUERTO 1 N 8000 BARRIO INDUSTRIAL MEJILLONES</SimpleData>
+		<SimpleData name="contacto">JEAN MICHEL CABRERAS</SimpleData>
+		<SimpleData name="mail">NELSONGARRIDO@GNLMCL</SimpleData>
+		<SimpleData name="coord_este">359594.83</SimpleData>
+		<SimpleData name="coor_norte">7450865.76</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ANTOFAGASTA</SimpleData>
+		<SimpleData name="provincia">ANTOFAGASTA</SimpleData>
+		<SimpleData name="comuna">MEJILLONES</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.3704146979999,-23.044779552</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.9">
+	<name>TERMINAL MARITIMO PETROLERO</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.9</SimpleData>
+		<SimpleData name="nombre">TERMINAL MARITIMO PETROLERO</SimpleData>
+		<SimpleData name="propiedad">CODELCO CHILE DIVISION EL SALVADOR</SimpleData>
+		<SimpleData name="capita_pue">CHANARAL</SimpleData>
+		<SimpleData name="operador">CODELCO CHILE DIVISION EL SALVADOR</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">ULTRAPORT</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">DIESEL - FUEL OIL</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">LUIS GUERRA</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">335756.02</SimpleData>
+		<SimpleData name="coor_norte">7083782.86</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ATACAMA</SimpleData>
+		<SimpleData name="provincia">CHANARAL</SimpleData>
+		<SimpleData name="comuna">CHANARAL</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.646027967,-26.356541638</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.10">
+	<name>ROCAS NEGRAS</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.10</SimpleData>
+		<SimpleData name="nombre">ROCAS NEGRAS</SimpleData>
+		<SimpleData name="propiedad">COPEC</SimpleData>
+		<SimpleData name="capita_pue">CALDERA</SimpleData>
+		<SimpleData name="operador">COPEC</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">COMPANIA DE PETROLEOS DE CHILE COPEC SA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">PETROLEO - GASOLINA</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">ANGELICA HERNANDEZ</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">320108.81</SimpleData>
+		<SimpleData name="coor_norte">7006959.93</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ATACAMA</SimpleData>
+		<SimpleData name="provincia">COPIAPO</SimpleData>
+		<SimpleData name="comuna">CALDERA</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.813732552,-27.047939721</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.11">
+	<name>GUACOLDA I</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.11</SimpleData>
+		<SimpleData name="nombre">GUACOLDA I</SimpleData>
+		<SimpleData name="propiedad">EMPRESA ELECTRICA GUACOLDA S.A.</SimpleData>
+		<SimpleData name="capita_pue">HUASCO</SimpleData>
+		<SimpleData name="operador">EMPRESA ELECTRICA GUACOLDA S.A.</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">S/I</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">IFO 180 - DIESEL</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">JORGE MLADINEO</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">279467.95</SimpleData>
+		<SimpleData name="coor_norte">6849293.55</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ATACAMA</SimpleData>
+		<SimpleData name="provincia">HUASCO</SimpleData>
+		<SimpleData name="comuna">HUASCO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.2523563,-28.4643253359999</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.12">
+	<name>GUACOLDA II</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.12</SimpleData>
+		<SimpleData name="nombre">GUACOLDA II</SimpleData>
+		<SimpleData name="propiedad">CIA. MINERA DEL PACIFICO S.A.</SimpleData>
+		<SimpleData name="capita_pue">HUASCO</SimpleData>
+		<SimpleData name="operador">CIA. MINERA DEL PACIFICO S.A.</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">S/I</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">IFO 380 - DIESEL</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">JORGE CEPEDA</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">279790.83</SimpleData>
+		<SimpleData name="coor_norte">6848935.46</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE ATACAMA</SimpleData>
+		<SimpleData name="provincia">HUASCO</SimpleData>
+		<SimpleData name="comuna">HUASCO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.2491291429999,-28.467609753</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.13">
+	<name>COPEC GUAYACAN</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.13</SimpleData>
+		<SimpleData name="nombre">COPEC GUAYACAN</SimpleData>
+		<SimpleData name="propiedad">COPEC</SimpleData>
+		<SimpleData name="capita_pue">COQUIMBO</SimpleData>
+		<SimpleData name="operador">COPEC</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">MIGUEL ZUVIC MUJICA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">GAS 93/97 - KEROSENE - PETROLEO</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">ANGELICA HERNANDEZ</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">272968.64</SimpleData>
+		<SimpleData name="coor_norte">6682247.88</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE COQUIMBO</SimpleData>
+		<SimpleData name="provincia">ELQUI</SimpleData>
+		<SimpleData name="comuna">COQUIMBO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.3528832809999,-29.969652745</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.14">
+	<name>MULTIBOYA LPG</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.14</SimpleData>
+		<SimpleData name="nombre">MULTIBOYA LPG</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="capita_pue">QUINTERO</SimpleData>
+		<SimpleData name="operador">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">PROPANO - BUTANO - PRODUCTOS LIMPIOS</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">PATRICIO FARFAN</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">265915.93</SimpleData>
+		<SimpleData name="coor_norte">6371531.77</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.499011759,-32.769228789</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.15">
+	<name>MULTIBOYA CRUDO</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.15</SimpleData>
+		<SimpleData name="nombre">MULTIBOYA CRUDO</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="capita_pue">QUINTERO</SimpleData>
+		<SimpleData name="operador">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">FUEL OIL - PRODUCTOS LIMPIOS - CRUDO - IFO 180</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">PATRICIO FARFAN</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">265943.64</SimpleData>
+		<SimpleData name="coor_norte">6371892.67</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.498625257,-32.765982218</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.16">
+	<name>MONOBOYA</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.16</SimpleData>
+		<SimpleData name="nombre">MONOBOYA</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="capita_pue">QUINTERO</SimpleData>
+		<SimpleData name="operador">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="tipo">TERMINAL MONOBOYA</SimpleData>
+		<SimpleData name="administra">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">CRUDO</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">PATRICIO FARFAN</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">264139.01</SimpleData>
+		<SimpleData name="coor_norte">6372239.98</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.517786079,-32.762466697</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.17">
+	<name>TERMINAL BARCAZA</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.17</SimpleData>
+		<SimpleData name="nombre">TERMINAL BARCAZA</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="capita_pue">QUINTERO</SimpleData>
+		<SimpleData name="operador">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">584-2000</SimpleData>
+		<SimpleData name="com_maneja">IFOS - DIESEL MARINO</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">PATRICIO FARFAN</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">266271.83</SimpleData>
+		<SimpleData name="coor_norte">6371370</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.4952560959999,-32.7707623909999</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.18">
+	<name>OXIQUIM S.A.</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.18</SimpleData>
+		<SimpleData name="nombre">OXIQUIM S.A.</SimpleData>
+		<SimpleData name="propiedad">OXIQUIM S.A.</SimpleData>
+		<SimpleData name="capita_pue">QUINTERO</SimpleData>
+		<SimpleData name="operador">OXIQUIM S.A.</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">OXIQUIM SA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">24-2013</SimpleData>
+		<SimpleData name="com_maneja">LPG</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">MARTIN LOPEZ</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">266226.87</SimpleData>
+		<SimpleData name="coor_norte">6372321.66</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.495496241,-32.762176348</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.19">
+	<name>PUERTO VENTANAS</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.19</SimpleData>
+		<SimpleData name="nombre">PUERTO VENTANAS</SimpleData>
+		<SimpleData name="propiedad">PUERTO VENTANAS S.A</SimpleData>
+		<SimpleData name="capita_pue">QUINTERO</SimpleData>
+		<SimpleData name="operador">PUERTO VENTANAS S.A</SimpleData>
+		<SimpleData name="tipo">TERMINAL GRANEL - LIQUIDO</SimpleData>
+		<SimpleData name="administra">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">S/I</SimpleData>
+		<SimpleData name="com_maneja">IFO 180 - IFO 380 - ASFALTO - FUEL OIL</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">S/I</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">266181.27</SimpleData>
+		<SimpleData name="coor_norte">6373379.36</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.495716554,-32.7526345119999</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.20">
+	<name>GNL QUINTERO</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.20</SimpleData>
+		<SimpleData name="nombre">GNL QUINTERO</SimpleData>
+		<SimpleData name="propiedad">GNL QUINTERO S.A.</SimpleData>
+		<SimpleData name="capita_pue">QUINTERO</SimpleData>
+		<SimpleData name="operador">GNL QUINTEROS S.A.</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">GNL QUINTEROS S.A.</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">232-2005/ 141-2007</SimpleData>
+		<SimpleData name="com_maneja">GNL</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">CLAUDIO DAGACH</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">265061.55</SimpleData>
+		<SimpleData name="coor_norte">6371764.79</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">VALPARAISO</SimpleData>
+		<SimpleData name="comuna">QUINTERO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-71.508066399,-32.766946584</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.21">
+	<name>CABO NEGRO MUELLE N1</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.21</SimpleData>
+		<SimpleData name="nombre">CABO NEGRO MUELLE N1</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS MAGALLANES</SimpleData>
+		<SimpleData name="capita_pue">PUNTA ARENAS</SimpleData>
+		<SimpleData name="operador">ENAP REFINERIAS MAGALLANES</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">ENAP - MAGALLANES</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">DIESEL - KEROSENE - GASOLINA</SimpleData>
+		<SimpleData name="sist_elect">MAGALLANES</SimpleData>
+		<SimpleData name="direccion">KM 28 NORTE CASILLA 247</SimpleData>
+		<SimpleData name="contacto">ROMY MALDONADO</SimpleData>
+		<SimpleData name="mail">VARANIS@MAGENAPCL</SimpleData>
+		<SimpleData name="coord_este">378805.33</SimpleData>
+		<SimpleData name="coor_norte">4134025.48</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">MAGALLANES</SimpleData>
+		<SimpleData name="comuna">PUNTA ARENAS</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.803055622,-52.929722221</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.22">
+	<name>CABO NEGRO MUELLE N2</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.22</SimpleData>
+		<SimpleData name="nombre">CABO NEGRO MUELLE N2</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS MAGALLANES</SimpleData>
+		<SimpleData name="capita_pue">PUNTA ARENAS</SimpleData>
+		<SimpleData name="operador">ENAP REFINERIAS MAGALLANES</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">ENAP - MAGALLANES</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">33-2001</SimpleData>
+		<SimpleData name="com_maneja">DIESEL - KEROSENE - GASOLINA</SimpleData>
+		<SimpleData name="sist_elect">MAGALLANES</SimpleData>
+		<SimpleData name="direccion">KM 28 NORTE CASILLA 247</SimpleData>
+		<SimpleData name="contacto">ROMY MALDONADO</SimpleData>
+		<SimpleData name="mail">VARANIS@MAGENAPCL</SimpleData>
+		<SimpleData name="coord_este">379183.78</SimpleData>
+		<SimpleData name="coor_norte">4134018.71</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">MAGALLANES</SimpleData>
+		<SimpleData name="comuna">PUNTA ARENAS</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.797430838,-52.929868327</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.23">
+	<name>TERMINAL MARITIMO GREGORIO</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.23</SimpleData>
+		<SimpleData name="nombre">TERMINAL MARITIMO GREGORIO</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS MAGALLANES</SimpleData>
+		<SimpleData name="capita_pue">PUNTA DELGADA</SimpleData>
+		<SimpleData name="operador">ENAP REFINERIAS MAGALLANES</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">ENAP - MAGALLANES</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">NC</SimpleData>
+		<SimpleData name="com_maneja">CRUDO - KEROSENE - DIESEL - NAFTA</SimpleData>
+		<SimpleData name="sist_elect">MAGALLANES</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">VICTOR ARANIS</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">419015.49</SimpleData>
+		<SimpleData name="coor_norte">4169057.61</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE MAGALLANES Y ANTARTICA CHILENA</SimpleData>
+		<SimpleData name="provincia">MAGALLANES</SimpleData>
+		<SimpleData name="comuna">SAN GREGORIO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.1963488599999,-52.622431416</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.24">
+	<name>MUELLE ABASTIBLE</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.24</SimpleData>
+		<SimpleData name="nombre">MUELLE ABASTIBLE</SimpleData>
+		<SimpleData name="propiedad">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="capita_pue">SAN VICENTE</SimpleData>
+		<SimpleData name="operador">ABASTIBLE S.A.</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">ABASTIBLE SA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">176-2002</SimpleData>
+		<SimpleData name="com_maneja">LPG - COMBUSTIBLES LIMPIOS</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">NESTOR COFRE</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">664137.86</SimpleData>
+		<SimpleData name="coor_norte">5931251.29</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">TALCAHUANO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.1613440149999,-36.7502972409999</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.25">
+	<name>MUELLE ENAP</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.25</SimpleData>
+		<SimpleData name="nombre">MUELLE ENAP</SimpleData>
+		<SimpleData name="propiedad">ENAP</SimpleData>
+		<SimpleData name="capita_pue">SAN VICENTE</SimpleData>
+		<SimpleData name="operador">ENAP</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">ENAP REFINERIAS S.A.</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">325-2001</SimpleData>
+		<SimpleData name="com_maneja">CRUDO - FUEL OIL - PRODUCTOS LIMPIOS</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">NESTOR OSSES</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">666596.58</SimpleData>
+		<SimpleData name="coor_norte">5932886.74</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">TALCAHUANO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.13417168,-36.7351331</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.26">
+	<name>ESCUADRON</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.26</SimpleData>
+		<SimpleData name="nombre">ESCUADRON</SimpleData>
+		<SimpleData name="propiedad">OXIQUIM S.A.</SimpleData>
+		<SimpleData name="capita_pue">CORONEL</SimpleData>
+		<SimpleData name="operador">OXIQUIM S.A.</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">OXIQUIM SA</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">HIDROCARBUROS</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">MARTIN LOPEZ</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">663176.04</SimpleData>
+		<SimpleData name="coor_norte">5909764.1</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DEL BIOBIO</SimpleData>
+		<SimpleData name="provincia">CONCEPCION</SimpleData>
+		<SimpleData name="comuna">CORONEL</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.167497253,-36.9440638789999</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.27">
+	<name>MUELLE SAN JOSE</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.27</SimpleData>
+		<SimpleData name="nombre">MUELLE SAN JOSE</SimpleData>
+		<SimpleData name="propiedad">PORTUARIA CABO FROWARD</SimpleData>
+		<SimpleData name="capita_pue">CALBUCO</SimpleData>
+		<SimpleData name="operador">PORTUARIA CABO FROWARD</SimpleData>
+		<SimpleData name="tipo">MUELLE</SimpleData>
+		<SimpleData name="administra">EMPRESA PORTUARIA CABO FROWARD</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">766-2007/645-2008</SimpleData>
+		<SimpleData name="com_maneja">DIESEL - GASOLINA 93 - GASOLINA 97 - KEROSENE DE AVIACION</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">ISLA QUIHUA S/N COMUNA DE CALBUCO</SimpleData>
+		<SimpleData name="contacto">FERNNDO ORELLANA</SimpleData>
+		<SimpleData name="mail">INFO@FROWARDCL</SimpleData>
+		<SimpleData name="coord_este">655376.65</SimpleData>
+		<SimpleData name="coor_norte">5373360.78</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE LOS LAGOS</SimpleData>
+		<SimpleData name="provincia">LLANQUIHUE</SimpleData>
+		<SimpleData name="comuna">CALBUCO</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.130438595,-41.776394433</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.28">
+	<name>TERMINAL MARITIMO COPEC</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">28</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.28</SimpleData>
+		<SimpleData name="nombre">TERMINAL MARITIMO COPEC</SimpleData>
+		<SimpleData name="propiedad">COPEC</SimpleData>
+		<SimpleData name="capita_pue">CHACABUCO</SimpleData>
+		<SimpleData name="operador">COPEC</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">COMPANIA DE PETROLEOS DE CHILE COPEC S.A.</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">GASOLINA 93 - PETROLEO DIESEL - KEROSENE - GASOLINA 97</SimpleData>
+		<SimpleData name="sist_elect">AYSEN</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">ANGELICA HERNANDEZ</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">669966.06</SimpleData>
+		<SimpleData name="coor_norte">4963479.75</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE AYSEN</SimpleData>
+		<SimpleData name="provincia">AYSEN</SimpleData>
+		<SimpleData name="comuna">AYSEN</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.8259573829999,-45.461517826</coordinates></Point>
+  </Placemark>
+  <Placemark id="terminales_maritimos_descarga.29">
+	<name>VINAPU</name>
+	<ExtendedData><SchemaData schemaUrl="#terminales_maritimos_descarga">
+		<SimpleData name="OBJECTID">29</SimpleData>
+		<SimpleData name="gml_id">terminales_mar_timos_1f3de3a3_44d9_4500_abab_f9099d017a26.29</SimpleData>
+		<SimpleData name="nombre">VINAPU</SimpleData>
+		<SimpleData name="propiedad">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="capita_pue">ISLA DE PASCUA</SimpleData>
+		<SimpleData name="operador">ENAP REFINERIAS ACONCAGUA</SimpleData>
+		<SimpleData name="tipo">TERMINAL MARITIMO MULTIBOYA</SimpleData>
+		<SimpleData name="administra">S/I</SimpleData>
+		<SimpleData name="estado">EN OPERACION</SimpleData>
+		<SimpleData name="rca">N/C</SimpleData>
+		<SimpleData name="com_maneja">DIESEL - KEROSENE DE AVIACION - GASOLINA</SimpleData>
+		<SimpleData name="sist_elect">SIC</SimpleData>
+		<SimpleData name="direccion">S/I</SimpleData>
+		<SimpleData name="contacto">PATRICIO FARFAN</SimpleData>
+		<SimpleData name="mail">S/I</SimpleData>
+		<SimpleData name="coord_este">658005.69</SimpleData>
+		<SimpleData name="coor_norte">6993299.04</SimpleData>
+		<SimpleData name="datum">WGS-84</SimpleData>
+		<SimpleData name="huso">19S</SimpleData>
+		<SimpleData name="region">REGION DE VALPARAISO</SimpleData>
+		<SimpleData name="provincia">ISLA DE PASCUA</SimpleData>
+		<SimpleData name="comuna">ISLA DE PASCUA</SimpleData>
+		<SimpleData name="fuente_bas">DIRECTEMAR</SimpleData>
+		<SimpleData name="fecha_crea">2014-12-10</SimpleData>
+		<SimpleData name="fecha_act">2016-08-25</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-109.405105556,-27.1738999999999</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
