@@ -12,7 +12,7 @@ from kmz_utils import extraer_doc_kml
 
 RAIZ_INFRA = Path(__file__).resolve().parent.parent.parent / "infraestructura-critica-chile"
 DESTINO_DATA = Path(__file__).resolve().parent.parent / "data"
-EXCLUIR = {"red_vial"}
+EXCLUIR = {"red_vial", "relaves_sernageomin_2018"}
 
 
 def rutas_kmz(raiz_infra: Path):
