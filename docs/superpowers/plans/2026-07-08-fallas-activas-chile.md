@@ -15,12 +15,12 @@
 ## Context already established (do not re-derive)
 
 - Spec is written, reviewed, and committed at `fallas-activas-chile/docs/superpowers/specs/2026-07-08-fallas-activas-chile-design.md`. `fallas-activas-chile/` already has its own local git repo (`git init` was run in that folder; do not re-init).
-- The national CHAF v1 KMZ (959 faults) downloads directly, no auth, from
+- The national CHAF v1 KMZ (958 faults) downloads directly, no auth, from
   `https://download.pangaea.de/dataset/922241/files/CHAF_Pangaea_v1.kmz` — verified reachable (HTTP 200) during design.
 - Source infrastructure data already exists as 26 KMZ files under
   `infraestructura-critica-chile/{agua,energia,relaves,salud,transporte}/*.kmz` (sibling directory to `fallas-activas-chile/`, i.e. `../infraestructura-critica-chile/` relative to it). Verified geometry types and feature counts for every one of the 26 shapefiles behind those KMZ (see table in Task 5).
 - `infraestructura-critica-chile/transporte/red_vial.shp` has 12,609 features / ~7.0M vertices in EPSG:4326. Tested `simplify(0.0005, preserve_topology=True)` → 156,162 vertices (97.8% reduction) → resulting KML ≈ 19.9 MB (down from an unsimplified KML that would be far larger than the 72 MB *compressed* KMZ). This tolerance is the one to use.
-- The complete `visor-web/index.html` (below, Task 6) was already drafted and **manually verified working** in a real browser preview during planning: sidebar renders, all 5 sector subsections + fault section expand/collapse correctly, badges compute correctly (959 for faults, `N/26` for infra), a "points" layer (synthetic bocatomas fixture), a "lines" layer (synthetic CHAF fixture), and a `MultiGeometry` "lines" layer (synthetic gasoductos fixture, 2-segment) all parsed and rendered with correct popups, and the fetch-failure path (missing file → inline error, checkbox unchecks itself) was verified too. One real bug was found and fixed during this prototyping: **a Web Worker created from a `Blob` has no page URL to resolve relative paths against** — posting a relative path like `"../data/x.kml"` to the worker throws `Failed to parse URL`. Fix already applied in the code below: `fetchKml` always resolves `new URL(..., document.baseURI).href` to an absolute URL *before* posting to the worker. Do not reintroduce a relative URL there.
+- The complete `visor-web/index.html` (below, Task 6) was already drafted and **manually verified working** in a real browser preview during planning: sidebar renders, all 5 sector subsections + fault section expand/collapse correctly, badges compute correctly (958 for faults, `N/26` for infra), a "points" layer (synthetic bocatomas fixture), a "lines" layer (synthetic CHAF fixture), and a `MultiGeometry` "lines" layer (synthetic gasoductos fixture, 2-segment) all parsed and rendered with correct popups, and the fetch-failure path (missing file → inline error, checkbox unchecks itself) was verified too. One real bug was found and fixed during this prototyping: **a Web Worker created from a `Blob` has no page URL to resolve relative paths against** — posting a relative path like `"../data/x.kml"` to the worker throws `Failed to parse URL`. Fix already applied in the code below: `fetchKml` always resolves `new URL(..., document.baseURI).href` to an absolute URL *before* posting to the worker. Do not reintroduce a relative URL there.
 - No JS unit-test framework is used for this visor (matches existing project convention for `alertas-redes`/`cuencas-chile` — verified manually via browser preview, not automated tests). Python tools DO get pytest tests (matches `catastro-fallas` convention).
 
 ---
@@ -185,7 +185,7 @@ from kmz_utils import contar_placemarks, extraer_doc_kml
 
 URL_CHAF = "https://download.pangaea.de/dataset/922241/files/CHAF_Pangaea_v1.kmz"
 DESTINO = Path(__file__).resolve().parent.parent / "data" / "red_fallas.kml"
-TOTAL_ESPERADO = 959
+TOTAL_ESPERADO = 958
 
 
 def descargar_kmz(url: str) -> bytes:
@@ -215,18 +215,18 @@ if __name__ == "__main__":
 - [ ] **Step 2: Run it for real**
 
 Run: `cd fallas-activas-chile && python tools/descargar_chaf.py`
-Expected output includes: `959 fallas (Placemarks)` and `Escrito: .../data/red_fallas.kml` — no `ADVERTENCIA` line.
+Expected output includes: `958 fallas (Placemarks)` and `Escrito: .../data/red_fallas.kml` — no `ADVERTENCIA` line.
 
 - [ ] **Step 3: Sanity-check the output file**
 
 Run: `python -c "print(open('fallas-activas-chile/data/red_fallas.kml', encoding='utf-8').read().count('<Placemark'))"`
-Expected: `959`
+Expected: `958`
 
 - [ ] **Step 4: Commit (script + generated data — data is static, committed per spec)**
 
 ```bash
 git add tools/descargar_chaf.py data/red_fallas.kml
-git commit -m "feat: download national CHAF v1 fault catalog (959 faults)"
+git commit -m "feat: download national CHAF v1 fault catalog (958 faults)"
 ```
 
 ---
@@ -1017,7 +1017,7 @@ function App() {
 
       {!collapsed && <div className="pbody">
       <Section title="🪨 Fallas Activas (CHAF v1)" open={fallasOpen} onToggle={() => setFallasOpen(!fallasOpen)}
-        badge={layerState.fallas && layerState.fallas.total != null ? layerState.fallas.total : "959"}>
+        badge={layerState.fallas && layerState.fallas.total != null ? layerState.fallas.total : "958"}>
         <LayerRow def={FALLAS_DEF} state={layerState.fallas} onToggle={toggleLayer} />
         <div style={{ marginTop: 6 }}>
           <St color={COLOR_ACTIVIDAD.Proved} label="Proved (confirmada)" value="" />
@@ -1091,7 +1091,7 @@ Add this entry to `.claude/launch.json` (repo root `Documents/Claude/.claude/lau
 
 - [ ] **Step 3: Load the page and check for console errors (no real data needed for this check)**
 
-Use `preview_start` with name `fallas-activas-preview`, then navigate to `/visor-web/index.html`, then check `preview_console_logs` (level `all`). Expected: no errors. Expected visible content (via `preview_eval` reading `document.getElementById('root').innerText`, since the accessibility snapshot tool has a known staleness bug documented in memory `feedback-preview-mcp-roto` — trust `preview_eval`, not `preview_snapshot`, for this): panel shows "🪨 Fallas Activas (CHAF v1)" with badge `959` and "🏗️ Infraestructura Crítica" with badge `0/26`.
+Use `preview_start` with name `fallas-activas-preview`, then navigate to `/visor-web/index.html`, then check `preview_console_logs` (level `all`). Expected: no errors. Expected visible content (via `preview_eval` reading `document.getElementById('root').innerText`, since the accessibility snapshot tool has a known staleness bug documented in memory `feedback-preview-mcp-roto` — trust `preview_eval`, not `preview_snapshot`, for this): panel shows "🪨 Fallas Activas (CHAF v1)" with badge `958` and "🏗️ Infraestructura Crítica" with badge `0/26`.
 
 - [ ] **Step 4: Commit**
 
@@ -1115,7 +1115,7 @@ Use `preview_start` with name `fallas-activas-preview` (added in Task 6), naviga
 - [ ] **Step 2: Verify the fault layer against real data**
 
 Via `preview_eval`: click the "🪨 Fallas Activas (CHAF v1)" section header to expand it, then click its checkbox, wait ~1s, then read `document.getElementById('root').innerText`.
-Expected: badge changes to `959` (same number, now backed by real data instead of the hardcoded fallback), no `⚠` error line, and the "Proved (confirmada)" / "Probable" / "Possible" legend rows are still visible.
+Expected: badge changes to `958` (same number, now backed by real data instead of the hardcoded fallback), no `⚠` error line, and the "Proved (confirmada)" / "Probable" / "Possible" legend rows are still visible.
 
 - [ ] **Step 3: Verify a representative infrastructure layer of each geometry kind**
 
@@ -1203,7 +1203,7 @@ Then check the Actions run for "pages build and deployment" completes with `"con
 
 - [ ] **Step 5: Open the published URL and repeat Task 7's Steps 2–4 against it**
 
-`https://cvenegas-sernageomin.github.io/fallas-activas-chile/` — confirm the fault layer badge shows `959` and at least one infrastructure layer loads with the expected count, fetching from `raw.githubusercontent.com/cvenegas-sernageomin/fallas-activas-chile/main/data/...` (not `../data`, since `location.hostname` is no longer `localhost`).
+`https://cvenegas-sernageomin.github.io/fallas-activas-chile/` — confirm the fault layer badge shows `958` and at least one infrastructure layer loads with the expected count, fetching from `raw.githubusercontent.com/cvenegas-sernageomin/fallas-activas-chile/main/data/...` (not `../data`, since `location.hostname` is no longer `localhost`).
 
 ---
 

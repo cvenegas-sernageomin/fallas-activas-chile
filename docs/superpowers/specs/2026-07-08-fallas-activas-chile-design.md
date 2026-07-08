@@ -9,7 +9,7 @@ SERNAGEOMIN necesita un visor web que combine dos capas de información nacional
 1. **Fallas activas y potencialmente activas** — catálogo CHAF v1 (Melnick, Maldonado &
    Contreras, 2020; *Database of active and potentially-active continental faults in
    Chile at 1:25,000 scale*; PANGAEA, doi:10.1594/PANGAEA.922241; CC-BY 4.0;
-   [fallasactivas.cl](https://fallasactivas.cl/)). 959 trazas de falla agrupadas en 17
+   [fallasactivas.cl](https://fallasactivas.cl/)). 958 trazas de falla agrupadas en 17
    sistemas, clasificadas por confiabilidad (78 Proved, 592 Probable, 288 Possible).
 2. **Infraestructura crítica de Chile** — 26 capas ya descargadas y convertidas a KMZ en
    `infraestructura-critica-chile/`, repartidas en 5 sectores: agua, energía, relaves,
@@ -132,7 +132,7 @@ queda cacheado en memoria (no se vuelve a pedir si se desactiva/reactiva la mism
 
 **Panel lateral (acordeón)**
 
-- Sección "🪨 Fallas Activas (CHAF v1)" — badge = 959, leyenda de color por actividad,
+- Sección "🪨 Fallas Activas (CHAF v1)" — badge = 958, leyenda de color por actividad,
   checkbox único para mostrar/ocultar toda la capa.
 - Sección "🏗️ Infraestructura Crítica" — con 5 subsecciones anidadas (una por sector:
   agua, energía, relaves, salud, transporte), cada una con checkboxes individuales por
@@ -155,7 +155,7 @@ queda cacheado en memoria (no se vuelve a pedir si se desactiva/reactiva la mism
 - Sin tests automatizados de UI — mismo criterio que cuencas/glaciares en alertas-redes:
   el juicio del usuario (geólogo) sobre la visualización es la validación real.
 - Verificación manual antes de dar por terminado: badges de conteo coinciden con las
-  fuentes (959 fallas, conteo real de features por capa de infraestructura), click en al
+  fuentes (958 fallas, conteo real de features por capa de infraestructura), click en al
   menos un elemento de cada tipo de geometría (punto, línea, y la propia falla) muestra su
   popup con datos coherentes, sin errores en consola del navegador.
 - Si se agrega test automatizado para el nuevo parser de líneas, va en Python simple
