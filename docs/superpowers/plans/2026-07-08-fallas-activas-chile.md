@@ -1160,14 +1160,222 @@ temporarily add `window.__debugGroups = groups.current;` right after the line
 Expected: a popup HTML dump starting with the placemark's title, followed by a table of
 its non-empty attributes (e.g. `NOMCAN`, `REGION` for bocatomas) — confirms
 `tablaAtributos`/`tituloPopup` work against the real file, not just Task 6's synthetic
-fixtures. **Remove the temporary `window.__debugGroups` line before Task 8** (it's a
-debug aid, not part of the shipped file).
+fixtures. **Remove the temporary `window.__debugGroups` line before publishing (Task 9)**
+(it's a debug aid, not part of the shipped file).
 
 - [ ] **Step 6: No commit needed for this task** (verification only, no file changes)
 
 ---
 
-## Task 8: Publish to GitHub Pages
+## Task 8: Replace outdated relaves layer with the Oct-2025 SERNAGEOMIN catastro
+
+**Context:** the `relaves_sernageomin_2018.kml` layer (742 features, sourced from `infraestructura-critica-chile/relaves/`) is outdated. The user provided a newer, official, more complete catastro directly: `Fallas Activas/Info/CATASTRO_RELAVES_CHILE_OCT2025.xlsx` (a sibling directory to this repo, same as `infraestructura-critica-chile/`), sheet `CDR_CHILE`, 836 records with real `LATITUD`/`LONGITUD` in WGS84 decimal degrees (columns verified during planning: no missing coordinates, lat range -46.86 to -20.61, lon range -72.67 to -68.44 — plausible for Chile). Data starts at row index 6 (0-indexed header row; rows 0-5 are title/metadata). `ESTADO_INSTALACION` breakdown: ABANDONADO=455, INACTIVO=223, ACTIVO=129, EN CONSTRUCCION=19, ELIMINADO=8, EN REVISION=2 (sums to 836).
+
+**Files:**
+- Create: `fallas-activas-chile/tools/convertir_catastro_relaves.py`
+- Test: `fallas-activas-chile/tools/tests/test_convertir_catastro_relaves.py`
+- Modify: `fallas-activas-chile/tools/extraer_kmls_infra.py` (add `"relaves_sernageomin_2018"` to `EXCLUIR`, so future re-runs against the sibling `infraestructura-critica-chile/` don't resurrect the superseded file)
+- Modify: `fallas-activas-chile/tools/tests/test_extraer_kmls_infra.py` (extend the exclusion test to cover both excluded names)
+- Modify: `fallas-activas-chile/visor-web/index.html` (swap the `relaves_sernageomin_2018` entry in `LAYER_DEFS` for `relaves_sernageomin_2025`)
+- Produces: `fallas-activas-chile/data/relaves/relaves_sernageomin_2025.kml`
+- Delete: `fallas-activas-chile/data/relaves/relaves_sernageomin_2018.kml` (superseded)
+
+- [ ] **Step 1: Write the failing tests**
+
+`tools/tests/test_convertir_catastro_relaves.py`:
+```python
+import pandas as pd
+
+from convertir_catastro_relaves import construir_geodataframe
+
+
+def _df_prueba():
+    return pd.DataFrame({
+        "NOMBRE_FAENA": ["FAENA A", "FAENA B", "FAENA C"],
+        "NOMBRE_INSTALACION": ["DEPOSITO 1", "DEPOSITO 2", "SIN COORDENADAS"],
+        "LATITUD": [-33.5, -20.9, None],
+        "LONGITUD": [-70.6, -68.6, None],
+        "ESTADO_INSTALACION": ["ACTIVO", "ABANDONADO", "ACTIVO"],
+        "FECHA_RES_APRUEBA": pd.to_datetime(["2022-12-05", None, "2019-01-01"]),
+        "RES_PDC_APRUEBA": [None, 123, None],
+    })
+
+
+def test_construir_geodataframe_arma_geometria_desde_lat_lon():
+    gdf = construir_geodataframe(_df_prueba())
+    assert len(gdf) == 2  # la fila sin coordenadas se descarta
+    assert gdf.crs.to_epsg() == 4326
+    assert gdf.geometry.iloc[0].x == -70.6
+    assert gdf.geometry.iloc[0].y == -33.5
+
+
+def test_construir_geodataframe_arma_nombre_legible():
+    gdf = construir_geodataframe(_df_prueba())
+    assert gdf["Name"].iloc[0] == "FAENA A - DEPOSITO 1"
+    assert gdf["Name"].iloc[1] == "FAENA B - DEPOSITO 2"
+
+
+def test_construir_geodataframe_convierte_fechas_y_vacios_a_texto():
+    gdf = construir_geodataframe(_df_prueba())
+    # fila 0 (FAENA A): tiene fecha real -> queda como texto ISO, no Timestamp
+    assert gdf["FECHA_RES_APRUEBA"].iloc[0] == "2022-12-05"
+    # fila 1 (FAENA B): NaT/None -> cadena vacia (no "NaT"/"None"), para que el
+    # filtro esValorVacio() del visor la descarte igual que un campo -99
+    assert gdf["FECHA_RES_APRUEBA"].iloc[1] == ""
+    assert gdf["RES_PDC_APRUEBA"].iloc[0] == ""
+```
+
+- [ ] **Step 2: Run tests to verify they fail**
+
+Run: `cd fallas-activas-chile/tools && python -m pytest tests/test_convertir_catastro_relaves.py -v`
+Expected: FAIL — `ModuleNotFoundError: No module named 'convertir_catastro_relaves'`
+
+- [ ] **Step 3: Write `tools/convertir_catastro_relaves.py`**
+
+```python
+"""Convierte el catastro SERNAGEOMIN de depositos de relaves (Oct-2025, Excel) a KML.
+
+Reemplaza relaves_sernageomin_2018.kml (742 registros, sourced from
+infraestructura-critica-chile/) por un catastro mas reciente y completo (836 registros,
+Octubre 2025) que el usuario aporto directamente como planilla Excel. Fuente:
+SERNAGEOMIN, "Catastro de Depositos de Relaves" (DS 248/2007).
+"""
+from pathlib import Path
+
+import geopandas as gpd
+import pandas as pd
+from shapely.geometry import Point
+
+ORIGEN_XLSX = (
+    Path(__file__).resolve().parent.parent.parent
+    / "Fallas Activas" / "Info" / "CATASTRO_RELAVES_CHILE_OCT2025.xlsx"
+)
+DESTINO_KML = Path(__file__).resolve().parent.parent / "data" / "relaves" / "relaves_sernageomin_2025.kml"
+HOJA = "CDR_CHILE"
+FILA_ENCABEZADO = 6  # 0-indexed: las primeras 6 filas del Excel son titulo/metadata
+
+
+def leer_catastro(ruta_xlsx: Path, hoja: str = HOJA, fila_encabezado: int = FILA_ENCABEZADO) -> pd.DataFrame:
+    """Lee la hoja de datos del catastro, saltando las filas de titulo/metadata iniciales."""
+    return pd.read_excel(ruta_xlsx, sheet_name=hoja, header=fila_encabezado)
+
+
+def construir_geodataframe(df: pd.DataFrame) -> gpd.GeoDataFrame:
+    """Arma un GeoDataFrame EPSG:4326 desde las columnas LATITUD/LONGITUD.
+
+    - Descarta filas sin coordenadas.
+    - Arma 'Name' = NOMBRE_FAENA + " - " + NOMBRE_INSTALACION (mismo patron que
+      shp_a_kmz.py: un campo 'Name' legible es lo que el driver KML de geopandas
+      usa como <name> del Placemark).
+    - Convierte columnas de fecha a texto ISO (el driver KML no serializa
+      datetime64 de forma confiable) y reemplaza NaN/None por cadena vacia en
+      TODOS los atributos, para que el filtro esValorVacio() del visor los
+      descarte igual que un campo -99 (en vez de mostrar literalmente "NaT"/"None").
+    """
+    df = df.dropna(subset=["LATITUD", "LONGITUD"]).copy()
+    geometry = [Point(lon, lat) for lat, lon in zip(df["LATITUD"], df["LONGITUD"])]
+    df["Name"] = (
+        df["NOMBRE_FAENA"].astype(str).str.strip() + " - " + df["NOMBRE_INSTALACION"].astype(str).str.strip()
+    )
+    atributos = df.drop(columns=["LATITUD", "LONGITUD"]).copy()
+    for col in atributos.columns:
+        if pd.api.types.is_datetime64_any_dtype(atributos[col]):
+            atributos[col] = atributos[col].dt.strftime("%Y-%m-%d")
+        atributos[col] = atributos[col].where(atributos[col].notna(), "")
+    return gpd.GeoDataFrame(atributos, geometry=geometry, crs="EPSG:4326")
+
+
+def main() -> None:
+    if not ORIGEN_XLSX.exists():
+        raise FileNotFoundError(
+            f"No se encontro {ORIGEN_XLSX}. Se espera la planilla del catastro de relaves "
+            "en 'Fallas Activas/Info/' (directorio hermano de este repo)."
+        )
+    print(f"Leyendo {ORIGEN_XLSX} (hoja '{HOJA}') ...")
+    df = leer_catastro(ORIGEN_XLSX)
+    print(f"  {len(df)} filas leidas")
+    gdf = construir_geodataframe(df)
+    print(f"  {len(gdf)} depositos con coordenadas validas")
+    DESTINO_KML.parent.mkdir(parents=True, exist_ok=True)
+    gdf.to_file(DESTINO_KML, driver="KML")
+    print(f"Escrito: {DESTINO_KML} ({DESTINO_KML.stat().st_size:,} bytes)")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+- [ ] **Step 4: Run tests to verify they pass**
+
+Run: `cd fallas-activas-chile/tools && python -m pytest tests/test_convertir_catastro_relaves.py -v`
+Expected: 3 passed
+
+- [ ] **Step 5: Add `openpyxl` to `tools/requirements.txt`** (needed by `pandas.read_excel` for `.xlsx`)
+
+Append a line: `openpyxl==3.1.5`
+
+- [ ] **Step 6: Run it for real**
+
+Run: `cd fallas-activas-chile && python tools/convertir_catastro_relaves.py`
+Expected: prints `836 filas leidas`, `836 depositos con coordenadas validas` (all rows had valid coordinates, verified during planning), then `Escrito: .../data/relaves/relaves_sernageomin_2025.kml (...)`.
+
+- [ ] **Step 7: Remove the superseded file and update `tools/extraer_kmls_infra.py`**
+
+```bash
+git rm fallas-activas-chile/data/relaves/relaves_sernageomin_2018.kml
+```
+(run from the `Documents/Claude` root, or `git rm data/relaves/relaves_sernageomin_2018.kml` from inside `fallas-activas-chile/`)
+
+In `tools/extraer_kmls_infra.py`, change:
+```python
+EXCLUIR = {"red_vial"}
+```
+to:
+```python
+EXCLUIR = {"red_vial", "relaves_sernageomin_2018"}
+```
+(so a future re-run of this script against the sibling `infraestructura-critica-chile/` doesn't resurrect the superseded 2018 file).
+
+In `tools/tests/test_extraer_kmls_infra.py`, extend `test_rutas_kmz_excluye_red_vial` (or add a new test) to also cover the `relaves_sernageomin_2018` exclusion, e.g.:
+```python
+def test_rutas_kmz_excluye_ambos_nombres(tmp_path):
+    _tocar(tmp_path / "transporte" / "red_vial.kmz")
+    _tocar(tmp_path / "transporte" / "red_ferrea.kmz")
+    _tocar(tmp_path / "relaves" / "relaves_sernageomin_2018.kmz")
+    _tocar(tmp_path / "relaves" / "otra_capa.kmz")
+
+    encontrados = rutas_kmz(tmp_path)
+
+    assert sorted(p.name for p in encontrados) == ["otra_capa.kmz", "red_ferrea.kmz"]
+```
+Run `cd tools && python -m pytest tests/test_extraer_kmls_infra.py -v` — expected: all tests (old + new) pass.
+
+- [ ] **Step 8: Update `visor-web/index.html`'s `LAYER_DEFS`**
+
+Replace:
+```js
+  { id: "relaves_sernageomin_2018", sector: "relaves", label: "Relaves (SERNAGEOMIN 2018)", file: "relaves/relaves_sernageomin_2018.kml", kind: "points" },
+```
+with:
+```js
+  { id: "relaves_sernageomin_2025", sector: "relaves", label: "Relaves (SERNAGEOMIN, oct. 2025)", file: "relaves/relaves_sernageomin_2025.kml", kind: "points" },
+```
+(same sector/kind, only `id`/`label`/`file` change — `INFRA_DEFS.length` stays 26, this is a swap not an addition.)
+
+- [ ] **Step 9: Verify in the browser**
+
+Use `preview_start` with `fallas-activas-preview`, navigate to `/visor-web/index.html`, expand "🏗️ Infraestructura Crítica" → "⛏️ Relaves", toggle the relaves checkbox on. Expected count: `836`. No console errors. Toggle the popup content check same way as Task 7 (calling `window.buildLayerGroup`/`window.fetchKml` directly is a valid, already-proven verification method for this file) — confirm a real feature shows attributes like `ESTADO_INSTALACION`, `NOMBRE_EMPRESA_O_PRODUCTOR_MINERO`, `REGION`.
+
+- [ ] **Step 10: Commit**
+
+```bash
+git add tools/convertir_catastro_relaves.py tools/tests/test_convertir_catastro_relaves.py tools/extraer_kmls_infra.py tools/tests/test_extraer_kmls_infra.py tools/requirements.txt visor-web/index.html data/relaves/relaves_sernageomin_2025.kml
+git commit -m "feat: replace outdated relaves layer with Oct-2025 SERNAGEOMIN catastro (742->836)"
+```
+
+---
+
+## Task 9: Publish to GitHub Pages
 
 **This task creates a public GitHub repository and pushes code — confirm with the user before running it if that confirmation hasn't already happened.**
 
@@ -1209,6 +1417,6 @@ Then check the Actions run for "pages build and deployment" completes with `"con
 
 ## Plan self-review notes
 
-- **Spec coverage:** every section of the design spec maps to a task — data pipeline (Tasks 2–5), viewer (Task 6), lazy-loading + generic attributes + line support + color scheme (all in Task 6's code), deployment (Task 8), validation approach (Task 7, matches spec's "no automated UI tests" decision).
+- **Spec coverage:** every section of the design spec maps to a task — data pipeline (Tasks 2–5), viewer (Task 6), lazy-loading + generic attributes + line support + color scheme (all in Task 6's code), deployment (Task 9), validation approach (Task 7, matches spec's "no automated UI tests" decision). Task 8 (added after initial planning) swaps the outdated 2018 relaves source for a newer Oct-2025 SERNAGEOMIN catastro the user provided directly — same pattern as Tasks 3–5, not a design change.
 - **Layer count consistency:** 26 infrastructure layers = 25 (Task 5) + 1 (`red_vial`, Task 4); + 1 fault layer (Task 3) = 27 total `LAYER_DEFS` entries, matching the corrected count in the spec.
 - **Type/name consistency check:** `fetchKml(file, kind)`, `parsePlacemarks(text, kind)`, `buildLayerGroup(def, feats)`, `LAYER_DEFS`/`INFRA_DEFS`/`FALLAS_DEF`, `layerState[def.id]` shape (`{on, loading, error, total}`) are used identically across Task 6's code — verified by literally running this code in a browser during planning (see "Context already established").
