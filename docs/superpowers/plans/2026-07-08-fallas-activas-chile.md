@@ -22,6 +22,7 @@
 - `infraestructura-critica-chile/transporte/red_vial.shp` has 12,609 features / ~7.0M vertices in EPSG:4326. Tested `simplify(0.0005, preserve_topology=True)` → 156,162 vertices (97.8% reduction) → resulting KML ≈ 19.9 MB (down from an unsimplified KML that would be far larger than the 72 MB *compressed* KMZ). This tolerance is the one to use.
 - The complete `visor-web/index.html` (below, Task 6) was already drafted and **manually verified working** in a real browser preview during planning: sidebar renders, all 5 sector subsections + fault section expand/collapse correctly, badges compute correctly (958 for faults, `N/26` for infra), a "points" layer (synthetic bocatomas fixture), a "lines" layer (synthetic CHAF fixture), and a `MultiGeometry` "lines" layer (synthetic gasoductos fixture, 2-segment) all parsed and rendered with correct popups, and the fetch-failure path (missing file → inline error, checkbox unchecks itself) was verified too. One real bug was found and fixed during this prototyping: **a Web Worker created from a `Blob` has no page URL to resolve relative paths against** — posting a relative path like `"../data/x.kml"` to the worker throws `Failed to parse URL`. Fix already applied in the code below: `fetchKml` always resolves `new URL(..., document.baseURI).href` to an absolute URL *before* posting to the worker. Do not reintroduce a relative URL there.
 - No JS unit-test framework is used for this visor (matches existing project convention for `alertas-redes`/`cuencas-chile` — verified manually via browser preview, not automated tests). Python tools DO get pytest tests (matches `catastro-fallas` convention).
+- **Post-execution note:** the `visor-web/index.html` code block in Task 6 below was re-synced after implementation to reflect the FINAL shipped file — it now includes the `desiredOn`/`inFlight` race-condition fix and the lazy (function-based) `bindPopup` sanitization added during Task 6's code-quality review round, and the `relaves_sernageomin_2025` entry from Task 8 (the original Task 6 draft referenced `relaves_sernageomin_2018`, superseded before publish). Treat this listing as the source of truth, not an as-originally-drafted snapshot.
 
 ---
 
@@ -547,7 +548,6 @@ This file was fully drafted and manually verified working during planning (see "
   }
   #panel .sub { color: #93a4b5; font-size: 11px; margin-bottom: 10px; }
   .hint { color: #7fd4ff; font-size: 12px; margin-top: 6px; cursor: pointer; }
-  .row { display: flex; align-items: center; justify-content: space-between; margin: 5px 0; }
   .stat { display: flex; align-items: center; gap: 7px; margin: 3px 0; }
   .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; flex: none; }
   .sq  { width: 12px; height: 12px; display: inline-block; flex: none; }
@@ -571,11 +571,9 @@ This file was fully drafted and manually verified working during planning (see "
   label.tg { display: flex; align-items: center; gap: 7px; cursor: pointer; margin: 4px 0; user-select: none; }
   label.tg .warn { color: #ffb020; }
   button { background: #2563eb; color: #fff; border: 0; border-radius: 7px; padding: 7px 10px; cursor: pointer; font-size: 12px; width: 100%; margin-top: 8px; }
-  button:disabled { opacity: .6; cursor: default; }
   .seg { display: flex; gap: 4px; margin-top: 4px; }
   .seg button { width: auto; flex: 1; margin: 0; background: #1f2b3a; }
   .seg button.on { background: #2563eb; }
-  #err { color: #ff8d7a; font-size: 11px; margin-top: 6px; }
   .layer-err { color: #ff8d7a; font-size: 11px; margin: 2px 0 4px; }
   .leaflet-popup-content { font-size: 12px; max-height: calc(100vh - 210px); overflow-y: auto; overflow-x: hidden; }
   .leaflet-popup-content table { border-collapse: collapse; }
@@ -663,7 +661,7 @@ const LAYER_DEFS = [
   { id: "terminales_maritimos_descarga", sector: "energia", label: "Terminales Marítimos de Descarga", file: "energia/terminales_maritimos_descarga.kml", kind: "points" },
   { id: "termoelectricas", sector: "energia", label: "Termoeléctricas", file: "energia/termoelectricas.kml", kind: "points" },
 
-  { id: "relaves_sernageomin_2018", sector: "relaves", label: "Relaves (SERNAGEOMIN 2018)", file: "relaves/relaves_sernageomin_2018.kml", kind: "points" },
+  { id: "relaves_sernageomin_2025", sector: "relaves", label: "Relaves (SERNAGEOMIN, oct. 2025)", file: "relaves/relaves_sernageomin_2025.kml", kind: "points" },
 
   { id: "establecimientos_salud", sector: "salud", label: "Establecimientos de Salud", file: "salud/establecimientos_salud.kml", kind: "points" },
 
@@ -878,7 +876,11 @@ function buildLayerGroup(def, feats) {
         radius: 5, color: "#0a0a0a", weight: 0.6, fillColor: color, fillOpacity: 0.85
       });
     }
-    layer.bindPopup(sanitizePopup(popupHtml), POPUP_OPTS);
+    // Lazy: Leaflet acepta una función como contenido y la llama recién al abrir el
+    // popup. Evita sanitizar (construcción de <template> + 2 querySelectorAll) las
+    // ~12.600 features de red_vial de una sola vez al activar la capa — solo se
+    // sanitiza la que el usuario realmente abre.
+    layer.bindPopup(() => sanitizePopup(popupHtml), POPUP_OPTS);
     g.addLayer(layer);
   });
   return g;
@@ -929,6 +931,13 @@ function App() {
   const mapRef = useRef(null);
   const basemaps = useRef({});
   const groups = useRef({});   // id -> L.layerGroup, poblado la primera vez que se activa
+  // desiredOn: último estado on/off pedido por el usuario para cada capa, escrito de
+  // forma SÍNCRONA (antes de cualquier await) para que un fetch en curso pueda
+  // comprobar, al resolver, si su resultado todavía es el que el usuario quiere.
+  const desiredOn = useRef({});
+  // inFlight: promesa de fetchKml en curso por def.id, para no disparar un segundo
+  // fetch si el usuario apaga y prende la capa mientras la primera sigue cargando.
+  const inFlight = useRef({});
 
   const [layerState, setLayerState] = useState({});
   const [fallasOpen, setFallasOpen] = useState(false);
@@ -981,29 +990,66 @@ function App() {
   }, [base]);
 
   const toggleLayer = useCallback(async (def, on) => {
+    // Escribir el estado deseado ANTES de cualquier await: si el usuario alterna
+    // rápido (on -> off -> on...) mientras un fetch sigue en curso, esta es la
+    // única fuente de verdad sobre qué quiere el usuario "ahora mismo".
+    desiredOn.current[def.id] = on;
     setLayerState(prev => ({ ...prev, [def.id]: { ...(prev[def.id] || {}), on } }));
     const map = mapRef.current;
     if (!map) return;
     let group = groups.current[def.id];
-    if (on) {
-      if (!group) {
-        setLayerState(prev => ({ ...prev, [def.id]: { ...(prev[def.id] || {}), on: true, loading: true, error: "" } }));
-        try {
-          const feats = await fetchKml(def.file, def.kind);
-          group = buildLayerGroup(def, feats);
-          groups.current[def.id] = group;
-          setLayerState(prev => ({ ...prev, [def.id]: { on: true, loading: false, error: "", total: feats.length } }));
-        } catch (e) {
-          // on:false -> el checkbox se desmarca solo (nada quedo mostrado en el mapa)
-          // y no infla el contador "X/N" de capas activas; el mensaje de error queda
-          // igual visible debajo para que el usuario sepa por que y pueda reintentar.
-          setLayerState(prev => ({ ...prev, [def.id]: { on: false, loading: false, error: String(e.message || e) } }));
-          return;
-        }
-      }
+
+    if (!on) {
+      // Apagar: si ya hay grupo construido, sacarlo del mapa. Si todavía no existe
+      // (fetch en curso), no hay nada que remover — cuando ese fetch resuelva,
+      // comprobará desiredOn.current y no lo mostrará (ver más abajo).
+      if (group) map.removeLayer(group);
+      return;
+    }
+
+    if (group) {
+      // Ya estaba construido (activación previa): mostrarlo de inmediato, sin fetch.
       group.addTo(map);
-    } else if (group) {
-      map.removeLayer(group);
+      return;
+    }
+
+    // No hay grupo todavía: reusar un fetch ya en curso para esta capa en vez de
+    // disparar uno nuevo (evita features duplicadas / grupos huérfanos si el
+    // usuario prende la capa dos veces antes de que la primera responda).
+    let promise = inFlight.current[def.id];
+    if (!promise) {
+      setLayerState(prev => ({ ...prev, [def.id]: { ...(prev[def.id] || {}), on: true, loading: true, error: "" } }));
+      promise = fetchKml(def.file, def.kind);
+      inFlight.current[def.id] = promise;
+    }
+
+    try {
+      const feats = await promise;
+      // Solo la primera llamada que despierta tras el resolve construye el grupo;
+      // llamadas posteriores que esperaban la misma promesa lo encuentran ya listo.
+      if (inFlight.current[def.id] === promise) {
+        delete inFlight.current[def.id];
+      }
+      if (!groups.current[def.id]) {
+        groups.current[def.id] = buildLayerGroup(def, feats);
+      }
+      group = groups.current[def.id];
+
+      if (desiredOn.current[def.id]) {
+        group.addTo(map);
+        setLayerState(prev => ({ ...prev, [def.id]: { on: true, loading: false, error: "", total: feats.length } }));
+      } else {
+        // El usuario apagó la capa mientras cargaba: dejar el grupo cacheado
+        // (listo al toque la próxima vez) pero NO mostrarlo ni reactivar el
+        // checkbox — evita el "flash" de que se vuelva a marcar solo.
+        setLayerState(prev => ({ ...prev, [def.id]: { on: false, loading: false, error: "", total: feats.length } }));
+      }
+    } catch (e) {
+      if (inFlight.current[def.id] === promise) delete inFlight.current[def.id];
+      // on:false -> el checkbox se desmarca solo (nada quedo mostrado en el mapa)
+      // y no infla el contador "X/N" de capas activas; el mensaje de error queda
+      // igual visible debajo para que el usuario sepa por que y pueda reintentar.
+      setLayerState(prev => ({ ...prev, [def.id]: { on: false, loading: false, error: String(e.message || e) } }));
     }
   }, []);
 
