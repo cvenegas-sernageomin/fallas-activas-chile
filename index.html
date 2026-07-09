@@ -623,9 +623,13 @@ function SismosSection({ map, ready }) {
           }
         }
         if (cancelado) return;
-        // Piso efectivo = el mayor entre el slider del usuario y el piso por zoom.
-        const magEff = Math.max(minMag, magMinPorZoom(zoom));
-        const g = buildSismoLayer(id, d, bands, magEff);
+        // El piso de magnitud por zoom aplica SOLO a Harvard (619 beachballs que se
+        // solapan a escala pais). USGS/CSN son pocos eventos recientes (decenas) y casi
+        // todos de magnitud chica: si se les aplicara el piso por zoom, a vista pais
+        // quedarian TODOS ocultos y pareceria que no cargan. Para ellos manda solo el
+        // slider de magnitud minima del usuario.
+        const magSrc = (id === "harvard") ? Math.max(minMag, magMinPorZoom(zoom)) : minMag;
+        const g = buildSismoLayer(id, d, bands, magSrc);
         layerRef.current[id] = g;
         g.addTo(m);
         setMeta(x => ({ ...x, [id]: { loading: false, error: "", total: g.getLayers().length } }));
@@ -677,7 +681,7 @@ function SismosSection({ map, ready }) {
         style={{ width: "100%" }} />
       {magMinPorZoom(zoom) > minMag &&
         <div style={{ color: "#7fd4ff", fontSize: 11, marginTop: 4 }}>
-          A este zoom se muestran M ≥ {magMinPorZoom(zoom).toFixed(1)}. Acércate para ver los más pequeños.
+          A este zoom, los históricos (Harvard) muestran M ≥ {magMinPorZoom(zoom).toFixed(1)}; acércate para ver los más pequeños. USGS/CSN se muestran completos.
         </div>}
 
       <div style={{ marginTop: 8 }}>
