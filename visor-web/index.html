@@ -415,6 +415,18 @@ function bandaDeProf(depth) {
   if (depth <= 30) return "5-30";
   return ">30";
 }
+// Piso de magnitud según el zoom: a escala país (zoom bajo) solo tiene sentido mostrar
+// los sismos grandes; al acercarse aparecen los más chicos. Evita la "sopa de puntos"
+// (beachballs solapados) sin esconder nada tras un cluster. Se combina con el slider de
+// magnitud mínima del usuario tomando el mayor de ambos.
+function magMinPorZoom(z) {
+  if (z <= 5) return 6.0;
+  if (z <= 6) return 5.5;
+  if (z <= 7) return 5.0;
+  if (z <= 8) return 4.5;
+  if (z <= 9) return 4.0;
+  return 0.0;   // zoom >= 10: sin piso por zoom, manda solo el slider
+}
 
 const USGS_URL = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson" +
   "&minlatitude=-56&maxlatitude=-17&minlongitude=-76&maxlongitude=-66" +
@@ -540,14 +552,26 @@ function LayerRow({ def, state, onToggle }) {
 }
 
 // ---------- sección Sismos (fuente + bandas de profundidad + magnitud mínima) ----------
-function SismosSection({ map }) {
+function SismosSection({ map, ready }) {
   const [open, setOpen] = useState(false);
   const [src, setSrc] = useState({ harvard: false, usgs: false, csn: false });
   const [bands, setBands] = useState({ "0-5": true, "5-30": true });
   const [minMag, setMinMag] = useState(2.5);
+  const [zoom, setZoom] = useState(() => (map.current ? map.current.getZoom() : 5));
   const [meta, setMeta] = useState({});   // id -> { loading, error, total }
   const dataRef = useRef({});              // id -> GeoJSON cacheado
   const layerRef = useRef({});             // id -> L.layerGroup en el mapa
+
+  // Seguir el zoom del mapa: al cambiar, se rehacen las capas con el piso de magnitud
+  // por zoom (magMinPorZoom). Así los sismos chicos aparecen recién al acercarse.
+  useEffect(() => {
+    const m = map.current;
+    if (!m) return;
+    const onZoom = () => setZoom(m.getZoom());
+    m.on("zoomend", onZoom);
+    setZoom(m.getZoom());
+    return () => m.off("zoomend", onZoom);
+  }, [map, ready]);
 
   const cargar = useCallback(async (id) => {
     if (dataRef.current[id]) return dataRef.current[id];
@@ -580,14 +604,16 @@ function SismosSection({ map }) {
           }
         }
         if (cancelado) return;
-        const g = buildSismoLayer(id, d, bands, minMag);
+        // Piso efectivo = el mayor entre el slider del usuario y el piso por zoom.
+        const magEff = Math.max(minMag, magMinPorZoom(zoom));
+        const g = buildSismoLayer(id, d, bands, magEff);
         layerRef.current[id] = g;
         g.addTo(m);
         setMeta(x => ({ ...x, [id]: { loading: false, error: "", total: g.getLayers().length } }));
       }
     })();
     return () => { cancelado = true; };
-  }, [src, bands, minMag, map, cargar]);
+  }, [src, bands, minMag, zoom, ready, map, cargar]);
 
   const activas = SISMO_FUENTES.filter(f => src[f.id]).length;
 
@@ -630,6 +656,10 @@ function SismosSection({ map }) {
       <input type="range" min="2" max="8" step="0.5" value={minMag}
         onChange={e => setMinMag(parseFloat(e.target.value))}
         style={{ width: "100%" }} />
+      {magMinPorZoom(zoom) > minMag &&
+        <div style={{ color: "#7fd4ff", fontSize: 11, marginTop: 4 }}>
+          A este zoom se muestran M ≥ {magMinPorZoom(zoom).toFixed(1)}. Acércate para ver los más pequeños.
+        </div>}
 
       <div style={{ marginTop: 8 }}>
         <St color="#cc0000" label="M ≥ 7" value="" />
@@ -664,6 +694,10 @@ function App() {
   const [infraOpen, setInfraOpen] = useState(false);
   const [sectorOpen, setSectorOpen] = useState({});
   const [base, setBase] = useState("sat");
+  // mapReady: los effects del hijo (SismosSection) corren ANTES que este effect que crea
+  // el mapa, así que mapRef.current todavía es null cuando el hijo intenta engancharse al
+  // evento zoomend. Este flag avisa al hijo cuándo el mapa ya existe.
+  const [mapReady, setMapReady] = useState(false);
   const [collapsed, setCollapsed] = useState(() =>
     typeof window !== "undefined" && window.matchMedia("(max-width: 760px)").matches);
 
@@ -690,12 +724,14 @@ function App() {
       { maxZoom: 18, attribution: "© OpenStreetMap" });
     basemaps.current = { sat, labels, osm };
     sat.addTo(map); labels.addTo(map);
+    setMapReady(true);
 
     return () => {
       try { map.remove(); } catch (e) {}
       if (_mapaActivo === map) _mapaActivo = null;
       mapRef.current = null;
       groups.current = {};
+      setMapReady(false);
     };
   }, []);
 
@@ -795,7 +831,7 @@ function App() {
         </div>
       </Section>
 
-      <SismosSection map={mapRef} />
+      <SismosSection map={mapRef} ready={mapReady} />
 
       <Section title="🏗️ Infraestructura Crítica" open={infraOpen} onToggle={() => setInfraOpen(!infraOpen)}
         badge={INFRA_DEFS.filter(d => layerState[d.id] && layerState[d.id].on).length + "/" + INFRA_DEFS.length}>
