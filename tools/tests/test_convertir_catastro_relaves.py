@@ -12,6 +12,7 @@ def _df_prueba():
         "ESTADO_INSTALACION": ["ACTIVO", "ABANDONADO", "ACTIVO"],
         "FECHA_RES_APRUEBA": pd.to_datetime(["2022-12-05", None, "2019-01-01"]),
         "RES_PDC_APRUEBA": [None, 123, None],
+        "CANTIDAD_MUROS__CONTENCION_": [1.0, 4.0, 2.0],
     })
 
 
@@ -29,6 +30,18 @@ def test_construir_geodataframe_arma_nombre_legible():
     assert gdf["Name"].iloc[1] == "FAENA B - DEPOSITO 2"
 
 
+def test_construir_geodataframe_nombre_faltante_no_incluye_literal_nan():
+    df = pd.DataFrame({
+        "NOMBRE_FAENA": [None],
+        "NOMBRE_INSTALACION": ["DEPOSITO X"],
+        "LATITUD": [-33.5],
+        "LONGITUD": [-70.6],
+    })
+    gdf = construir_geodataframe(df)
+    assert "nan" not in gdf["Name"].iloc[0].lower()
+    assert gdf["Name"].iloc[0] == " - DEPOSITO X"
+
+
 def test_construir_geodataframe_convierte_fechas_y_vacios_a_texto():
     gdf = construir_geodataframe(_df_prueba())
     # fila 0 (FAENA A): tiene fecha real -> queda como texto ISO, no Timestamp
@@ -37,3 +50,13 @@ def test_construir_geodataframe_convierte_fechas_y_vacios_a_texto():
     # filtro esValorVacio() del visor la descarte igual que un campo -99
     assert gdf["FECHA_RES_APRUEBA"].iloc[1] == ""
     assert gdf["RES_PDC_APRUEBA"].iloc[0] == ""
+
+
+def test_construir_geodataframe_formatea_columnas_enteras_sin_punto_cero():
+    gdf = construir_geodataframe(_df_prueba())
+    # RES_PDC_APRUEBA: columna float64 (por los None mezclados) cuyo valor real es
+    # entero -> debe verse "123", no "123.0" (dtype float sube a object por el NaN->"").
+    assert gdf["RES_PDC_APRUEBA"].iloc[1] == "123"
+    # CANTIDAD_MUROS__CONTENCION_: sin nulos, pero igual float64 -> "1"/"4", no "1.0"/"4.0"
+    assert gdf["CANTIDAD_MUROS__CONTENCION_"].iloc[0] == "1"
+    assert gdf["CANTIDAD_MUROS__CONTENCION_"].iloc[1] == "4"

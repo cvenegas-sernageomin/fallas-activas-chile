@@ -1,4 +1,5 @@
 geopandas==1.1.4
+pandas==3.0.3
 pyogrio==0.13.0
 shapely==2.1.2
 pytest==9.1.1
