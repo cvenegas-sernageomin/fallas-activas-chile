@@ -389,6 +389,116 @@ function buildLayerGroup(def, feats) {
   return g;
 }
 
+// ---------- sismos: colores/tamaños por magnitud, bandas de profundidad ----------
+// Escala de color por magnitud (misma convención que alertas-redes: M≥7 rojo oscuro
+// → M<4 verde). Aplica a puntos USGS/CSN; Harvard usa el beachball (b/n) como ícono.
+function colorSismo(mag) {
+  if (mag == null || isNaN(mag)) return "#9db1c4";
+  if (mag >= 7) return "#cc0000";
+  if (mag >= 6) return "#ff3300";
+  if (mag >= 5) return "#ff8000";
+  if (mag >= 4) return "#ffd700";
+  return "#80ff40";
+}
+function radioSismo(mag) {
+  if (mag == null || isNaN(mag)) return 4;
+  return Math.max(3, Math.min(20, 2 + (mag - 2) * 2.4));  // px, crece con magnitud
+}
+function sizeBeachball(mw) {
+  const m = (mw == null || isNaN(mw)) ? 4 : mw;
+  return Math.round(Math.max(16, Math.min(48, 14 + (m - 3) * 5)));  // px lado del PNG
+}
+// Banda de profundidad hipocentral (el usuario pidió 0-30 con subfiltro 0-5).
+function bandaDeProf(depth) {
+  if (depth == null || isNaN(depth)) return null;
+  if (depth <= 5) return "0-5";
+  if (depth <= 30) return "5-30";
+  return ">30";
+}
+
+const USGS_URL = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson" +
+  "&minlatitude=-56&maxlatitude=-17&minlongitude=-76&maxlongitude=-66" +
+  "&maxdepth=30&minmagnitude=2.5&orderby=time&limit=500";
+
+async function fetchGeoJSON(url) {
+  const r = await fetch(url, { cache: "no-cache" });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return r.json();
+}
+
+function popupHarvard(p, iconUrl) {
+  let s = `<b>M${p.mw != null ? p.mw : "?"} — ${escHtml(p.fecha)} ${escHtml(p.hora)} UTC</b>`;
+  s += `<div style="text-align:center;margin:4px 0"><img src="${iconUrl}" width="90" height="90" alt="mecanismo focal"/></div>`;
+  s += `<table cellpadding="2">`;
+  s += `<tr><td><b>Mw</b></td><td>${p.mw != null ? p.mw : "n/d"}</td></tr>`;
+  s += `<tr><td><b>mb / Ms</b></td><td>${p.mb} / ${p.ms}</td></tr>`;
+  s += `<tr><td><b>Prof. hipocentro</b></td><td>${p.prof_hipocentro_km} km</td></tr>`;
+  s += `<tr><td><b>Prof. centroide (CMT)</b></td><td>${p.prof_centroide_km} km</td></tr>`;
+  if (p.np1_rumbo != null) s += `<tr><td><b>Plano nodal 1</b></td><td>rumbo ${p.np1_rumbo}° / manteo ${p.np1_manteo}° / cabeceo ${p.np1_cabeceo}°</td></tr>`;
+  if (p.np2_rumbo != null) s += `<tr><td><b>Plano nodal 2</b></td><td>rumbo ${p.np2_rumbo}° / manteo ${p.np2_manteo}° / cabeceo ${p.np2_cabeceo}°</td></tr>`;
+  s += `<tr><td><b>Región</b></td><td>${escHtml(p.region || "")}</td></tr>`;
+  s += `</table><div style="color:#93a4b5;font-size:11px;margin-top:4px">Global CMT (Harvard) 1976–2020</div>`;
+  return s;
+}
+
+function popupPunto(source, p, depth, mag, lat, lon) {
+  const place = p.place || p.lugar || p.region || "";
+  const fecha = p.fecha || (p.time ? new Date(p.time).toLocaleString("es-CL") : "");
+  const url = p.url || "";
+  const src = source.toUpperCase();
+  let s = `<b>M${mag != null ? mag : "?"} — ${escHtml(src)}</b><table cellpadding="2">`;
+  if (fecha) s += `<tr><td><b>Fecha</b></td><td>${escHtml(String(fecha))}</td></tr>`;
+  s += `<tr><td><b>Magnitud</b></td><td>${mag != null ? mag : "n/d"}</td></tr>`;
+  s += `<tr><td><b>Profundidad</b></td><td>${depth != null ? depth + " km" : "n/d"}</td></tr>`;
+  if (place) s += `<tr><td><b>Lugar</b></td><td>${escHtml(String(place))}</td></tr>`;
+  s += `<tr><td><b>Lat, Lon</b></td><td>${lat.toFixed(2)}, ${lon.toFixed(2)}</td></tr>`;
+  if (url) s += `<tr><td><b>Fuente</b></td><td><a href="${escHtml(url)}" target="_blank" rel="noopener">${escHtml(src)}</a></td></tr>`;
+  s += `</table>`;
+  return s;
+}
+
+// Construye el layerGroup de una fuente aplicando los filtros actuales (bandas de
+// profundidad + magnitud mínima). Harvard = marcador con ícono beachball escalado por
+// Mw; USGS/CSN = circleMarker coloreado y dimensionado por magnitud.
+function buildSismoLayer(source, data, bands, minMag) {
+  const g = L.layerGroup();
+  (data.features || []).forEach(f => {
+    const p = f.properties || {}, c = f.geometry.coordinates;
+    const lon = c[0], lat = c[1];
+    if (source === "harvard") {
+      const mw = p.mw;
+      if (mw != null && mw < minMag) return;
+      if (!bands[p.banda_prof]) return;
+      const s = sizeBeachball(mw);
+      const iconUrl = new URL(`${DATA_BASE}/sismos/${p.beachball}`, document.baseURI).href;
+      const icon = L.icon({ iconUrl, iconSize: [s, s], iconAnchor: [s / 2, s / 2], popupAnchor: [0, -s / 2] });
+      const m = L.marker([lat, lon], { icon });
+      m.bindPopup(() => sanitizePopup(popupHarvard(p, iconUrl)), POPUP_OPTS);
+      g.addLayer(m);
+    } else {
+      const mag = p.mag != null ? p.mag : (p.Mag != null ? p.Mag : null);
+      const depth = c[2] != null ? c[2] : (p.prof != null ? p.prof : null);
+      const banda = bandaDeProf(depth);
+      if (banda == null || banda === ">30") return;
+      if (!bands[banda]) return;
+      if (mag != null && mag < minMag) return;
+      const m = L.circleMarker([lat, lon], {
+        radius: radioSismo(mag), color: "#0a0a0a", weight: 0.6,
+        fillColor: colorSismo(mag), fillOpacity: 0.85
+      });
+      m.bindPopup(() => sanitizePopup(popupPunto(source, p, depth, mag, lat, lon)), POPUP_OPTS);
+      g.addLayer(m);
+    }
+  });
+  return g;
+}
+
+const SISMO_FUENTES = [
+  { id: "harvard", label: "Históricos Harvard/GCMT (mecanismos, 1976–2020)", file: "sismos/harvard_someros.geojson" },
+  { id: "usgs", label: "USGS (tiempo real, ≤30 km)", live: true },
+  { id: "csn", label: "CSN nacional (instantánea)", file: "sismos/csn_reciente.geojson" }
+];
+
 // ---------- componentes de UI ----------
 function St({ color, square, label, value }) {
   return (
@@ -426,6 +536,113 @@ function LayerRow({ def, state, onToggle }) {
       </label>
       {st.error && <div className="layer-err">⚠ {st.error}</div>}
     </div>
+  );
+}
+
+// ---------- sección Sismos (fuente + bandas de profundidad + magnitud mínima) ----------
+function SismosSection({ map }) {
+  const [open, setOpen] = useState(false);
+  const [src, setSrc] = useState({ harvard: false, usgs: false, csn: false });
+  const [bands, setBands] = useState({ "0-5": true, "5-30": true });
+  const [minMag, setMinMag] = useState(2.5);
+  const [meta, setMeta] = useState({});   // id -> { loading, error, total }
+  const dataRef = useRef({});              // id -> GeoJSON cacheado
+  const layerRef = useRef({});             // id -> L.layerGroup en el mapa
+
+  const cargar = useCallback(async (id) => {
+    if (dataRef.current[id]) return dataRef.current[id];
+    const def = SISMO_FUENTES.find(f => f.id === id);
+    const url = def.live ? USGS_URL : new URL(`${DATA_BASE}/${def.file}`, document.baseURI).href;
+    const d = await fetchGeoJSON(url);
+    dataRef.current[id] = d;
+    return d;
+  }, []);
+
+  // Reconcilia las 3 fuentes cada vez que cambian los filtros o los toggles: quita el
+  // layerGroup previo de cada fuente y, si está encendida, lo reconstruye con los
+  // filtros actuales y lo agrega. Rehacer cientos de marcadores es barato.
+  useEffect(() => {
+    const m = map.current;
+    if (!m) return;
+    let cancelado = false;
+    (async () => {
+      for (const def of SISMO_FUENTES) {
+        const id = def.id;
+        const prev = layerRef.current[id];
+        if (prev) { m.removeLayer(prev); layerRef.current[id] = null; }
+        if (!src[id]) continue;
+        let d = dataRef.current[id];
+        if (!d) {
+          setMeta(x => ({ ...x, [id]: { loading: true, error: "" } }));
+          try { d = await cargar(id); } catch (e) {
+            if (!cancelado) setMeta(x => ({ ...x, [id]: { loading: false, error: String(e.message || e) } }));
+            continue;
+          }
+        }
+        if (cancelado) return;
+        const g = buildSismoLayer(id, d, bands, minMag);
+        layerRef.current[id] = g;
+        g.addTo(m);
+        setMeta(x => ({ ...x, [id]: { loading: false, error: "", total: g.getLayers().length } }));
+      }
+    })();
+    return () => { cancelado = true; };
+  }, [src, bands, minMag, map, cargar]);
+
+  const activas = SISMO_FUENTES.filter(f => src[f.id]).length;
+
+  return (
+    <Section title="🔴 Sismos" open={open} onToggle={() => setOpen(!open)}
+      badge={activas + "/" + SISMO_FUENTES.length}>
+      <div style={{ marginBottom: 4, color: "#8aa0b4", fontSize: 11, textTransform: "uppercase", letterSpacing: ".5px" }}>Fuente</div>
+      {SISMO_FUENTES.map(def => {
+        const st = meta[def.id] || {};
+        return (
+          <div key={def.id}>
+            <label className="tg">
+              <input type="checkbox" checked={!!src[def.id]}
+                onChange={e => setSrc(s => ({ ...s, [def.id]: e.target.checked }))} />
+              <span>{def.label}</span>
+              <span className="num" style={{ marginLeft: "auto" }}>
+                {st.loading ? "…" : (st.total != null ? st.total : "")}
+              </span>
+            </label>
+            {st.error && <div className="layer-err">⚠ {st.error}</div>}
+          </div>
+        );
+      })}
+
+      <div style={{ marginTop: 8, color: "#8aa0b4", fontSize: 11, textTransform: "uppercase", letterSpacing: ".5px" }}>Profundidad</div>
+      <label className="tg">
+        <input type="checkbox" checked={bands["0-5"]}
+          onChange={e => setBands(b => ({ ...b, "0-5": e.target.checked }))} />
+        <span>0–5 km (cortical superficial)</span>
+      </label>
+      <label className="tg">
+        <input type="checkbox" checked={bands["5-30"]}
+          onChange={e => setBands(b => ({ ...b, "5-30": e.target.checked }))} />
+        <span>5–30 km</span>
+      </label>
+
+      <div style={{ marginTop: 8, color: "#8aa0b4", fontSize: 11, textTransform: "uppercase", letterSpacing: ".5px" }}>
+        Magnitud mínima: <span className="num">{minMag.toFixed(1)}</span>
+      </div>
+      <input type="range" min="2" max="8" step="0.5" value={minMag}
+        onChange={e => setMinMag(parseFloat(e.target.value))}
+        style={{ width: "100%" }} />
+
+      <div style={{ marginTop: 8 }}>
+        <St color="#cc0000" label="M ≥ 7" value="" />
+        <St color="#ff3300" label="M 6 – 7" value="" />
+        <St color="#ff8000" label="M 5 – 6" value="" />
+        <St color="#ffd700" label="M 4 – 5" value="" />
+        <St color="#80ff40" label="M < 4" value="" />
+      </div>
+      <div style={{ color: "#93a4b5", fontSize: 11, marginTop: 6 }}>
+        Harvard: el ícono es el mecanismo focal (beachball); tamaño ∝ Mw. USGS/CSN: color y
+        tamaño por magnitud. USGS en vivo (CORS); CSN es instantánea estática (sin CORS).
+      </div>
+    </Section>
   );
 }
 
@@ -577,6 +794,8 @@ function App() {
           Melnick, Maldonado &amp; Contreras (2020), PANGAEA doi:10.1594/PANGAEA.922241, CC-BY 4.0.
         </div>
       </Section>
+
+      <SismosSection map={mapRef} />
 
       <Section title="🏗️ Infraestructura Crítica" open={infraOpen} onToggle={() => setInfraOpen(!infraOpen)}
         badge={INFRA_DEFS.filter(d => layerState[d.id] && layerState[d.id].on).length + "/" + INFRA_DEFS.length}>
