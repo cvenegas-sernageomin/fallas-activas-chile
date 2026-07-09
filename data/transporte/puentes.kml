@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="puentes" id="puentes">
+	<SimpleField name="Tipo" type="string"></SimpleField>
+	<SimpleField name="Estado" type="string"></SimpleField>
+</Schema>
+<Folder><name>puentes</name>
+  <Placemark id="puentes.1">
+	<name>Puente Mapocho</name>
+	<ExtendedData><SchemaData schemaUrl="#puentes">
+		<SimpleData name="Tipo">Hormigon</SimpleData>
+		<SimpleData name="Estado">Bueno</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.65,-33.445</coordinates></Point>
+  </Placemark>
+  <Placemark id="puentes.2">
+	<name>Puente Lorena</name>
+	<ExtendedData><SchemaData schemaUrl="#puentes">
+		<SimpleData name="Tipo">Acero</SimpleData>
+		<SimpleData name="Estado">Bueno</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.655,-33.44</coordinates></Point>
+  </Placemark>
+  <Placemark id="puentes.3">
+	<name>Puente Pio Nono</name>
+	<ExtendedData><SchemaData schemaUrl="#puentes">
+		<SimpleData name="Tipo">Acero</SimpleData>
+		<SimpleData name="Estado">Regular</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.66,-33.438</coordinates></Point>
+  </Placemark>
+  <Placemark id="puentes.4">
+	<name>Puente Lastarria</name>
+	<ExtendedData><SchemaData schemaUrl="#puentes">
+		<SimpleData name="Tipo">Hormigon</SimpleData>
+		<SimpleData name="Estado">Bueno</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.665,-33.437</coordinates></Point>
+  </Placemark>
+  <Placemark id="puentes.5">
+	<name>Puente Baquedano</name>
+	<ExtendedData><SchemaData schemaUrl="#puentes">
+		<SimpleData name="Tipo">Acero</SimpleData>
+		<SimpleData name="Estado">Bueno</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.67,-33.436</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="carabineros" id="carabineros">
+	<SimpleField name="Region" type="string"></SimpleField>
+	<SimpleField name="Tipo" type="string"></SimpleField>
+</Schema>
+<Folder><name>carabineros</name>
+  <Placemark id="carabineros.1">
+	<name>Comisaria Region Metropolitana</name>
+	<ExtendedData><SchemaData schemaUrl="#carabineros">
+		<SimpleData name="Region">RM</SimpleData>
+		<SimpleData name="Tipo">Comisaria</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6693,-33.4489</coordinates></Point>
+  </Placemark>
+  <Placemark id="carabineros.2">
+	<name>Cuartel General Carabineros</name>
+	<ExtendedData><SchemaData schemaUrl="#carabineros">
+		<SimpleData name="Region">RM</SimpleData>
+		<SimpleData name="Tipo">Cuartel</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6728,-33.4397</coordinates></Point>
+  </Placemark>
+  <Placemark id="carabineros.3">
+	<name>Prefectura Policial Santiago</name>
+	<ExtendedData><SchemaData schemaUrl="#carabineros">
+		<SimpleData name="Region">RM</SimpleData>
+		<SimpleData name="Tipo">Prefectura</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6,-33.42</coordinates></Point>
+  </Placemark>
+  <Placemark id="carabineros.4">
+	<name>Comisaria Providencia</name>
+	<ExtendedData><SchemaData schemaUrl="#carabineros">
+		<SimpleData name="Region">RM</SimpleData>
+		<SimpleData name="Tipo">Comisaria</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.58,-33.41</coordinates></Point>
+  </Placemark>
+  <Placemark id="carabineros.5">
+	<name>Comisaria Las Condes</name>
+	<ExtendedData><SchemaData schemaUrl="#carabineros">
+		<SimpleData name="Region">RM</SimpleData>
+		<SimpleData name="Tipo">Comisaria</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.55,-33.44</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

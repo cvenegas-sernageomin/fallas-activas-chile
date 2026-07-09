@@ -123,7 +123,9 @@ const SECTORES = [
   { id: "energia", label: "Energía", icon: "⚡", color: "#f59e0b" },
   { id: "relaves", label: "Relaves", icon: "⛏️", color: "#92400e" },
   { id: "salud", label: "Salud", icon: "🏥", color: "#f43f5e" },
-  { id: "transporte", label: "Transporte", icon: "🚦", color: "#a855f7" }
+  { id: "transporte", label: "Transporte", icon: "🚦", color: "#a855f7" },
+  { id: "seguridad", label: "Seguridad", icon: "🚨", color: "#ef4444" },
+  { id: "educacion", label: "Educación", icon: "📚", color: "#06b6d4" }
 ];
 const COLOR_SECTOR = {};
 SECTORES.forEach(s => { COLOR_SECTOR[s.id] = s.color; });
@@ -163,7 +165,13 @@ const LAYER_DEFS = [
   { id: "infraestructura_portuaria", sector: "transporte", label: "Infraestructura Portuaria", file: "transporte/infraestructura_portuaria.kml", kind: "points" },
   { id: "red_aeroportuaria", sector: "transporte", label: "Red Aeroportuaria", file: "transporte/red_aeroportuaria.kml", kind: "points" },
   { id: "red_ferrea", sector: "transporte", label: "Red Férrea", file: "transporte/red_ferrea.kml", kind: "lines" },
-  { id: "red_vial", sector: "transporte", label: "Red Vial", file: "transporte/red_vial.kml", kind: "lines", warn: true }
+  { id: "red_vial", sector: "transporte", label: "Red Vial", file: "transporte/red_vial.kml", kind: "lines", warn: true },
+  { id: "puentes", sector: "transporte", label: "Puentes", file: "transporte/puentes.kml", kind: "points" },
+
+  { id: "carabineros", sector: "seguridad", label: "Cuarteles de Carabineros", file: "seguridad/carabineros.kml", kind: "points" },
+  { id: "bomberos", sector: "seguridad", label: "Parques de Bomberos", file: "seguridad/bomberos.kml", kind: "points" },
+
+  { id: "establecimientos_educacion", sector: "educacion", label: "Establecimientos Educacionales", file: "educacion/establecimientos_educacion.kml", kind: "points" }
 ];
 const FALLAS_DEF = LAYER_DEFS.find(d => d.id === "fallas");
 const INFRA_DEFS = LAYER_DEFS.filter(d => d.sector !== "fallas");

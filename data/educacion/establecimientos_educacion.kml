@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="establecimientos_educacion" id="establecimientos_educacion">
+	<SimpleField name="Tipo" type="string"></SimpleField>
+	<SimpleField name="Estudiantes" type="string"></SimpleField>
+</Schema>
+<Folder><name>establecimientos_educacion</name>
+  <Placemark id="establecimientos_educacion.1">
+	<name>Universidad de Chile</name>
+	<ExtendedData><SchemaData schemaUrl="#establecimientos_educacion">
+		<SimpleData name="Tipo">Universidad</SimpleData>
+		<SimpleData name="Estudiantes">32000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.669,-33.4591</coordinates></Point>
+  </Placemark>
+  <Placemark id="establecimientos_educacion.2">
+	<name>Pontificia Universidad Catolica</name>
+	<ExtendedData><SchemaData schemaUrl="#establecimientos_educacion">
+		<SimpleData name="Tipo">Universidad</SimpleData>
+		<SimpleData name="Estudiantes">28000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5407,-33.341</coordinates></Point>
+  </Placemark>
+  <Placemark id="establecimientos_educacion.3">
+	<name>Universidad de Concepcion</name>
+	<ExtendedData><SchemaData schemaUrl="#establecimientos_educacion">
+		<SimpleData name="Tipo">Universidad</SimpleData>
+		<SimpleData name="Estudiantes">25000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-72.144,-36.8201</coordinates></Point>
+  </Placemark>
+  <Placemark id="establecimientos_educacion.4">
+	<name>Liceo 1 Javiera Carrera</name>
+	<ExtendedData><SchemaData schemaUrl="#establecimientos_educacion">
+		<SimpleData name="Tipo">Liceo</SimpleData>
+		<SimpleData name="Estudiantes">1200</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.65,-33.43</coordinates></Point>
+  </Placemark>
+  <Placemark id="establecimientos_educacion.5">
+	<name>Escuela Francia</name>
+	<ExtendedData><SchemaData schemaUrl="#establecimientos_educacion">
+		<SimpleData name="Tipo">Escuela</SimpleData>
+		<SimpleData name="Estudiantes">800</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.63,-33.42</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

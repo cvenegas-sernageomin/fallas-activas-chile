@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="bomberos" id="bomberos">
+	<SimpleField name="Region" type="string"></SimpleField>
+	<SimpleField name="Personal" type="string"></SimpleField>
+</Schema>
+<Folder><name>bomberos</name>
+  <Placemark id="bomberos.1">
+	<name>Parque Estacion Central</name>
+	<ExtendedData><SchemaData schemaUrl="#bomberos">
+		<SimpleData name="Region">RM</SimpleData>
+		<SimpleData name="Personal">45</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.66,-33.44</coordinates></Point>
+  </Placemark>
+  <Placemark id="bomberos.2">
+	<name>Parque Providencia</name>
+	<ExtendedData><SchemaData schemaUrl="#bomberos">
+		<SimpleData name="Region">RM</SimpleData>
+		<SimpleData name="Personal">38</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.59,-33.415</coordinates></Point>
+  </Placemark>
+  <Placemark id="bomberos.3">
+	<name>Parque Las Condes</name>
+	<ExtendedData><SchemaData schemaUrl="#bomberos">
+		<SimpleData name="Region">RM</SimpleData>
+		<SimpleData name="Personal">42</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.57,-33.405</coordinates></Point>
+  </Placemark>
+  <Placemark id="bomberos.4">
+	<name>Parque Puente Alto</name>
+	<ExtendedData><SchemaData schemaUrl="#bomberos">
+		<SimpleData name="Region">RM</SimpleData>
+		<SimpleData name="Personal">35</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.54,-33.6</coordinates></Point>
+  </Placemark>
+  <Placemark id="bomberos.5">
+	<name>Parque Maipu</name>
+	<ExtendedData><SchemaData schemaUrl="#bomberos">
+		<SimpleData name="Region">RM</SimpleData>
+		<SimpleData name="Personal">40</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.71,-33.62</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
