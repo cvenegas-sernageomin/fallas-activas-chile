@@ -171,13 +171,32 @@ const LAYER_DEFS = [
   { id: "carabineros", sector: "seguridad", label: "Cuarteles de Carabineros", file: "seguridad/carabineros.kml", kind: "points" },
   { id: "bomberos", sector: "seguridad", label: "Parques de Bomberos", file: "seguridad/bomberos.kml", kind: "points" },
 
-  { id: "establecimientos_educacion", sector: "educacion", label: "Establecimientos Educacionales", file: "educacion/establecimientos_educacion.kml", kind: "points" }
+  { id: "establecimientos_educacion", sector: "educacion", label: "Establecimientos Educacionales", file: "educacion/establecimientos_educacion.kml", kind: "points" },
+
+  { id: "vs30", sector: "vs30", label: "Vs30 — mediciones", file: "vs30/vs30_chile.kml", kind: "points" }
 ];
 const FALLAS_DEF = LAYER_DEFS.find(d => d.id === "fallas");
-const INFRA_DEFS = LAYER_DEFS.filter(d => d.sector !== "fallas");
+const VS30_DEF = LAYER_DEFS.find(d => d.id === "vs30");
+const INFRA_DEFS = LAYER_DEFS.filter(d => d.sector !== "fallas" && d.sector !== "vs30");
+
+// Vs30: clases de suelo NCh433/DS61. Convención USGS: azul = Vs30 alto (roca, buena),
+// rojo = Vs30 bajo (suelo blando, amplifica más el sismo).
+const COLOR_VS30 = [
+  { min: 900, color: "#313695", label: "A · Roca (≥900 m/s)" },
+  { min: 500, color: "#74add1", label: "B · Roca blanda / muy denso (500–900)" },
+  { min: 350, color: "#fee090", label: "C · Suelo denso / firme (350–500)" },
+  { min: 180, color: "#f46d43", label: "D · Medianamente denso (180–350)" },
+  { min: 0,   color: "#a50026", label: "E · Suelo blando (<180)" }
+];
+function colorVs30(v) {
+  if (v == null || isNaN(v)) return "#9db1c4";
+  for (const c of COLOR_VS30) if (v >= c.min) return c.color;
+  return "#9db1c4";
+}
 
 function colorDeCapa(def, attrs) {
   if (def.id === "fallas") return COLOR_ACTIVIDAD[attrs.activity] || COLOR_ACTIVIDAD_DEFAULT;
+  if (def.id === "vs30") return colorVs30(parseFloat(attrs.Vs30));
   return COLOR_SECTOR[def.sector] || "#3388ff";
 }
 
@@ -691,6 +710,7 @@ function App() {
 
   const [layerState, setLayerState] = useState({});
   const [fallasOpen, setFallasOpen] = useState(false);
+  const [vs30Open, setVs30Open] = useState(false);
   const [infraOpen, setInfraOpen] = useState(false);
   const [sectorOpen, setSectorOpen] = useState({});
   const [base, setBase] = useState("sat");
@@ -832,6 +852,18 @@ function App() {
       </Section>
 
       <SismosSection map={mapRef} ready={mapReady} />
+
+      <Section title="🟦 Vs30 (rigidez del sitio)" open={vs30Open} onToggle={() => setVs30Open(!vs30Open)}
+        badge={layerState.vs30 && layerState.vs30.total != null ? layerState.vs30.total : "904"}>
+        <LayerRow def={VS30_DEF} state={layerState.vs30} onToggle={toggleLayer} />
+        <div style={{ marginTop: 6 }}>
+          {COLOR_VS30.map(c => <St key={c.color} color={c.color} label={c.label} value="" />)}
+        </div>
+        <div style={{ color: "#93a4b5", fontSize: 11, marginTop: 6 }}>
+          904 mediciones de Vs30 (m/s) de estudios, tesis e instituciones. Clases de suelo
+          NCh433/DS61 — menor Vs30 = suelo más blando = mayor amplificación sísmica.
+        </div>
+      </Section>
 
       <Section title="🏗️ Infraestructura Crítica" open={infraOpen} onToggle={() => setInfraOpen(!infraOpen)}
         badge={INFRA_DEFS.filter(d => layerState[d.id] && layerState[d.id].on).length + "/" + INFRA_DEFS.length}>
