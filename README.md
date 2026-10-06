@@ -1,5 +1,7 @@
 # Visor de fallas activas de Chile e infraestructura crítica
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23196788.svg)](https://doi.org/10.5281/zenodo.23196788)
+
 Visor web de las fallas activas de Chile (base CHAF) cruzadas con capas de infraestructura crítica.
 
 **Publicado:** https://cvenegas-sernageomin.github.io/fallas-activas-chile/
@@ -14,4 +16,4 @@ La base de fallas activas CHAF conserva la licencia y la cita de sus autores. La
 
 Cita sugerida:
 
-> SERNAGEOMIN / Venegas Benavides, C. (2026). Visor de fallas activas de Chile e infraestructura crítica [aplicación web]. https://cvenegas-sernageomin.github.io/fallas-activas-chile/
+> SERNAGEOMIN / Venegas Benavides, C. (2026). Visor de fallas activas de Chile e infraestructura crítica [aplicación web]. https://cvenegas-sernageomin.github.io/fallas-activas-chile/ · DOI: https://doi.org/10.5281/zenodo.23196788
