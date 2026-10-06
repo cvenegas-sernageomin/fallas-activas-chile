@@ -1,0 +1,31 @@
+{
+  "upload_type": "software",
+  "title": "Visor de fallas activas de Chile e infraestructura crítica",
+  "description": "<p>Visor web de las fallas activas de Chile (base CHAF) cruzadas con capas de infraestructura crítica.</p><p>Publicado en https://cvenegas-sernageomin.github.io/fallas-activas-chile/</p><p>La licencia CC BY-NC 4.0 cubre el trabajo original de los autores. No cubre el material de terceros:</p><ul><li>La base de fallas activas CHAF conserva la licencia y la cita de sus autores.</li><li>Las capas de infraestructura crítica provienen de sus instituciones de origen y conservan sus condiciones de uso.</li><li>Las librerías de terceros incluidas (por ejemplo en vendor/) conservan sus propias licencias.</li></ul>",
+  "creators": [
+    {
+      "name": "Servicio Nacional de Geología y Minería (SERNAGEOMIN)"
+    },
+    {
+      "name": "Venegas Benavides, Carlos",
+      "affiliation": "Servicio Nacional de Geología y Minería (SERNAGEOMIN)"
+    }
+  ],
+  "license": "cc-by-nc-4.0",
+  "access_right": "open",
+  "language": "spa",
+  "keywords": [
+    "fallas activas",
+    "neotectónica",
+    "infraestructura crítica",
+    "Chile",
+    "SERNAGEOMIN"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://cvenegas-sernageomin.github.io/fallas-activas-chile/",
+      "relation": "isDocumentedBy",
+      "resource_type": "other"
+    }
+  ]
+}
